@@ -2,9 +2,10 @@
   "直播": {
     "所有直播": [
       {
-        "title": "LIVE: NBC News NOW - April 3",
-        "id": "o-D1PBFDlHE",
-        "url": "https://www.youtube.com/watch?v=o-D1PBFDlHE"
+        "group": "SYSTEM",
+        "title": "NO LIVE FOUND",
+        "id": "",
+        "url": ""
       }
     ]
   }
