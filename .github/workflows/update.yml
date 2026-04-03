@@ -1,37 +1,42 @@
-name: Auto Update YouTube JSON
+name: IPTV Update
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
-  workflow_dispatch:
+    - cron: "0 */2 * * *"   # 每2小时
+  workflow_dispatch:        # 手动运行按钮
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: 拉代码
+        uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: 安装 Python
+        uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+      - name: 安装 yt-dlp
+        run: pip install yt-dlp
 
-      - name: Run script
-        run: |
-          python Global_Vision_list.py
+      - name: 创建输出目录
+        run: mkdir -p output
 
-      - name: Commit result
+      # 👇 关键：先生成 JSON
+      - name: 生成 JSON
+        run: python Global_Vision_list.py
+
+      # 👇 再生成 M3U（依赖 JSON）
+      - name: 生成 M3U
+        run: python json_to_m3u.py
+
+      # 👇 提交结果
+      - name: 提交文件
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-          git add Global_Vision_list.json
-          git commit -m "auto update json" || exit 0
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "auto update" || echo "no changes"
           git push
