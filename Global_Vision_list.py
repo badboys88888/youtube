@@ -4,17 +4,124 @@
 import json
 import subprocess
 
-# ========= 配置 =========
-CHANNEL_URL = "https://www.youtube.com/@nbcnews/streams"
+# ========= 配置：在这里加直播源 =========
+CHANNELS = [
+    {
+        "name": "凤凰卫视资讯台",
+        "url": "https://www.youtube.com/@phoenixtvglobal/streams"
+    },
+    {
+        "name": "CCTV4",
+        "url": "https://www.youtube.com/@LiveNow24H/streams"
+    },
+    {
+        "name": "中天新闻",
+        "url": "https://www.youtube.com/@中天電視CtiTv/streams"
+    },
+    {
+        "name": "寰宇新聞",
+        "url": "https://www.youtube.com/@globalnewstw/streams"
+    },
+    {
+        "name": "東森綜合台",
+        "url": "https://www.youtube.com/@ettv32/streams"
+    },
+    {
+        "name": "东森新闻",
+        "url": "https://www.youtube.com/@newsebc/streams"
+    },
+    {
+        "name": "民视新闻",
+        "url": "https://www.youtube.com/@FTV_News/streams"
+    },
+    {
+        "name": "华视新闻",
+        "url": "https://www.youtube.com/@CtsTw/streams"
+    },
+    {
+        "name": "TVBS新闻",
+        "url": "https://www.youtube.com/@TVBSNEWS02/streams"
+    },
+    {
+        "name": "非凡新闻",
+        "url": "https://www.youtube.com/@ustv/streams"
+    },
+    {
+        "name": "TVBS NEWS",
+        "url": "https://www.youtube.com/@TVBSNEWS01/streams"
+    },
+    {
+        "name": "东森财经新闻",
+        "url": "https://www.youtube.com/@57ETFN/streams"
+    },
+    {
+        "name": "三立新闻",
+        "url": "https://www.youtube.com/@setnews/streams"
+    },
+    {
+        "name": "台视新闻",
+        "url": "https://www.youtube.com/@TTV_NEWS/streams"
+    },
+    {
+        "name": "三立iNEWS",
+        "url": "https://www.youtube.com/@三立iNEWS/streams"
+    },
+    {
+        "name": "镜新闻",
+        "url": "https://www.youtube.com/@mnews-tw/streams"
+    },
+    {
+        "name": "中视新闻",
+        "url": "https://www.youtube.com/@twctvnews/streams"
+    },
+    {
+        "name": "運通財經台",
+        "url": "https://www.youtube.com/@EFTV01/streams"
+    },
+    {
+        "name": "三大一台",
+        "url": "https://www.youtube.com/@SDTV55ch/streams"
+    },
+    {
+        "name": "大爱电视",
+        "url": "https://www.youtube.com/@DaAiVideo/streams"
+    },
+    {
+        "name": "新唐人電視台",
+        "url": "https://www.youtube.com/@NTDAPTV/streams"
+    },
+    {
+        "name": "澳廣視",
+        "url": "https://www.youtube.com/@TDM_MACAU/streams"
+    },
+    {
+        "name": "NBC News",
+        "url": "https://www.youtube.com/@nbcnews/streams"
+    },
+    {
+        "name": "BBC News",
+        "url": "https://www.youtube.com/@BBCNews/streams"
+    },
+    {
+        "name": "CNA",
+        "url": "https://www.youtube.com/@channelnewsasia/streams"
+    },
+    {
+        "name": "Al Jazeera",
+        "url": "https://www.youtube.com/@aljazeeraenglish/streams"
+    }
+]
+
 OUTPUT_FILE = "Global_Vision_list.json"
 
-# ========= 抓取 =========
-def fetch_data():
+
+# ========= 抓取函数 =========
+def fetch_channel(url):
     cmd = [
         "yt-dlp",
         "-J",
         "--flat-playlist",
-        CHANNEL_URL
+        url
     ]
 
     try:
@@ -26,52 +133,55 @@ def fetch_data():
         )
 
         if result.returncode != 0:
-            print("yt-dlp错误:", result.stderr)
+            print("yt-dlp error:", result.stderr)
             return None
 
         return json.loads(result.stdout)
 
     except Exception as e:
-        print("异常:", e)
+        print("error:", e)
         return None
 
 
-# ========= 处理 =========
+# ========= 主逻辑 =========
 def build_json():
-    raw = fetch_data()
-
-    if not raw:
-        print("没有获取到数据")
-        return
-
-    entries = raw.get("entries", []) or []
-
     output = {
         "直播": {
             "所有直播": []
         }
     }
 
-    count = 0
+    total = 0
 
-    for item in entries:
-        if not item:
+    for ch in CHANNELS:
+        print("正在抓取:", ch["name"])
+
+        raw = fetch_channel(ch["url"])
+        if not raw:
             continue
 
-        # 兼容字段（yt-dlp在不同环境可能不同）
-        is_live = item.get("is_live") or item.get("live_status") == "is_live"
+        entries = raw.get("entries", []) or []
 
-        if is_live:
-            output["直播"]["所有直播"].append({
-                "title": item.get("title"),
-                "id": item.get("id"),
-                "url": item.get("url") or item.get("webpage_url")
-            })
-            count += 1
+        for item in entries:
+            if not item:
+                continue
 
-    # 防止完全空（避免 JSON 变空结构）
-    if count == 0:
+            # 兼容字段
+            is_live = item.get("is_live") or item.get("live_status") == "is_live"
+
+            if is_live:
+                output["直播"]["所有直播"].append({
+                    "group": ch["name"],
+                    "title": item.get("title"),
+                    "id": item.get("id"),
+                    "url": item.get("url") or item.get("webpage_url")
+                })
+                total += 1
+
+    # 防止完全空
+    if total == 0:
         output["直播"]["所有直播"].append({
+            "group": "SYSTEM",
             "title": "NO LIVE FOUND",
             "id": "",
             "url": ""
@@ -80,7 +190,7 @@ def build_json():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"完成，直播数量: {count}")
+    print("完成，直播数量:", total)
 
 
 # ========= 入口 =========
