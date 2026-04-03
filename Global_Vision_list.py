@@ -30,11 +30,14 @@ OUTPUT_FILE = "Global_Vision_list.json"
 
 # ========= 抓取 =========
 def fetch_channel(url):
-    cmd = [
-        "yt-dlp",
-        "-J",
-        url
-    ]
+cmd = [
+    "yt-dlp",
+    "-J",
+    "--no-check-certificate",
+    "--user-agent",
+    "Mozilla/5.0",
+    url
+]
 
     try:
         result = subprocess.run(
