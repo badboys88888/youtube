@@ -1,160 +1,88 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import json
 import subprocess
 
-# ===============================
-# 输出文件（GitHub Actions 环境）
-# ===============================
+# ========= 配置 =========
+CHANNEL_URL = "https://www.youtube.com/@nbcnews/streams"
 OUTPUT_FILE = "Global_Vision_list.json"
 
-# ===============================
-# 节目分组
-# ===============================
-GROUPS = {
-    "全球大視野": [
-        "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY"
-    ],
-    "國際直球對決": [
-        "https://www.youtube.com/watch?v=L3QdmF68ibk&list=PLvHT0yeWYIuASUZjoW8OXe4e_UkgP7qDU"
-    ],
-    "新聞大白話": [
-        "https://www.youtube.com/watch?v=gXL7xfVhgxU&list=PLh9lJwqeOuvNPqHfKf10o5Ql9M-OEnoLy"
-    ],
-    "世界財經周報": [
-        "https://www.youtube.com/watch?v=b8iJF64rC-k&list=PLyvXVH_86VfblqpVtRq7D9vRyQMl6o2E8"
-    ],
-    "文茜的世界周報": [
-        "https://www.youtube.com/watch?v=denoskP4brc&list=PLyvXVH_86VfZ7g9Xb5SYIVhpO09Pg2zVI"
-    ],
-    "孤烟暮蝉": [
-        "https://www.youtube.com/@guyanmuchan01/videos?view=0&sort=dd"
+# ========= 抓取 =========
+def fetch_data():
+    cmd = [
+        "yt-dlp",
+        "-J",
+        "--flat-playlist",
+        CHANNEL_URL
     ]
-}
 
-# ===============================
-# 直播频道
-# ===============================
-LIVE_CHANNELS = [
-    "https://www.youtube.com/@ctitv",
-    "https://www.youtube.com/@globalnewstw",
-    "https://www.youtube.com/@ettv32",
-    "https://www.youtube.com/@newsebc",
-    "https://www.youtube.com/@ftvnews",
-    "https://www.youtube.com/@tvbsnews01",
-    "https://www.youtube.com/@setnews",
-    "https://www.youtube.com/@trtworld",
-    "https://www.youtube.com/@aljazeeraenglish",
-    "https://www.youtube.com/@abcnews",
-    "https://www.youtube.com/@nbcnews"
-]
-
-# ===============================
-# JSON 结构
-# ===============================
-final_data = {
-    "直播": {"所有直播": []},
-    "節目": {}
-}
-
-# ===============================
-# 1️⃣ 抓直播
-# ===============================
-print("开始抓直播...")
-
-all_live = []
-
-for url in LIVE_CHANNELS:
     try:
-        cmd = [
-            "yt-dlp",
-            "--dump-json",
-            "--flat-playlist",
-            url + "/streams"
-        ]
-
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=25)
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=90
+        )
 
         if result.returncode != 0:
-            continue
+            print("yt-dlp错误:", result.stderr)
+            return None
 
-        for line in result.stdout.splitlines():
-            if not line:
-                continue
-
-            data = json.loads(line)
-
-            if not data.get("is_live"):
-                continue
-
-            vid = data.get("id")
-            title = data.get("title", "")
-
-            thumb = ""
-            if data.get("thumbnails"):
-                thumb = data["thumbnails"][-1]["url"]
-
-            all_live.append({
-                "videoId": vid,
-                "title": title,
-                "thumbnail": thumb
-            })
+        return json.loads(result.stdout)
 
     except Exception as e:
-        print("直播错误:", e)
+        print("异常:", e)
+        return None
 
-final_data["直播"]["所有直播"] = all_live
 
-# ===============================
-# 2️⃣ 抓节目
-# ===============================
-for group, urls in GROUPS.items():
-    print("处理:", group)
+# ========= 处理 =========
+def build_json():
+    raw = fetch_data()
 
-    videos = []
-    seen = set()
+    if not raw:
+        print("没有获取到数据")
+        return
 
-    for url in urls:
-        try:
-            cmd = ["yt-dlp", "--flat-playlist", "-J", url]
+    entries = raw.get("entries", []) or []
 
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    output = {
+        "直播": {
+            "所有直播": []
+        }
+    }
 
-            if result.returncode != 0:
-                continue
+    count = 0
 
-            data = json.loads(result.stdout)
+    for item in entries:
+        if not item:
+            continue
 
-            entries = data.get("entries", [])
+        # 兼容字段（yt-dlp在不同环境可能不同）
+        is_live = item.get("is_live") or item.get("live_status") == "is_live"
 
-            for e in entries:
-                vid = e.get("id")
-                title = e.get("title")
+        if is_live:
+            output["直播"]["所有直播"].append({
+                "title": item.get("title"),
+                "id": item.get("id"),
+                "url": item.get("url") or item.get("webpage_url")
+            })
+            count += 1
 
-                if not vid or not title:
-                    continue
+    # 防止完全空（避免 JSON 变空结构）
+    if count == 0:
+        output["直播"]["所有直播"].append({
+            "title": "NO LIVE FOUND",
+            "id": "",
+            "url": ""
+        })
 
-                if vid in seen:
-                    continue
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
-                if "Private" in title or "Deleted" in title:
-                    continue
+    print(f"完成，直播数量: {count}")
 
-                videos.append({
-                    "videoId": vid,
-                    "title": title,
-                    "thumbnail": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
-                })
 
-                seen.add(vid)
-
-        except Exception as e:
-            print("节目错误:", e)
-
-    final_data["節目"][group] = videos
-
-# ===============================
-# 3️⃣ 输出 JSON
-# ===============================
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(final_data, f, ensure_ascii=False, indent=2)
-
-print("完成：", OUTPUT_FILE)
+# ========= 入口 =========
+if __name__ == "__main__":
+    build_json()
