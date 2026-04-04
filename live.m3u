@@ -1,9 +1,33 @@
 #EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-#EXTINF:-1 tvg-id="凤凰卫视资讯台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰卫视资讯台
+#EXTINF:-1 tvg-id="凤凰卫视资讯台" group-title="新闻",凤凰卫视资讯台
 http://192.168.6.16:8080/play?url=fN9uYWCjQaw
-#EXTINF:-1 tvg-id="中天新闻台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新闻台
+#EXTINF:-1 tvg-id="中天新闻台" group-title="新闻",中天新闻台
 http://192.168.6.16:8080/play?url=vr3XyVCR4T0
 #EXTINF:-1 tvg-id="寰宇新闻台" group-title="新闻",寰宇新闻台
 http://192.168.6.16:8080/play?url=6IquAgfvYmc
-#EXTINF:-1 tvg-id="寰宇新闻台湾台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_TW_logo.png" group-title="新闻",寰宇新闻台湾台
+#EXTINF:-1 tvg-id="寰宇新闻台湾台" group-title="新闻",寰宇新闻台湾台
 http://192.168.6.16:8080/play?url=w87VGpgd90U
+#EXTINF:-1 tvg-id="TVBS NEWS" group-title="新闻",TVBS NEWS
+http://192.168.6.16:8080/play?url=m_dhMSvUCIc
+#EXTINF:-1 tvg-id="东森财经" group-title="财经",东森财经
+http://192.168.6.16:8080/play?url=1I2iq41Akmo
+#EXTINF:-1 tvg-id="东森新闻" group-title="新闻",东森新闻
+http://192.168.6.16:8080/play?url=E0zhe2gkXBs
+#EXTINF:-1 tvg-id="东森综合二台" group-title="新闻",东森综合二台
+http://192.168.6.16:8080/play?url=cimbpAZUjzw
+#EXTINF:-1 tvg-id="台视新闻" group-title="新闻",台视新闻
+http://192.168.6.16:8080/play?url=xL0ch83RAK8
+#EXTINF:-1 tvg-id="华视新闻" group-title="新闻",华视新闻
+http://192.168.6.16:8080/play?url=wM0g8EoUZ_E
+#EXTINF:-1 tvg-id="中视新闻" group-title="新闻",中视新闻
+http://192.168.6.16:8080/play?url=TCnaIE_SAtM
+#EXTINF:-1 tvg-id="民视新闻" group-title="新闻",民视新闻
+http://192.168.6.16:8080/play?url=ylYJSBUgaMA
+#EXTINF:-1 tvg-id="公视" group-title="新闻",公视
+http://192.168.6.16:8080/play?url=quwqlazU-c8
+#EXTINF:-1 tvg-id="镜新闻" group-title="新闻",镜新闻
+http://192.168.6.16:8080/play?url=5n0y6b0Q25o
+#EXTINF:-1 tvg-id="大爱一台" group-title="新闻",大爱一台
+http://192.168.6.16:8080/play?url=pM-1ytfQhos
+#EXTINF:-1 tvg-id="大爱二台" group-title="新闻",大爱二台
+http://192.168.6.16:8080/play?url=QDxRJP-wfeI

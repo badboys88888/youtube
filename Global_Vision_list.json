@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-04-04 02:38:42",
-  "count": 4,
+  "update_time": "2026-04-04 02:58:58",
+  "count": 16,
   "data": [
     {
       "name": "凤凰卫视资讯台",
@@ -25,6 +25,78 @@
       "group": "新闻",
       "id": "w87VGpgd90U",
       "url": "https://www.youtube.com/watch?v=w87VGpgd90U"
+    },
+    {
+      "name": "TVBS NEWS",
+      "group": "新闻",
+      "id": "m_dhMSvUCIc",
+      "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc"
+    },
+    {
+      "name": "东森财经",
+      "group": "财经",
+      "id": "1I2iq41Akmo",
+      "url": "https://www.youtube.com/watch?v=1I2iq41Akmo"
+    },
+    {
+      "name": "东森新闻",
+      "group": "新闻",
+      "id": "E0zhe2gkXBs",
+      "url": "https://www.youtube.com/watch?v=E0zhe2gkXBs"
+    },
+    {
+      "name": "东森综合二台",
+      "group": "新闻",
+      "id": "cimbpAZUjzw",
+      "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"
+    },
+    {
+      "name": "台视新闻",
+      "group": "新闻",
+      "id": "xL0ch83RAK8",
+      "url": "https://www.youtube.com/watch?v=xL0ch83RAK8"
+    },
+    {
+      "name": "华视新闻",
+      "group": "新闻",
+      "id": "wM0g8EoUZ_E",
+      "url": "https://www.youtube.com/watch?v=wM0g8EoUZ_E"
+    },
+    {
+      "name": "中视新闻",
+      "group": "新闻",
+      "id": "TCnaIE_SAtM",
+      "url": "https://www.youtube.com/watch?v=TCnaIE_SAtM"
+    },
+    {
+      "name": "民视新闻",
+      "group": "新闻",
+      "id": "ylYJSBUgaMA",
+      "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"
+    },
+    {
+      "name": "公视",
+      "group": "新闻",
+      "id": "quwqlazU-c8",
+      "url": "https://www.youtube.com/watch?v=quwqlazU-c8"
+    },
+    {
+      "name": "镜新闻",
+      "group": "新闻",
+      "id": "5n0y6b0Q25o",
+      "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"
+    },
+    {
+      "name": "大爱一台",
+      "group": "新闻",
+      "id": "pM-1ytfQhos",
+      "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"
+    },
+    {
+      "name": "大爱二台",
+      "group": "新闻",
+      "id": "QDxRJP-wfeI",
+      "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
     }
   ]
 }
