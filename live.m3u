@@ -15,7 +15,7 @@ http://192.168.6.16:8080/play?url=2mCSYvcfhtc
 http://192.168.6.16:8080/play?url=1I2iq41Akmo
 #EXTINF:-1 tvg-id="东森新闻" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",东森新闻
 http://192.168.6.16:8080/play?url=E0zhe2gkXBs
-#EXTINF:-1 tvg-id="东森综合二台" group-title="新闻",东森综合二台
+#EXTINF:-1 tvg-id="东森综合二台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森综合二台.jpg" group-title="新闻",东森综合二台
 http://192.168.6.16:8080/play?url=cimbpAZUjzw
 #EXTINF:-1 tvg-id="台视新闻" group-title="新闻",台视新闻
 http://192.168.6.16:8080/play?url=xL0ch83RAK8
@@ -25,15 +25,15 @@ http://192.168.6.16:8080/play?url=wM0g8EoUZ_E
 http://192.168.6.16:8080/play?url=TCnaIE_SAtM
 #EXTINF:-1 tvg-id="民视新闻" group-title="新闻",民视新闻
 http://192.168.6.16:8080/play?url=ylYJSBUgaMA
-#EXTINF:-1 tvg-id="公视" group-title="新闻",公视
+#EXTINF:-1 tvg-id="公视" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公视
 http://192.168.6.16:8080/play?url=quwqlazU-c8
 #EXTINF:-1 tvg-id="三立iNEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立iNEWS
 http://192.168.6.16:8080/play?url=pF507BLtbqU
 #EXTINF:-1 tvg-id="三立新闻" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新闻
 http://192.168.6.16:8080/play?url=QsGswQvRmtU
-#EXTINF:-1 tvg-id="镜新闻" group-title="新闻",镜新闻
+#EXTINF:-1 tvg-id="镜新闻" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",镜新闻
 http://192.168.6.16:8080/play?url=5n0y6b0Q25o
-#EXTINF:-1 tvg-id="大爱一台" group-title="新闻",大爱一台
+#EXTINF:-1 tvg-id="大爱一台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="新闻",大爱一台
 http://192.168.6.16:8080/play?url=pM-1ytfQhos
-#EXTINF:-1 tvg-id="大爱二台" group-title="新闻",大爱二台
+#EXTINF:-1 tvg-id="大爱二台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱二台.jpg" group-title="新闻",大爱二台
 http://192.168.6.16:8080/play?url=QDxRJP-wfeI
