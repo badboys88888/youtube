@@ -9,6 +9,8 @@ http://192.168.6.16:8080/play?url=6IquAgfvYmc
 http://192.168.6.16:8080/play?url=w87VGpgd90U
 #EXTINF:-1 tvg-id="TVBS NEWS" group-title="新闻",TVBS NEWS
 http://192.168.6.16:8080/play?url=m_dhMSvUCIc
+#EXTINF:-1 tvg-id="TVBS新闻台" group-title="新闻",TVBS新闻台
+http://192.168.6.16:8080/play?url=2mCSYvcfhtc
 #EXTINF:-1 tvg-id="东森财经" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森财经新闻台.png" group-title="财经",东森财经
 http://192.168.6.16:8080/play?url=1I2iq41Akmo
 #EXTINF:-1 tvg-id="东森新闻" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",东森新闻
@@ -25,6 +27,10 @@ http://192.168.6.16:8080/play?url=TCnaIE_SAtM
 http://192.168.6.16:8080/play?url=ylYJSBUgaMA
 #EXTINF:-1 tvg-id="公视" group-title="新闻",公视
 http://192.168.6.16:8080/play?url=quwqlazU-c8
+#EXTINF:-1 tvg-id="三立iNEWS" group-title="新闻",三立iNEWS
+http://192.168.6.16:8080/play?url=pF507BLtbqU
+#EXTINF:-1 tvg-id="三立新闻" group-title="新闻",三立新闻
+http://192.168.6.16:8080/play?url=QsGswQvRmtU
 #EXTINF:-1 tvg-id="镜新闻" group-title="新闻",镜新闻
 http://192.168.6.16:8080/play?url=5n0y6b0Q25o
 #EXTINF:-1 tvg-id="大爱一台" group-title="新闻",大爱一台

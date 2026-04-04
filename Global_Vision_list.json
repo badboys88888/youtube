@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-04-04 03:16:49",
-  "count": 16,
+  "update_time": "2026-04-04 03:36:16",
+  "count": 19,
   "data": [
     {
       "name": "凤凰卫视资讯台",
@@ -31,6 +31,12 @@
       "group": "新闻",
       "id": "m_dhMSvUCIc",
       "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc"
+    },
+    {
+      "name": "TVBS新闻台",
+      "group": "新闻",
+      "id": "2mCSYvcfhtc",
+      "url": "https://www.youtube.com/watch?v=2mCSYvcfhtc"
     },
     {
       "name": "东森财经",
@@ -79,6 +85,18 @@
       "group": "新闻",
       "id": "quwqlazU-c8",
       "url": "https://www.youtube.com/watch?v=quwqlazU-c8"
+    },
+    {
+      "name": "三立iNEWS",
+      "group": "新闻",
+      "id": "pF507BLtbqU",
+      "url": "https://www.youtube.com/watch?v=pF507BLtbqU"
+    },
+    {
+      "name": "三立新闻",
+      "group": "新闻",
+      "id": "QsGswQvRmtU",
+      "url": "https://www.youtube.com/watch?v=QsGswQvRmtU"
     },
     {
       "name": "镜新闻",
