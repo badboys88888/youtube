@@ -3,31 +3,30 @@ import os
 
 INPUT_FILE = "Global_Vision_list.json"
 OUTPUT_FILE = "live.m3u"
+ICON_MAP_FILE = "icons_map.json"
 
 BASE_URL = "http://192.168.6.16:8080/play?url="
 
 
 # =========================
-# 🟢 1. 精准匹配（最优先）
+# 🟢 加载图标映射（唯一来源）
 # =========================
-EXACT_ICON_MAP = {
-    "TVBS NEWS": "icons/tvbs.png",
-    "凤凰卫视资讯台": "icons/fh.png",
-    "东森新闻": "icons/ebc.png",
-}
+def load_icon_map():
+    if not os.path.exists(ICON_MAP_FILE):
+        print("⚠️ icons_map.json 不存在，将不加载图标")
+        return {}
+
+    try:
+        with open(ICON_MAP_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print("❌ icons_map.json 读取失败:", e)
+        return {}
 
 
 # =========================
-# 🟡 2. 关键词兜底匹配
+# 🟢 读取直播列表（兼容结构）
 # =========================
-KEYWORD_ICON_MAP = {
-    "TVBS": "icons/tvbs.png",
-    "凤凰": "icons/fh.png",
-    "东森": "icons/ebc.png",
-    "中天": "icons/cti.png",
-}
-
-
 def get_live_list(data):
 
     if isinstance(data.get("直播"), dict):
@@ -36,9 +35,15 @@ def get_live_list(data):
     if isinstance(data.get("data"), list):
         return data["data"]
 
+    if isinstance(data, list):
+        return data
+
     return []
 
 
+# =========================
+# 🟢 获取频道名称
+# =========================
 def get_name(item):
     return (
         item.get("title")
@@ -49,35 +54,30 @@ def get_name(item):
 
 
 # =========================
-# 🧠 核心：图标解析（关键）
+# 🧠 精准图标匹配（核心）
 # =========================
-def resolve_icon(name):
-
-    # 1️⃣ 精准匹配（优先级最高）
-    if name in EXACT_ICON_MAP:
-        return EXACT_ICON_MAP[name]
-
-    # 2️⃣ 关键词匹配（兜底）
-    for key, icon in KEYWORD_ICON_MAP.items():
-        if key in name:
-            return icon
-
-    # 3️⃣ 无匹配
-    return ""
+def resolve_icon(name, icon_map):
+    return icon_map.get(name, "")
 
 
+# =========================
+# 🚀 主程序
+# =========================
 def main():
 
     if not os.path.exists(INPUT_FILE):
-        print("❌ JSON文件不存在")
+        print("❌ 找不到文件:", INPUT_FILE)
         return
 
     try:
         with open(INPUT_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
     except Exception as e:
-        print("❌ JSON读取失败:", e)
+        print("❌ JSON解析失败:", e)
         return
+
+    # 🟢 加载图标映射
+    ICON_MAP = load_icon_map()
 
     live_list = get_live_list(data)
 
@@ -100,10 +100,10 @@ def main():
 
         url = BASE_URL + str(vid)
 
-        icon = resolve_icon(name)
+        icon = resolve_icon(name, ICON_MAP)
 
         # =========================
-        # 🟢 写 EXTINF
+        # 🟢 写 M3U
         # =========================
         if icon:
             lines.append(
