@@ -7,9 +7,14 @@ ICON_MAP_FILE = "icons_map.json"
 
 BASE_URL = "http://192.168.6.16:8080/play?url="
 
+# =========================
+# 🟢 EPG地址（新增）
+# =========================
+EPG_URL = "https://epg.112114.xyz/pp.xml"
+
 
 # =========================
-# 🟢 加载图标映射（唯一来源）
+# 🟢 加载图标映射
 # =========================
 def load_icon_map():
     if not os.path.exists(ICON_MAP_FILE):
@@ -25,7 +30,7 @@ def load_icon_map():
 
 
 # =========================
-# 🟢 读取直播列表（兼容结构）
+# 🟢 读取直播列表
 # =========================
 def get_live_list(data):
 
@@ -42,7 +47,7 @@ def get_live_list(data):
 
 
 # =========================
-# 🟢 获取频道名称
+# 🟢 获取名称
 # =========================
 def get_name(item):
     return (
@@ -54,10 +59,20 @@ def get_name(item):
 
 
 # =========================
-# 🧠 精准图标匹配（核心）
+# 🧠 图标匹配（支持URL/文件名）
 # =========================
 def resolve_icon(name, icon_map):
-    return icon_map.get(name, "")
+
+    icon = icon_map.get(name, "")
+
+    if not icon:
+        return ""
+
+    if icon.startswith("http"):
+        return icon
+
+    BASE_ICON_URL = "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/"
+    return BASE_ICON_URL + icon
 
 
 # =========================
@@ -76,16 +91,19 @@ def main():
         print("❌ JSON解析失败:", e)
         return
 
-    # 🟢 加载图标映射
     ICON_MAP = load_icon_map()
-
     live_list = get_live_list(data)
 
     if not live_list:
         print("⚠️ 没有直播数据")
         return
 
-    lines = ["#EXTM3U"]
+    lines = []
+
+    # =========================
+    # 🟢 M3U头（新增EPG）
+    # =========================
+    lines.append(f'#EXTM3U x-tvg-url="{EPG_URL}"')
 
     count = 0
 
@@ -103,15 +121,15 @@ def main():
         icon = resolve_icon(name, ICON_MAP)
 
         # =========================
-        # 🟢 写 M3U
+        # 🟢 EXTINF
         # =========================
         if icon:
             lines.append(
-                f'#EXTINF:-1 tvg-logo="{icon}" group-title="{group}",{name}'
+                f'#EXTINF:-1 tvg-id="{name}" tvg-logo="{icon}" group-title="{group}",{name}'
             )
         else:
             lines.append(
-                f'#EXTINF:-1 group-title="{group}",{name}'
+                f'#EXTINF:-1 tvg-id="{name}" group-title="{group}",{name}'
             )
 
         lines.append(url)
