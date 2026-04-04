@@ -9,24 +9,21 @@ from datetime import datetime
 # ===================== 频道 ===================== #
 
 CHANNELS = [
-    {"name": "凤凰卫视资讯台", "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"},
-    {"name": "中天新闻台", "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"},
-    {"name": "寰宇新闻台", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
-    {"name": "寰宇台湾新闻台", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
+    {"name": "凤凰卫视资讯台", "group": "新闻", "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"},
+    {"name": "中天新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"},
+    {"name": "寰宇新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
+    {"name": "寰宇台湾新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
 
-    {"name": "TVBS NEWS", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
-    {"name": "东森财经", "url": "https://www.youtube.com/@57ETFN/live"},
-    {"name": "东森新闻", "url": "https://www.youtube.com/@newsebc/live"},
-    {"name": "三立新闻", "url": "https://www.youtube.com/@setnews/live"},
-    {"name": "民视新闻", "url": "https://www.youtube.com/@FTV_News/live"},
+    {"name": "TVBS NEWS", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
+    {"name": "东森财经", "group": "财经", "url": "https://www.youtube.com/@57ETFN/live"},
+    {"name": "东森新闻", "group": "新闻", "url": "https://www.youtube.com/@newsebc/live"},
+    {"name": "三立新闻", "group": "新闻", "url": "https://www.youtube.com/@setnews/live"},
+    {"name": "民视新闻", "group": "新闻", "url": "https://www.youtube.com/@FTV_News/live"},
 ]
 
 # ===================== 工具 ===================== #
 
 def is_live_video(url):
-    """
-    判断是否正在直播（工业核心）
-    """
     cmd = [
         "yt-dlp",
         "--quiet",
@@ -43,16 +40,14 @@ def is_live_video(url):
 
 
 def get_video_id(url):
-    """
-    获取 video id（稳定版）
-    """
 
-    # 1️⃣ v= 视频
+    # 普通视频
     if "v=" in url:
         return url.split("v=")[1].split("&")[0]
 
-    # 2️⃣ live 频道
+    # live频道
     if "/live" in url:
+
         if not is_live_video(url):
             return None
 
@@ -90,13 +85,13 @@ def run():
 
         output.append({
             "name": ch["name"],
+            "group": ch.get("group", "LIVE"),
             "id": vid,
             "url": f"https://www.youtube.com/watch?v={vid}"
         })
 
         print("✅ 成功")
 
-        # 👇 防封 + 模拟人类行为
         time.sleep(1.8)
 
     result = {
