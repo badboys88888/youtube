@@ -2,7 +2,7 @@ name: IPTV Update
 
 on:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 * * 1"  # 每周一
   workflow_dispatch:
 
 permissions:
@@ -13,22 +13,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - run: pip install yt-dlp
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yt-dlp
 
-      - run: mkdir -p output
+      - name: Run scripts
+        run: |
+          mkdir -p output
+          python Global_Vision_list.py
+          python json_to_m3u.py
 
-      - run: python Global_Vision_list.py
-      - run: python json_to_m3u.py
-
-      - run: |
+      - name: Commit and push changes
+        run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "auto update" || echo "no changes"
+          git add -A
+          git diff --cached --quiet || git commit -m "auto update IPTV"
+          git pull --rebase || true
           git push
