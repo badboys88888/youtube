@@ -1,24 +1,28 @@
 {
-  "update_time": "2026-04-04 00:51:16",
+  "update_time": "2026-04-04 01:36:38",
   "count": 4,
   "data": [
     {
       "name": "凤凰卫视资讯台",
+      "group": "新闻",
       "id": "fN9uYWCjQaw",
       "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"
     },
     {
       "name": "中天新闻台",
+      "group": "新闻",
       "id": "vr3XyVCR4T0",
       "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"
     },
     {
       "name": "寰宇新闻台",
+      "group": "新闻",
       "id": "6IquAgfvYmc",
       "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"
     },
     {
       "name": "寰宇台湾新闻台",
+      "group": "新闻",
       "id": "w87VGpgd90U",
       "url": "https://www.youtube.com/watch?v=w87VGpgd90U"
     }
