@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-04-04 04:45:25",
-  "count": 19,
+  "update_time": "2026-04-04 05:11:44",
+  "count": 21,
   "data": [
     {
       "name": "凤凰卫视资讯台",
@@ -52,7 +52,7 @@
     },
     {
       "name": "东森综合二台",
-      "group": "新闻",
+      "group": "综合",
       "id": "cimbpAZUjzw",
       "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"
     },
@@ -105,14 +105,26 @@
       "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"
     },
     {
+      "name": "CCTV4美洲",
+      "group": "综合",
+      "id": "f6Kq93wnaZ8",
+      "url": "https://www.youtube.com/watch?v=f6Kq93wnaZ8"
+    },
+    {
+      "name": "新唐人亚太台",
+      "group": "综合",
+      "id": "Bhp_V7H5QoY",
+      "url": "https://www.youtube.com/watch?v=Bhp_V7H5QoY"
+    },
+    {
       "name": "大爱一台",
-      "group": "新闻",
+      "group": "综合",
       "id": "pM-1ytfQhos",
       "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"
     },
     {
       "name": "大爱二台",
-      "group": "新闻",
+      "group": "综合",
       "id": "QDxRJP-wfeI",
       "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
     }
