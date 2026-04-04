@@ -27,7 +27,7 @@ http://192.168.6.16:8080/play?url=TCnaIE_SAtM
 http://192.168.6.16:8080/play?url=ylYJSBUgaMA
 #EXTINF:-1 tvg-id="公视" group-title="新闻",公视
 http://192.168.6.16:8080/play?url=quwqlazU-c8
-#EXTINF:-1 tvg-id="三立iNEWS" group-title="新闻",三立iNEWS
+#EXTINF:-1 tvg-id="三立iNEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立iNEWS
 http://192.168.6.16:8080/play?url=pF507BLtbqU
 #EXTINF:-1 tvg-id="三立新闻" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新闻
 http://192.168.6.16:8080/play?url=QsGswQvRmtU
