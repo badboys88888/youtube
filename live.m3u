@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="新闻",凤凰卫视资讯台
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰卫视资讯台
 http://192.168.6.16:8080/play?url=fN9uYWCjQaw
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新闻台
 http://192.168.6.16:8080/play?url=vr3XyVCR4T0
