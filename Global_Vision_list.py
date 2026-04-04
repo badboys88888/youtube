@@ -4,63 +4,47 @@
 import json
 import subprocess
 import time
-import random
 
-# ========= 你的完整频道 =========
+# ========= 台湾直播频道 =========
 CHANNELS = [
-    {"name": "凤凰卫视资讯台", "url": "https://www.youtube.com/@phoenixtvglobal/streams"},
-    {"name": "CCTV4", "url": "https://www.youtube.com/@LiveNow24H/streams"},
-    {"name": "中天新闻", "url": "https://www.youtube.com/@中天電視CtiTv/streams"},
-    {"name": "寰宇新聞", "url": "https://www.youtube.com/@globalnewstw/streams"},
-    {"name": "東森綜合台", "url": "https://www.youtube.com/@ettv32/streams"},
-    {"name": "东森新闻", "url": "https://www.youtube.com/@newsebc/streams"},
-    {"name": "民视新闻", "url": "https://www.youtube.com/@FTV_News/streams"},
-    {"name": "华视新闻", "url": "https://www.youtube.com/@CtsTw/streams"},
-    {"name": "TVBS新闻", "url": "https://www.youtube.com/@TVBSNEWS02/streams"},
-    {"name": "非凡新闻", "url": "https://www.youtube.com/@ustv/streams"},
-    {"name": "TVBS NEWS", "url": "https://www.youtube.com/@TVBSNEWS01/streams"},
-    {"name": "东森财经新闻", "url": "https://www.youtube.com/@57ETFN/streams"},
-    {"name": "三立新闻", "url": "https://www.youtube.com/@setnews/streams"},
-    {"name": "台视新闻", "url": "https://www.youtube.com/@TTV_NEWS/streams"},
-    {"name": "三立iNEWS", "url": "https://www.youtube.com/@三立iNEWS/streams"},
-    {"name": "镜新闻", "url": "https://www.youtube.com/@mnews-tw/streams"},
-    {"name": "中视新闻", "url": "https://www.youtube.com/@twctvnews/streams"},
-    {"name": "運通財經台", "url": "https://www.youtube.com/@EFTV01/streams"},
-    {"name": "三大一台", "url": "https://www.youtube.com/@SDTV55ch/streams"},
-    {"name": "大爱电视", "url": "https://www.youtube.com/@DaAiVideo/streams"},
-    {"name": "新唐人電視台", "url": "https://www.youtube.com/@NTDAPTV/streams"},
-    {"name": "澳廣視", "url": "https://www.youtube.com/@TDM_MACAU/streams"},
-    {"name": "NBC News", "url": "https://www.youtube.com/@nbcnews/streams"},
-    {"name": "BBC News", "url": "https://www.youtube.com/@BBCNews/streams"},
-    {"name": "CNA", "url": "https://www.youtube.com/@channelnewsasia/streams"},
-    {"name": "Al Jazeera", "url": "https://www.youtube.com/@aljazeeraenglish/streams"},
+    {"name": "凤凰卫视资讯台", "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"},
+    {"name": "中天新闻台", "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"},
+    {"name": "寰宇新闻台", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
+    {"name": "寰宇台湾新闻台", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
+    {"name": "TVBS新闻", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
+    {"name": "TVBS NEWS", "url": "https://www.youtube.com/@TVBSNEWS01/live"},
+    {"name": "东森新闻", "url": "https://www.youtube.com/@newsebc/live"},
+    {"name": "东森新闻二台", "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"},
+    {"name": "东森财经", "url": "https://www.youtube.com/@57ETFN/live"},
+    {"name": "三立新闻", "url": "https://www.youtube.com/@setnews/live"},
+    {"name": "三立iNEWS", "url": "https://www.youtube.com/@三立iNEWS/live"},
+    {"name": "民视新闻", "url": "https://www.youtube.com/@FTV_News/live"},
+    {"name": "台视新闻", "url": "https://www.youtube.com/@TTV_NEWS/live"},
+    {"name": "华视新闻", "url": "https://www.youtube.com/@CtsTw/live"},
+    {"name": "镜新闻", "url": "https://www.youtube.com/@mnews-tw/live"},
+    {"name": "中视新闻", "url": "https://www.youtube.com/@twctvnews/live"},
+    {"name": "非凡新闻", "url": "https://www.youtube.com/@ustv/live"},
+    {"name": "运通财经台", "url": "https://www.youtube.com/@EFTV01/live"},
+    {"name": "大爱一台", "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"},
+    {"name": "大爱二台", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"},
 ]
 
 OUTPUT_FILE = "output/Global_Vision_list.json"
 
-# ========= UA池 =========
-UA_LIST = [
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
-    "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 Chrome/90.0 Mobile",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0"
-]
 
-
-# ========= 抓取 =========
-def fetch(url):
-    ua = random.choice(UA_LIST)
-
+# ========= 抓取函数 =========
+def fetch_live(url):
     cmd = [
         "yt-dlp",
-        "-J",
-        "--user-agent", ua,
-        "--add-header", "Accept-Language:zh-CN,zh;q=0.9",
-        "--add-header", "Referer:https://www.youtube.com/",
-        "--add-header", "X-YouTube-Client-Name: 2",
-        "--add-header", "X-YouTube-Client-Version: 19.09.3",
-        "--no-check-certificate",
-        "--socket-timeout", "20",
-        "--retries", "2",
+        "--dump-json",
+        "--no-playlist",
+
+        "--user-agent",
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X)",
+
+        "--socket-timeout", "10",
+        "--retries", "1",
+
         url
     ]
 
@@ -69,92 +53,83 @@ def fetch(url):
             cmd,
             capture_output=True,
             text=True,
-            timeout=120
+            timeout=40
         )
 
         if result.returncode != 0:
-            print("yt-dlp error:", result.stderr)
+            print("❌ yt-dlp错误")
             return None
 
         return json.loads(result.stdout)
 
+    except subprocess.TimeoutExpired:
+        print("⏱ 超时")
+        return None
     except Exception as e:
-        print("error:", e)
+        print("❌ 异常:", e)
         return None
 
 
-# ========= 判断直播 =========
-def is_live(item):
-    if not item:
+# ========= 判断是否直播 =========
+def is_live(data):
+    if not data:
         return False
 
-    status = item.get("live_status", "")
-    if status in ["is_live", "live", "LIVE"]:
-        return True
-
-    if item.get("is_live") is True:
-        return True
-
-    return False
+    return (
+        data.get("is_live") is True or
+        data.get("live_status") in ["is_live", "live"]
+    )
 
 
 # ========= 主逻辑 =========
 def main():
-    output = {"直播": {"所有直播": []}}
+    output = {
+        "直播": {
+            "所有直播": []
+        }
+    }
+
     total = 0
 
-    batch_size = 5  # 每批5个频道（防封关键）
+    for ch in CHANNELS:
+        print("🔍 抓取:", ch["name"])
 
-    for i in range(0, len(CHANNELS), batch_size):
-        batch = CHANNELS[i:i + batch_size]
+        data = fetch_live(ch["url"])
 
-        print(f"\n=== 批次 {i//batch_size + 1} ===")
+        if not data:
+            continue
 
-        for ch in batch:
-            print("抓取:", ch["name"])
+        if not is_live(data):
+            print("⚠️ 当前未直播")
+            continue
 
-            raw = fetch(ch["url"])
-            if not raw:
-                continue
+        vid = data.get("id")
+        if not vid:
+            continue
 
-            for item in raw.get("entries", []):
-                if not is_live(item):
-                    continue
-
-                vid = item.get("id")
-                if not vid:
-                    continue
-
-                output["直播"]["所有直播"].append({
-                    "group": ch["name"],
-                    "title": item.get("title", "NO_TITLE"),
-                    "id": vid,
-                    "url": f"https://www.youtube.com/watch?v={vid}"
-                })
-
-                total += 1
-
-            # 每频道延迟
-            time.sleep(random.uniform(2, 5))
-
-        # 每批延迟
-        print("批次休息...")
-        time.sleep(random.uniform(5, 10))
-
-    # 防止空
-    if total == 0:
         output["直播"]["所有直播"].append({
-            "group": "SYSTEM",
-            "title": "NO LIVE FOUND",
-            "id": "",
-            "url": ""
+            "group": ch["name"],
+            "title": data.get("title", "LIVE"),
+            "id": vid,
+            "url": f"https://www.youtube.com/watch?v={vid}"
         })
+
+        print("✅ 成功:", ch["name"])
+        total += 1
+
+        time.sleep(2)  # 防封（关键）
+
+    # ========= 防空保护 =========
+    if total == 0:
+        print("⚠️ 没抓到任何直播，跳过写入（防止清空）")
+        return
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print("\n完成，直播数量:", total)
+    print(f"\n🎉 完成，共 {total} 个直播")
 
 
+# ========= 入口 =========
 if __name__ == "__main__":
     main()
