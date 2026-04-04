@@ -4,9 +4,19 @@
     {"name": "寰宇新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
     {"name": "寰宇新闻台湾台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
 
-    {"name": "TVBS NEWS", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
-    {"name": "东森财经", "group": "财经", "url": "https://www.youtube.com/@57ETFN/live"},
-    {"name": "东森新闻", "group": "新闻", "url": "https://www.youtube.com/@newsebc/live"},
-    {"name": "三立新闻", "group": "新闻", "url": "https://www.youtube.com/@setnews/live"},
-    {"name": "民视新闻", "group": "新闻", "url": "https://www.youtube.com/@FTV_News/live"}
+    {"name": "TVBS NEWS", "group": "新闻", "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc"},
+    {"name": "东森财经", "group": "财经", "url": "https://www.youtube.com/watch?v=1I2iq41Akmo"},
+    {"name": "东森新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=E0zhe2gkXBs"},
+    {"name": "东森综合二台", "group": "新闻", "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"},
+    
+    {"name": "台视新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=xL0ch83RAK8"},
+    {"name": "华视新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=wM0g8EoUZ_E"},
+    {"name": "中视新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=TCnaIE_SAtM"},
+    {"name": "民视新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"},
+    {"name": "公视", "group": "新闻", "url": "https://www.youtube.com/watch?v=quwqlazU-c8"},
+
+    
+    {"name": "镜新闻", "group": "新闻", "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"},
+    {"name": "大爱一台", "group": "新闻", "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"},
+    {"name": "大爱二台", "group": "新闻", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"}
 ]
