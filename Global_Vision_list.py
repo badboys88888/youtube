@@ -6,24 +6,23 @@ import json
 import time
 from datetime import datetime
 
-# ===================== 频道 ===================== #
+# ===================== 频道加载 ===================== #
 
-CHANNELS = [
-    {"name": "凤凰卫视资讯台", "group": "新闻", "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"},
-    {"name": "中天新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"},
-    {"name": "寰宇新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
-    {"name": "寰宇新闻台湾台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
+def load_channels():
+    try:
+        with open("channels.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"❌ channels.json 读取失败: {e}")
+        return []
 
-    {"name": "TVBS NEWS", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
-    {"name": "东森财经", "group": "财经", "url": "https://www.youtube.com/@57ETFN/live"},
-    {"name": "东森新闻", "group": "新闻", "url": "https://www.youtube.com/@newsebc/live"},
-    {"name": "三立新闻", "group": "新闻", "url": "https://www.youtube.com/@setnews/live"},
-    {"name": "民视新闻", "group": "新闻", "url": "https://www.youtube.com/@FTV_News/live"},
-]
 
-# ===================== 工具 ===================== #
+# ===================== 工具函数 ===================== #
 
 def is_live_video(url):
+    """
+    判断是否正在直播
+    """
     cmd = [
         "yt-dlp",
         "--quiet",
@@ -40,12 +39,15 @@ def is_live_video(url):
 
 
 def get_video_id(url):
+    """
+    获取 video id（兼容 watch + live）
+    """
 
     # 普通视频
     if "v=" in url:
         return url.split("v=")[1].split("&")[0]
 
-    # live频道
+    # 直播频道
     if "/live" in url:
 
         if not is_live_video(url):
@@ -72,19 +74,28 @@ def get_video_id(url):
 # ===================== 主流程 ===================== #
 
 def run():
+    CHANNELS = load_channels()
     output = []
 
-    for ch in CHANNELS:
-        print(f"🔍 检测: {ch['name']}")
+    if not CHANNELS:
+        print("⚠️ 没有加载到频道数据")
+        return
 
-        vid = get_video_id(ch["url"])
+    for ch in CHANNELS:
+        print(f"🔍 检测: {ch.get('name','unknown')}")
+
+        url = ch.get("url")
+        if not url:
+            continue
+
+        vid = get_video_id(url)
 
         if not vid:
             print("⚠️ 未直播 / 无效")
             continue
 
         output.append({
-            "name": ch["name"],
+            "name": ch.get("name"),
             "group": ch.get("group", "LIVE"),
             "id": vid,
             "url": f"https://www.youtube.com/watch?v={vid}"
@@ -92,7 +103,7 @@ def run():
 
         print("✅ 成功")
 
-        time.sleep(1.8)
+        time.sleep(1.5)
 
     result = {
         "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
