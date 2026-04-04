@@ -12,7 +12,7 @@ CHANNELS = [
     {"name": "凤凰卫视资讯台", "group": "新闻", "url": "https://www.youtube.com/watch?v=fN9uYWCjQaw"},
     {"name": "中天新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=vr3XyVCR4T0"},
     {"name": "寰宇新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
-    {"name": "寰宇台湾新闻台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
+    {"name": "寰宇新闻台湾台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
 
     {"name": "TVBS NEWS", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS02/live"},
     {"name": "东森财经", "group": "财经", "url": "https://www.youtube.com/@57ETFN/live"},
