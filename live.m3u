@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 group-title="新闻",凤凰卫视资讯台
 http://192.168.6.16:8080/play?url=fN9uYWCjQaw
-#EXTINF:-1 tvg-logo="icons/CTI_News_Logo.jpg" group-title="新闻",中天新闻台
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新闻台
 http://192.168.6.16:8080/play?url=vr3XyVCR4T0
 #EXTINF:-1 group-title="新闻",寰宇新闻台
 http://192.168.6.16:8080/play?url=6IquAgfvYmc
-#EXTINF:-1 tvg-logo="icons/Global_News_TW_logo.png" group-title="新闻",寰宇新闻台湾台
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_TW_logo.png" group-title="新闻",寰宇新闻台湾台
 http://192.168.6.16:8080/play?url=w87VGpgd90U
