@@ -24,5 +24,25 @@
     {"name": "CCTV4美洲", "group": "综合", "url": "https://www.youtube.com/watch?v=f6Kq93wnaZ8"},
     {"name": "新唐人亚太台", "group": "综合", "url": "https://www.youtube.com/watch?v=Bhp_V7H5QoY"},
     {"name": "大爱一台", "group": "综合", "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"},
-    {"name": "大爱二台", "group": "综合", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"}
+    {"name": "大爱二台", "group": "综合", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"},
+
+    
+    {"name": "半岛电视台", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"},
+    {"name": "Euronews", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"},
+    {"name": "FRANCE 24", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=Ap-UM1O9RBU"},
+    {"name": "CNA", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=XWq5kBlakcQ"},
+    {"name": "CNA Insider", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=fSUMKrxPEd8"},
+
+    
+    {"name": "ABC NEWS Australia", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=vOTiJkg1voo"},
+    {"name": "CNN TÜRK", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=6N8_r2uwLEc"},
+    {"name": "Habertürk TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=RNVNlJSUFoE"},
+    {"name": "HALK TV CANLI YAYINI", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=8uNelFh0oz4"},
+    {"name": "Show TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ouuCjEjyKVI"},
+
+    {"name": "SÖZCÜ TV Canlı Yayını ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"},
+    {"name": "DW News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=LuKwFajn37U"},
+    {"name": "Bloomberg Originals", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=DxmDPrfinXY"},
+    {"name": "Bloomberg Business News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iEpJwprxDdk"},
+    {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iipR5yUp36o"}
 ]
