@@ -63,9 +63,9 @@ http://192.168.6.16:8080/play?url=8uNelFh0oz4
 http://192.168.6.16:8080/play?url=ouuCjEjyKVI
 #EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
 http://192.168.6.16:8080/play?url=ztmY_cCtUl0
-#EXTINF:-1 tvg-id="DW News" group-title="国际新闻",DW News
+#EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
 http://192.168.6.16:8080/play?url=LuKwFajn37U
-#EXTINF:-1 tvg-id="Bloomberg Originals" group-title="国际新闻",Bloomberg Originals
+#EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
 http://192.168.6.16:8080/play?url=DxmDPrfinXY
 #EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
 http://192.168.6.16:8080/play?url=iEpJwprxDdk
