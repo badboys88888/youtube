@@ -41,3 +41,33 @@ http://192.168.6.16:8080/play?url=Bhp_V7H5QoY
 http://192.168.6.16:8080/play?url=pM-1ytfQhos
 #EXTINF:-1 tvg-id="大爱二台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱二台.jpg" group-title="综合",大爱二台
 http://192.168.6.16:8080/play?url=QDxRJP-wfeI
+#EXTINF:-1 tvg-id="半岛电视台" group-title="国际新闻",半岛电视台
+http://192.168.6.16:8080/play?url=gCNeDWCI0vo
+#EXTINF:-1 tvg-id="Euronews" group-title="国际新闻",Euronews
+http://192.168.6.16:8080/play?url=pykpO5kQJ98
+#EXTINF:-1 tvg-id="FRANCE 24" group-title="国际新闻",FRANCE 24
+http://192.168.6.16:8080/play?url=Ap-UM1O9RBU
+#EXTINF:-1 tvg-id="CNA" group-title="国际新闻",CNA
+http://192.168.6.16:8080/play?url=XWq5kBlakcQ
+#EXTINF:-1 tvg-id="CNA Insider" group-title="国际新闻",CNA Insider
+http://192.168.6.16:8080/play?url=fSUMKrxPEd8
+#EXTINF:-1 tvg-id="ABC NEWS Australia" group-title="国际新闻",ABC NEWS Australia
+http://192.168.6.16:8080/play?url=vOTiJkg1voo
+#EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
+http://192.168.6.16:8080/play?url=6N8_r2uwLEc
+#EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
+http://192.168.6.16:8080/play?url=RNVNlJSUFoE
+#EXTINF:-1 tvg-id="HALK TV CANLI YAYINI" group-title="国际新闻",HALK TV CANLI YAYINI
+http://192.168.6.16:8080/play?url=8uNelFh0oz4
+#EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
+http://192.168.6.16:8080/play?url=ouuCjEjyKVI
+#EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
+http://192.168.6.16:8080/play?url=ztmY_cCtUl0
+#EXTINF:-1 tvg-id="DW News" group-title="国际新闻",DW News
+http://192.168.6.16:8080/play?url=LuKwFajn37U
+#EXTINF:-1 tvg-id="Bloomberg Originals" group-title="国际新闻",Bloomberg Originals
+http://192.168.6.16:8080/play?url=DxmDPrfinXY
+#EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
+http://192.168.6.16:8080/play?url=iEpJwprxDdk
+#EXTINF:-1 tvg-id="ABC News" group-title="国际新闻",ABC News
+http://192.168.6.16:8080/play?url=iipR5yUp36o

@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-04-04 05:11:44",
-  "count": 21,
+  "update_time": "2026-04-04 07:16:30",
+  "count": 36,
   "data": [
     {
       "name": "凤凰卫视资讯台",
@@ -127,6 +127,96 @@
       "group": "综合",
       "id": "QDxRJP-wfeI",
       "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
+    },
+    {
+      "name": "半岛电视台",
+      "group": "国际新闻",
+      "id": "gCNeDWCI0vo",
+      "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
+    },
+    {
+      "name": "Euronews",
+      "group": "国际新闻",
+      "id": "pykpO5kQJ98",
+      "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
+    },
+    {
+      "name": "FRANCE 24",
+      "group": "国际新闻",
+      "id": "Ap-UM1O9RBU",
+      "url": "https://www.youtube.com/watch?v=Ap-UM1O9RBU"
+    },
+    {
+      "name": "CNA",
+      "group": "国际新闻",
+      "id": "XWq5kBlakcQ",
+      "url": "https://www.youtube.com/watch?v=XWq5kBlakcQ"
+    },
+    {
+      "name": "CNA Insider",
+      "group": "国际新闻",
+      "id": "fSUMKrxPEd8",
+      "url": "https://www.youtube.com/watch?v=fSUMKrxPEd8"
+    },
+    {
+      "name": "ABC NEWS Australia",
+      "group": "国际新闻",
+      "id": "vOTiJkg1voo",
+      "url": "https://www.youtube.com/watch?v=vOTiJkg1voo"
+    },
+    {
+      "name": "CNN TÜRK",
+      "group": "国际新闻",
+      "id": "6N8_r2uwLEc",
+      "url": "https://www.youtube.com/watch?v=6N8_r2uwLEc"
+    },
+    {
+      "name": "Habertürk TV Canlı Yayın ᴴᴰ",
+      "group": "国际新闻",
+      "id": "RNVNlJSUFoE",
+      "url": "https://www.youtube.com/watch?v=RNVNlJSUFoE"
+    },
+    {
+      "name": "HALK TV CANLI YAYINI",
+      "group": "国际新闻",
+      "id": "8uNelFh0oz4",
+      "url": "https://www.youtube.com/watch?v=8uNelFh0oz4"
+    },
+    {
+      "name": "Show TV Canlı Yayın ᴴᴰ",
+      "group": "国际新闻",
+      "id": "ouuCjEjyKVI",
+      "url": "https://www.youtube.com/watch?v=ouuCjEjyKVI"
+    },
+    {
+      "name": "SÖZCÜ TV Canlı Yayını ᴴᴰ",
+      "group": "国际新闻",
+      "id": "ztmY_cCtUl0",
+      "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"
+    },
+    {
+      "name": "DW News",
+      "group": "国际新闻",
+      "id": "LuKwFajn37U",
+      "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
+    },
+    {
+      "name": "Bloomberg Originals",
+      "group": "国际新闻",
+      "id": "DxmDPrfinXY",
+      "url": "https://www.youtube.com/watch?v=DxmDPrfinXY"
+    },
+    {
+      "name": "Bloomberg Business News",
+      "group": "国际新闻",
+      "id": "iEpJwprxDdk",
+      "url": "https://www.youtube.com/watch?v=iEpJwprxDdk"
+    },
+    {
+      "name": "ABC News",
+      "group": "国际新闻",
+      "id": "iipR5yUp36o",
+      "url": "https://www.youtube.com/watch?v=iipR5yUp36o"
     }
   ]
 }
