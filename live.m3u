@@ -1,73 +1,73 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
-http://192.168.6.16:8080/play?url=fN9uYWCjQaw
+http://192.168.6.16:8081/play?id=fN9uYWCjQaw
 #EXTINF:-1 tvg-id="中天新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新聞台
-http://192.168.6.16:8080/play?url=vr3XyVCR4T0
+http://192.168.6.16:8081/play?id=vr3XyVCR4T0
 #EXTINF:-1 tvg-id="寰宇新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_CH_logo.png" group-title="新闻",寰宇新聞台
-http://192.168.6.16:8080/play?url=6IquAgfvYmc
+http://192.168.6.16:8081/play?id=6IquAgfvYmc
 #EXTINF:-1 tvg-id="寰宇新聞台灣台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_TW_logo.png" group-title="新闻",寰宇新聞台灣台
-http://192.168.6.16:8080/play?url=w87VGpgd90U
+http://192.168.6.16:8081/play?id=w87VGpgd90U
 #EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
-http://192.168.6.16:8080/play?url=m_dhMSvUCIc
+http://192.168.6.16:8081/play?id=m_dhMSvUCIc
 #EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
-http://192.168.6.16:8080/play?url=2mCSYvcfhtc
+http://192.168.6.16:8081/play?id=2mCSYvcfhtc
 #EXTINF:-1 tvg-id="東森財經新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森财经新闻台.png" group-title="财经",東森財經新聞台
-http://192.168.6.16:8080/play?url=1I2iq41Akmo
+http://192.168.6.16:8081/play?id=1I2iq41Akmo
 #EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
-http://192.168.6.16:8080/play?url=E0zhe2gkXBs
+http://192.168.6.16:8081/play?id=E0zhe2gkXBs
 #EXTINF:-1 tvg-id="东森综合二台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森综合二台.jpg" group-title="综合",东森综合二台
-http://192.168.6.16:8080/play?url=cimbpAZUjzw
+http://192.168.6.16:8081/play?id=cimbpAZUjzw
 #EXTINF:-1 tvg-id="台視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/台视新闻.jpg" group-title="新闻",台視新聞台
-http://192.168.6.16:8080/play?url=xL0ch83RAK8
+http://192.168.6.16:8081/play?id=xL0ch83RAK8
 #EXTINF:-1 tvg-id="華視新聞資訊HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/华视新闻.jpg" group-title="新闻",華視新聞資訊HD
-http://192.168.6.16:8080/play?url=wM0g8EoUZ_E
+http://192.168.6.16:8081/play?id=wM0g8EoUZ_E
 #EXTINF:-1 tvg-id="中視新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/中视新闻.jpg" group-title="新闻",中視新聞
-http://192.168.6.16:8080/play?url=TCnaIE_SAtM
+http://192.168.6.16:8081/play?id=TCnaIE_SAtM
 #EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://192.168.6.16:8080/play?url=ylYJSBUgaMA
+http://192.168.6.16:8081/play?id=ylYJSBUgaMA
 #EXTINF:-1 tvg-id="公視(HD)" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公視(HD)
-http://192.168.6.16:8080/play?url=quwqlazU-c8
+http://192.168.6.16:8081/play?id=quwqlazU-c8
 #EXTINF:-1 tvg-id="三立新聞INEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立新聞INEWS
-http://192.168.6.16:8080/play?url=pF507BLtbqU
+http://192.168.6.16:8081/play?id=pF507BLtbqU
 #EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://192.168.6.16:8080/play?url=QsGswQvRmtU
+http://192.168.6.16:8081/play?id=QsGswQvRmtU
 #EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://192.168.6.16:8080/play?url=5n0y6b0Q25o
+http://192.168.6.16:8081/play?id=5n0y6b0Q25o
 #EXTINF:-1 tvg-id="CCTV4美洲" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4美洲.jpg" group-title="综合",CCTV4美洲
-http://192.168.6.16:8080/play?url=f6Kq93wnaZ8
+http://192.168.6.16:8081/play?id=f6Kq93wnaZ8
 #EXTINF:-1 tvg-id="新唐人亞太台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/新唐人亚太台.jpg" group-title="综合",新唐人亞太台
-http://192.168.6.16:8080/play?url=Bhp_V7H5QoY
+http://192.168.6.16:8081/play?id=Bhp_V7H5QoY
 #EXTINF:-1 tvg-id="大愛電視HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="综合",大愛電視HD
-http://192.168.6.16:8080/play?url=pM-1ytfQhos
+http://192.168.6.16:8081/play?id=pM-1ytfQhos
 #EXTINF:-1 tvg-id="大愛二台HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱二台.jpg" group-title="综合",大愛二台HD
-http://192.168.6.16:8080/play?url=QDxRJP-wfeI
+http://192.168.6.16:8081/play?id=QDxRJP-wfeI
 #EXTINF:-1 tvg-id="半島國際新聞台" group-title="国际新闻",半島國際新聞台
-http://192.168.6.16:8080/play?url=gCNeDWCI0vo
+http://192.168.6.16:8081/play?id=gCNeDWCI0vo
 #EXTINF:-1 tvg-id="EURONEWS" group-title="国际新闻",EURONEWS
-http://192.168.6.16:8080/play?url=pykpO5kQJ98
+http://192.168.6.16:8081/play?id=pykpO5kQJ98
 #EXTINF:-1 tvg-id="FRANCE24(ENGLISH)" group-title="国际新闻",FRANCE24(ENGLISH)
-http://192.168.6.16:8080/play?url=Ap-UM1O9RBU
+http://192.168.6.16:8081/play?id=Ap-UM1O9RBU
 #EXTINF:-1 tvg-id="CNA" group-title="国际新闻",CNA
-http://192.168.6.16:8080/play?url=XWq5kBlakcQ
+http://192.168.6.16:8081/play?id=XWq5kBlakcQ
 #EXTINF:-1 tvg-id="CNAHD" group-title="国际新闻",CNAHD
-http://192.168.6.16:8080/play?url=fSUMKrxPEd8
+http://192.168.6.16:8081/play?id=fSUMKrxPEd8
 #EXTINF:-1 tvg-id="ABCAUSTRALIA" group-title="国际新闻",ABCAUSTRALIA
-http://192.168.6.16:8080/play?url=vOTiJkg1voo
+http://192.168.6.16:8081/play?id=vOTiJkg1voo
 #EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
-http://192.168.6.16:8080/play?url=6N8_r2uwLEc
+http://192.168.6.16:8081/play?id=6N8_r2uwLEc
 #EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
-http://192.168.6.16:8080/play?url=RNVNlJSUFoE
+http://192.168.6.16:8081/play?id=RNVNlJSUFoE
 #EXTINF:-1 tvg-id="HALK TV CANLI YAYINI" group-title="国际新闻",HALK TV CANLI YAYINI
-http://192.168.6.16:8080/play?url=8uNelFh0oz4
+http://192.168.6.16:8081/play?id=8uNelFh0oz4
 #EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
-http://192.168.6.16:8080/play?url=ouuCjEjyKVI
+http://192.168.6.16:8081/play?id=ouuCjEjyKVI
 #EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
-http://192.168.6.16:8080/play?url=ztmY_cCtUl0
+http://192.168.6.16:8081/play?id=ztmY_cCtUl0
 #EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
-http://192.168.6.16:8080/play?url=LuKwFajn37U
+http://192.168.6.16:8081/play?id=LuKwFajn37U
 #EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
-http://192.168.6.16:8080/play?url=DxmDPrfinXY
+http://192.168.6.16:8081/play?id=DxmDPrfinXY
 #EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
-http://192.168.6.16:8080/play?url=iEpJwprxDdk
+http://192.168.6.16:8081/play?id=iEpJwprxDdk
 #EXTINF:-1 tvg-id="ABC News" group-title="国际新闻",ABC News
-http://192.168.6.16:8080/play?url=iipR5yUp36o
+http://192.168.6.16:8081/play?id=iipR5yUp36o
