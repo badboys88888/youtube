@@ -5,7 +5,7 @@ INPUT_FILE = "Global_Vision_list.json"
 OUTPUT_FILE = "live.m3u"
 ICON_MAP_FILE = "icons_map.json"
 
-BASE_URL = "http://192.168.6.16:8080/play?url="
+BASE_URL = "http://192.168.6.16:8081/play?id="
 
 # =========================
 # 🟢 EPG地址（新增）
