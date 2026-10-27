@@ -1,5 +1,6 @@
 import yt_dlp
 import os
+import re
 import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -9,8 +10,18 @@ OUTPUT_FILE = os.path.join(BASE_DIR, "playlist.m3u")
 PLAYLIST_END = 100  # 每个列表只取最新的前 100 个
 
 # 视频地址模板，{id} 会被替换成 YouTube 视频 ID
-# 例如：http://192.168.6.7:28000/yt/v2YMR4ettHs.mp4
 VIDEO_URL_TEMPLATE = "http://192.168.6.7:28000/yt/{id}.mp4"
+
+
+def sanitize(text, fallback="Unknown"):
+    """清理标题/台标里的换行和会破坏 M3U 的字符"""
+    if not text:
+        return fallback
+    text = str(text).replace("\r", " ").replace("\n", " ")
+    # 去掉控制字符
+    text = re.sub(r"[\x00-\x1f\x7f]", "", text)
+    text = text.strip()
+    return text or fallback
 
 
 def get_playlist_configs():
@@ -18,7 +29,6 @@ def get_playlist_configs():
     读取 playlists.txt，格式为：
         分组名|播放列表URL
     以 # 开头的行和空行会被忽略。
-    没有写分组名时，用 "未分组" 兜底。
     """
     if not os.path.exists(PLAYLIST_FILE):
         print(f"错误：找不到配置文件 {PLAYLIST_FILE}")
@@ -56,13 +66,9 @@ def process_playlist(url):
 
 
 def get_video_id(entry):
-    """
-    从 entry 中提取 YouTube 视频 ID。
-    扁平模式下 entry['id'] 通常就是 11 位视频 ID，优先用它。
-    兜底：从 url / webpage_url 里解析 v= 参数。
-    """
+    """提取 YouTube 视频 ID，优先用 entry['id']"""
     vid = entry.get("id")
-    if vid and isinstance(vid, str):
+    if vid and isinstance(vid, str) and len(vid) == 11:
         return vid
 
     for key in ("url", "webpage_url"):
@@ -70,15 +76,26 @@ def get_video_id(entry):
         if not raw:
             continue
         if "v=" in raw:
-            # 从 https://www.youtube.com/watch?v=XXXX 里取
-            part = raw.split("v=", 1)[1]
-            return part.split("&", 1)[0]
+            return raw.split("v=", 1)[1].split("&", 1)[0]
         if "youtu.be/" in raw:
             return raw.split("youtu.be/", 1)[1].split("?", 1)[0]
-        # 纯 ID
         if len(raw) == 11 and "/" not in raw and "?" not in raw:
             return raw
     return None
+
+
+def get_station(entry, fallback_group):
+    """台标：优先 uploader / channel，取不到用分组名兜底"""
+    for key in ("uploader", "channel", "channel_title"):
+        val = entry.get(key)
+        if val:
+            return sanitize(val, fallback_group)
+    return sanitize(fallback_group, "Unknown")
+
+
+def get_filename(entry):
+    """文件名：用视频标题，清理非法字符"""
+    return sanitize(entry.get("title"), "Unknown Title")
 
 
 def main():
@@ -111,13 +128,14 @@ def main():
                     skipped += 1
                     continue
 
-                # 用模板拼出最终播放地址
                 video_url = VIDEO_URL_TEMPLATE.format(id=video_id)
+                station = get_station(entry, group_title)
+                filename = get_filename(entry)
 
-                title = entry.get("title") or "Unknown Title"
-                title = title.replace("\n", " ").replace("\r", " ").strip()
+                # 标题里同时体现台标和文件名
+                display_title = f"[{station}] {filename}"
 
-                f.write(f'#EXTINF:-1 group-title="{group_title}",{title}\n')
+                f.write(f'#EXTINF:-1 group-title="{group_title}",{display_title}\n')
                 f.write(f"{video_url}\n")
                 total += 1
 
