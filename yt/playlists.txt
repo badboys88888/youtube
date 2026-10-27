@@ -1,2 +1,7 @@
+# 格式：分组名|播放列表URL
+# 以 # 开头的行会被忽略，可以写注释
+# 每行一个列表，分组名会写入 M3U 的 group-title
+
 新闻大白话完整版|https://www.youtube.com/watch?v=McSnHKFUF7U&list=PLh9lJwqeOuvNPqHfKf10o5Ql9M-OEnoLy
-另一个频道名|https://www.youtube.com/playlist?list=另一个列表ID
+# 示例：再加一个列表就照下面这样写
+# 另一个频道|https://www.youtube.com/playlist?list=另一个列表ID
