@@ -19,54 +19,73 @@ def load_channels():
 
 # ===================== 工具函数 ===================== #
 
-def is_live_video(url):
+def ytdlp_print_id(url, timeout=25):
     """
-    判断是否正在直播
+    用 yt-dlp 直接输出视频 id。
+    成功返回 id 字符串，失败/无直播返回 None。
     """
     cmd = [
         "yt-dlp",
         "--quiet",
         "--no-warnings",
-        "--print", "is_live",
+        "--print", "%(id)s",
         url
     ]
-
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
-        return "True" in r.stdout
-    except:
-        return False
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        vid = (r.stdout or "").strip()
+        # yt-dlp 有时会输出多行（例如 playlist），只取第一行有效 id
+        if vid:
+            vid = vid.splitlines()[0].strip()
+        return vid if vid else None
+    except Exception:
+        return None
+
+
+def is_channel_home(url):
+    """
+    判断是否为频道主页类链接（可自动补 /live）
+    """
+    markers = ["/@", "/channel/", "/c/", "/user/"]
+    return any(m in url for m in markers)
 
 
 def get_video_id(url):
     """
-    获取 video id（兼容 watch + live）
+    获取 video id，兼容：
+    - 普通视频 watch?v=
+    - 频道主页 /@xxx、/channel/UCxxx、/c/xxx、/user/xxx（自动补 /live）
+    - 频道 /live 页面
+    - 已带 /live 或 /streams 的频道链接
     """
 
-    # 普通视频
+    # 1) 普通视频
     if "v=" in url:
         return url.split("v=")[1].split("&")[0]
 
-    # 直播频道
+    # 2) 频道主页类链接
+    if is_channel_home(url):
+        # 已经是 /live 或 /streams 就直接用；否则补 /live
+        if url.rstrip("/").endswith("/live") or url.rstrip("/").endswith("/streams"):
+            live_url = url
+        else:
+            live_url = url.rstrip("/") + "/live"
+
+        vid = ytdlp_print_id(live_url)
+        if vid:
+            return vid
+
+        # /live 没取到，再尝试 /streams 取最近一条（可选兜底）
+        if not live_url.rstrip("/").endswith("/streams"):
+            streams_url = live_url.rstrip("/")[:-len("/live")] + "/streams"
+            vid = ytdlp_print_id(streams_url)
+            if vid:
+                return vid
+        return None
+
+    # 3) 其他 /live 链接（非频道主页形式，比如直接直播间地址）
     if "/live" in url:
-
-        if not is_live_video(url):
-            return None
-
-        cmd = [
-            "yt-dlp",
-            "--quiet",
-            "--no-warnings",
-            "--print", "%(id)s",
-            url
-        ]
-
-        try:
-            r = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
-            vid = r.stdout.strip()
-            return vid if vid else None
-        except:
-            return None
+        return ytdlp_print_id(url)
 
     return None
 
@@ -82,7 +101,7 @@ def run():
         return
 
     for ch in CHANNELS:
-        print(f"🔍 检测: {ch.get('name','unknown')}")
+        print(f"🔍 检测: {ch.get('name', 'unknown')}")
 
         url = ch.get("url")
         if not url:
