@@ -8,6 +8,10 @@ OUTPUT_FILE = os.path.join(BASE_DIR, "playlist.m3u")
 
 PLAYLIST_END = 100  # 每个列表只取最新的前 100 个
 
+# 视频地址模板，{id} 会被替换成 YouTube 视频 ID
+# 例如：http://192.168.6.7:28000/yt/v2YMR4ettHs.mp4
+VIDEO_URL_TEMPLATE = "http://192.168.6.7:28000/yt/{id}.mp4"
+
 
 def get_playlist_configs():
     """
@@ -51,14 +55,30 @@ def process_playlist(url):
     return info.get("entries", []) or []
 
 
-def normalize_url(entry):
-    """扁平模式下 url 有时只是视频 ID，需要补全"""
-    video_url = entry.get("url") or entry.get("webpage_url")
-    if not video_url:
-        return None
-    if not video_url.startswith("http"):
-        video_url = f"https://www.youtube.com/watch?v={video_url}"
-    return video_url
+def get_video_id(entry):
+    """
+    从 entry 中提取 YouTube 视频 ID。
+    扁平模式下 entry['id'] 通常就是 11 位视频 ID，优先用它。
+    兜底：从 url / webpage_url 里解析 v= 参数。
+    """
+    vid = entry.get("id")
+    if vid and isinstance(vid, str):
+        return vid
+
+    for key in ("url", "webpage_url"):
+        raw = entry.get(key)
+        if not raw:
+            continue
+        if "v=" in raw:
+            # 从 https://www.youtube.com/watch?v=XXXX 里取
+            part = raw.split("v=", 1)[1]
+            return part.split("&", 1)[0]
+        if "youtu.be/" in raw:
+            return raw.split("youtu.be/", 1)[1].split("?", 1)[0]
+        # 纯 ID
+        if len(raw) == 11 and "/" not in raw and "?" not in raw:
+            return raw
+    return None
 
 
 def main():
@@ -68,6 +88,7 @@ def main():
         sys.exit(1)
 
     total = 0
+    skipped = 0
     failed = []
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -85,12 +106,15 @@ def main():
             print(f"  -> {len(entries)} videos")
 
             for entry in entries:
-                video_url = normalize_url(entry)
-                if not video_url:
+                video_id = get_video_id(entry)
+                if not video_id:
+                    skipped += 1
                     continue
 
+                # 用模板拼出最终播放地址
+                video_url = VIDEO_URL_TEMPLATE.format(id=video_id)
+
                 title = entry.get("title") or "Unknown Title"
-                # 标题里的换行会破坏 M3U 结构，替换掉
                 title = title.replace("\n", " ").replace("\r", " ").strip()
 
                 f.write(f'#EXTINF:-1 group-title="{group_title}",{title}\n')
@@ -98,12 +122,13 @@ def main():
                 total += 1
 
     print(f"\n完成：生成 {OUTPUT_FILE}，共 {total} 个条目")
+    if skipped:
+        print(f"跳过 {skipped} 个无法提取 ID 的条目")
 
     if failed:
         print(f"\n有 {len(failed)} 个列表处理失败：")
         for group_title, url, err in failed:
             print(f"  [{group_title}] {url}\n    {err}")
-        # 有失败时以非零退出码结束，方便在 Actions 里看到红色标记
         sys.exit(1)
 
 
