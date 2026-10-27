@@ -15,23 +15,99 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug - list repository structure
+        run: |
+          echo "==== PWD ===="
+          pwd
+          echo "==== 仓库根目录 ===="
+          ls -la
+          echo "==== 查找 requirements.txt 和 main.py ===="
+          find . -maxdepth 4 -type f \( -name "requirements.txt" -o -name "main.py" -o -name "playlists.txt" \) -print
+          echo "==== youtube 目录（如果存在）===="
+          ls -la youtube 2>/dev/null || echo "youtube/ 不存在"
+          echo "==== youtube/yt 目录（如果存在）===="
+          ls -la youtube/yt 2>/dev/null || echo "youtube/yt/ 不存在"
+          echo "==== yt 目录（如果存在）===="
+          ls -la yt 2>/dev/null || echo "yt/ 不存在"
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
+      - name: Debug - python version
+        run: |
+          python --version
+          pip --version
+
       - name: Install dependencies
-        run: pip install -r youtube/yt/requirements.txt
+        run: |
+          set -e
+          if [ -f youtube/yt/requirements.txt ]; then
+            echo "使用路径: youtube/yt/requirements.txt"
+            pip install -r youtube/yt/requirements.txt
+          elif [ -f yt/requirements.txt ]; then
+            echo "使用路径: yt/requirements.txt"
+            pip install -r yt/requirements.txt
+          elif [ -f requirements.txt ]; then
+            echo "使用路径: requirements.txt"
+            pip install -r requirements.txt
+          else
+            echo "错误：找不到 requirements.txt"
+            echo "当前目录：$(pwd)"
+            ls -la
+            exit 1
+          fi
 
       - name: Generate M3U
-        working-directory: youtube/yt
-        run: python main.py
+        run: |
+          set -e
+          if [ -f youtube/yt/main.py ]; then
+            echo "运行: youtube/yt/main.py"
+            cd youtube/yt
+            python main.py
+          elif [ -f yt/main.py ]; then
+            echo "运行: yt/main.py"
+            cd yt
+            python main.py
+          elif [ -f main.py ]; then
+            echo "运行: main.py"
+            python main.py
+          else
+            echo "错误：找不到 main.py"
+            find . -maxdepth 4 -name "main.py" -print
+            exit 1
+          fi
+
+      - name: Debug - list generated files
+        run: |
+          echo "==== 查找生成的 m3u ===="
+          find . -maxdepth 4 -name "*.m3u" -print -exec ls -la {} \;
 
       - name: Commit and push
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add youtube/yt/playlist.m3u
+
+          M3U_PATH=""
+          if [ -f youtube/yt/playlist.m3u ]; then
+            M3U_PATH="youtube/yt/playlist.m3u"
+          elif [ -f yt/playlist.m3u ]; then
+            M3U_PATH="yt/playlist.m3u"
+          elif [ -f playlist.m3u ]; then
+            M3U_PATH="playlist.m3u"
+          fi
+
+          if [ -z "$M3U_PATH" ]; then
+            echo "错误：没有找到生成的 playlist.m3u"
+            find . -maxdepth 4 -name "*.m3u" -print
+            exit 1
+          fi
+
+          echo "准备提交: $M3U_PATH"
+          git add "$M3U_PATH"
+
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
