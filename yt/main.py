@@ -2,34 +2,29 @@ import yt_dlp
 import os
 import re
 import sys
+import time
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PLAYLIST_FILE = os.path.join(BASE_DIR, "playlists.txt")
 OUTPUT_FILE = os.path.join(BASE_DIR, "playlist.m3u")
 
-PLAYLIST_END = 100  # 每个列表只取最新的前 100 个
-
-# 视频地址模板，{id} 会被替换成 YouTube 视频 ID
+PLAYLIST_END = 100
 VIDEO_URL_TEMPLATE = "http://192.168.6.7:28000/yt/{id}.mp4"
+
+MAX_RETRIES = 3
+RETRY_DELAY = 5
 
 
 def sanitize(text, fallback="Unknown"):
-    """清理标题/台标里的换行和会破坏 M3U 的字符"""
     if not text:
         return fallback
     text = str(text).replace("\r", " ").replace("\n", " ")
-    # 去掉控制字符
     text = re.sub(r"[\x00-\x1f\x7f]", "", text)
     text = text.strip()
     return text or fallback
 
 
 def get_playlist_configs():
-    """
-    读取 playlists.txt，格式为：
-        分组名|播放列表URL
-    以 # 开头的行和空行会被忽略。
-    """
     if not os.path.exists(PLAYLIST_FILE):
         print(f"错误：找不到配置文件 {PLAYLIST_FILE}")
         sys.exit(1)
@@ -52,21 +47,49 @@ def get_playlist_configs():
     return configs
 
 
-def process_playlist(url):
-    """提取单个播放列表的条目（扁平模式，只取前 100 个）"""
+def extract_playlist_once(url):
+    """单次提取，返回 entries 列表（可能为空）"""
     ydl_opts = {
         "quiet": True,
         "no_warnings": True,
-        "extract_flat": True,
+        "extract_flat": "in_playlist",
         "playlistend": PLAYLIST_END,
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=False)
-    return info.get("entries", []) or []
+
+    if not info:
+        print("  DEBUG: extract_info 返回 None")
+        return []
+
+    entries = info.get("entries")
+    print(f"  DEBUG: info keys = {list(info.keys())[:10]}")
+    print(f"  DEBUG: entries 类型 = {type(entries)}, 长度 = {len(entries) if entries else 0}")
+
+    return entries or []
+
+
+def process_playlist_with_retry(url):
+    """带重试的提取，空列表也触发重试"""
+    for attempt in range(1, MAX_RETRIES + 1):
+        print(f"  尝试 {attempt}/{MAX_RETRIES}...")
+        try:
+            entries = extract_playlist_once(url)
+            if entries:
+                return entries
+            print(f"  返回 0 条，{RETRY_DELAY} 秒后重试")
+        except Exception as e:
+            print(f"  异常：{e}")
+            if attempt == MAX_RETRIES:
+                raise
+
+        if attempt < MAX_RETRIES:
+            time.sleep(RETRY_DELAY)
+
+    return []
 
 
 def get_video_id(entry):
-    """提取 YouTube 视频 ID，优先用 entry['id']"""
     vid = entry.get("id")
     if vid and isinstance(vid, str) and len(vid) == 11:
         return vid
@@ -85,7 +108,6 @@ def get_video_id(entry):
 
 
 def get_station(entry, fallback_group):
-    """台标：优先 uploader / channel，取不到用分组名兜底"""
     for key in ("uploader", "channel", "channel_title"):
         val = entry.get(key)
         if val:
@@ -94,7 +116,6 @@ def get_station(entry, fallback_group):
 
 
 def get_filename(entry):
-    """文件名：用视频标题，清理非法字符"""
     return sanitize(entry.get("title"), "Unknown Title")
 
 
@@ -106,23 +127,29 @@ def main():
 
     total = 0
     skipped = 0
-    failed = []
+    empty_playlists = []
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
         for group_title, url in configs:
-            print(f"Processing [{group_title}]: {url}")
+            print(f"\nProcessing [{group_title}]: {url}")
             try:
-                entries = [e for e in process_playlist(url) if e]
+                entries = process_playlist_with_retry(url)
             except Exception as e:
-                print(f"  失败：{e}")
-                failed.append((group_title, url, str(e)))
+                print(f"  最终失败：{e}")
+                empty_playlists.append((group_title, url))
                 continue
 
-            print(f"  -> {len(entries)} videos")
+            if not entries:
+                print(f"  重试 {MAX_RETRIES} 次后仍为 0 条")
+                empty_playlists.append((group_title, url))
+                continue
 
+            print(f"  -> 获取到 {len(entries)} 个视频")
             for entry in entries:
+                if not entry:
+                    continue
                 video_id = get_video_id(entry)
                 if not video_id:
                     skipped += 1
@@ -131,8 +158,6 @@ def main():
                 video_url = VIDEO_URL_TEMPLATE.format(id=video_id)
                 station = get_station(entry, group_title)
                 filename = get_filename(entry)
-
-                # 标题里同时体现台标和文件名
                 display_title = f"[{station}] {filename}"
 
                 f.write(f'#EXTINF:-1 group-title="{group_title}",{display_title}\n')
@@ -142,12 +167,10 @@ def main():
     print(f"\n完成：生成 {OUTPUT_FILE}，共 {total} 个条目")
     if skipped:
         print(f"跳过 {skipped} 个无法提取 ID 的条目")
-
-    if failed:
-        print(f"\n有 {len(failed)} 个列表处理失败：")
-        for group_title, url, err in failed:
-            print(f"  [{group_title}] {url}\n    {err}")
-        sys.exit(1)
+    if empty_playlists:
+        print(f"\n以下 {len(empty_playlists)} 个列表获取失败（0 条）：")
+        for g, u in empty_playlists:
+            print(f"  [{g}] {u}")
 
 
 if __name__ == "__main__":
