@@ -1,6 +1,4 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
-#EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
-http://192.168.6.7:28000/live/fN9uYWCjQaw/index.m3u8
 #EXTINF:-1 tvg-id="中天新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新聞台
 http://192.168.6.7:28000/live/vr3XyVCR4T0/index.m3u8
 #EXTINF:-1 tvg-id="寰宇新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_CH_logo.png" group-title="新闻",寰宇新聞台
