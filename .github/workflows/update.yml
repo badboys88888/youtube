@@ -2,7 +2,7 @@ name: IPTV Update
 
 on:
   schedule:
-    - cron: "0 0 * * 1"  # 每周一
+    - cron: "0 0 * * 1"  # 每周一；需要更频繁可改 "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,22 +11,24 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install yt-dlp
+          pip install -U yt-dlp
+          yt-dlp --version
 
       - name: Run scripts
         run: |
