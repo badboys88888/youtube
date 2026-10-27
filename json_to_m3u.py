@@ -5,7 +5,8 @@ INPUT_FILE = "Global_Vision_list.json"
 OUTPUT_FILE = "live.m3u"
 ICON_MAP_FILE = "icons_map.json"
 
-BASE_URL = "http://192.168.6.16:8080/play?id="
+BASE_URL = "http://192.168.6.7:28000/live/"
+URL_SUFFIX = "/index.m3u8"
 
 # =========================
 # 🟢 EPG地址（新增）
@@ -116,7 +117,7 @@ def main():
         name = get_name(item)
         group = item.get("group") or "LIVE"
 
-        url = BASE_URL + str(vid)
+        url = f"{BASE_URL}{vid}{URL_SUFFIX}"
 
         icon = resolve_icon(name, ICON_MAP)
 
