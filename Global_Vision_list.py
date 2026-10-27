@@ -19,55 +19,60 @@ def load_channels():
 
 # ===================== 工具函数 ===================== #
 
-def ytdlp_print_ids(url, timeout=30):
+def ytdlp_print_id(url, timeout=25):
     """
-    用 yt-dlp 输出所有匹配条目的 id，每行一个。
-    返回 id 列表，失败返回空列表。
+    用 yt-dlp 直接输出视频 id。
+    成功返回 id 字符串，失败/无直播返回 None。
     """
     cmd = [
         "yt-dlp",
         "--quiet",
         "--no-warnings",
         "--print", "%(id)s",
-        "--match-filter", "live_status = is_live",
         url
     ]
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-        lines = (r.stdout or "").strip().splitlines()
-        return [l.strip() for l in lines if l.strip()]
+        vid = (r.stdout or "").strip()
+        if vid:
+            vid = vid.splitlines()[0].strip()
+        return vid if vid else None
     except Exception:
-        return []
+        return None
 
 
 def is_channel_home(url):
+    """
+    判断是否为频道主页类链接
+    """
     markers = ["/@", "/channel/", "/c/", "/user/"]
     return any(m in url for m in markers)
 
 
-def get_video_ids(url):
+def get_video_id(url):
     """
-    返回该频道/链接下所有正在直播的 video id 列表。
+    只处理两种情况：
+    1) 普通视频 watch?v=
+    2) 频道主页 -> 自动补 /live 取当前直播 id
     """
-    # 普通视频：直接返回单个
+
+    # 普通视频
     if "v=" in url:
-        vid = url.split("v=")[1].split("&")[0]
-        return [vid] if vid else []
+        return url.split("v=")[1].split("&")[0]
 
-    # 频道主页：走 /streams + live_status 过滤
+    # 频道主页：自动补 /live
     if is_channel_home(url):
-        base = url.rstrip("/")
-        if base.endswith("/streams"):
-            streams_url = base
-        elif base.endswith("/live"):
-            # 如果用户写了 /live，改成 /streams 才能拿多个
-            streams_url = base[:-len("/live")] + "/streams"
+        if url.rstrip("/").endswith("/live"):
+            live_url = url
         else:
-            streams_url = base + "/streams"
-        return ytdlp_print_ids(streams_url)
+            live_url = url.rstrip("/") + "/live"
+        return ytdlp_print_id(live_url)
 
-    # 其他链接兜底
-    return ytdlp_print_ids(url)
+    # 其他 /live 链接
+    if "/live" in url:
+        return ytdlp_print_id(url)
+
+    return None
 
 
 # ===================== 主流程 ===================== #
@@ -81,28 +86,26 @@ def run():
         return
 
     for ch in CHANNELS:
-        name = ch.get("name", "unknown")
-        print(f"🔍 检测: {name}")
+        print(f"🔍 检测: {ch.get('name', 'unknown')}")
 
         url = ch.get("url")
         if not url:
             continue
 
-        vids = get_video_ids(url)
+        vid = get_video_id(url)
 
-        if not vids:
+        if not vid:
             print("⚠️ 未直播 / 无效")
-            time.sleep(1.5)
             continue
 
-        for vid in vids:
-            output.append({
-                "name": name,
-                "group": ch.get("group", "LIVE"),
-                "id": vid,
-                "url": f"https://www.youtube.com/watch?v={vid}"
-            })
-            print(f"✅ 成功: {vid}")
+        output.append({
+            "name": ch.get("name"),
+            "group": ch.get("group", "LIVE"),
+            "id": vid,
+            "url": f"https://www.youtube.com/watch?v={vid}"
+        })
+
+        print("✅ 成功")
 
         time.sleep(1.5)
 
