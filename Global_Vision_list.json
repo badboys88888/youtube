@@ -1,7 +1,13 @@
 {
-  "update_time": "2026-10-28 03:45:23",
-  "count": 36,
+  "update_time": "2026-10-28 07:49:34",
+  "count": 37,
   "data": [
+    {
+      "name": "凤凰资讯",
+      "group": "新闻",
+      "id": "QTReCUMZl7o",
+      "url": "https://www.youtube.com/watch?v=QTReCUMZl7o"
+    },
     {
       "name": "凤凰资讯",
       "group": "新闻",
@@ -143,20 +149,14 @@
     {
       "name": "FRANCE24(ENGLISH)",
       "group": "国际新闻",
-      "id": "Ap-UM1O9RBU",
-      "url": "https://www.youtube.com/watch?v=Ap-UM1O9RBU"
+      "id": "a47ckXKZjxI",
+      "url": "https://www.youtube.com/watch?v=a47ckXKZjxI"
     },
     {
       "name": "CNA",
       "group": "国际新闻",
-      "id": "XWq5kBlakcQ",
-      "url": "https://www.youtube.com/watch?v=XWq5kBlakcQ"
-    },
-    {
-      "name": "CNAHD",
-      "group": "国际新闻",
-      "id": "fSUMKrxPEd8",
-      "url": "https://www.youtube.com/watch?v=fSUMKrxPEd8"
+      "id": "-PWMxjBgr0k",
+      "url": "https://www.youtube.com/watch?v=-PWMxjBgr0k"
     },
     {
       "name": "ABCAUSTRALIA",
@@ -193,6 +193,12 @@
       "group": "国际新闻",
       "id": "ztmY_cCtUl0",
       "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"
+    },
+    {
+      "name": "DW德國之聲",
+      "group": "国际新闻",
+      "id": "bkV9Gisa2Ls",
+      "url": "https://www.youtube.com/watch?v=bkV9Gisa2Ls"
     },
     {
       "name": "DW德國之聲",

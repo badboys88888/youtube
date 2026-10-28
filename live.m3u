@@ -1,5 +1,7 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
+http://www.diffn.xyz:28000/live/QTReCUMZl7o/index.m3u8
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
 http://www.diffn.xyz:28000/live/Ry--eMIjYLQ/index.m3u8
 #EXTINF:-1 tvg-id="中天新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新聞台
 http://www.diffn.xyz:28000/live/vr3XyVCR4T0/index.m3u8
@@ -46,11 +48,9 @@ http://www.diffn.xyz:28000/live/gCNeDWCI0vo/index.m3u8
 #EXTINF:-1 tvg-id="EURONEWS" group-title="国际新闻",EURONEWS
 http://www.diffn.xyz:28000/live/pykpO5kQJ98/index.m3u8
 #EXTINF:-1 tvg-id="FRANCE24(ENGLISH)" group-title="国际新闻",FRANCE24(ENGLISH)
-http://www.diffn.xyz:28000/live/Ap-UM1O9RBU/index.m3u8
+http://www.diffn.xyz:28000/live/a47ckXKZjxI/index.m3u8
 #EXTINF:-1 tvg-id="CNA" group-title="国际新闻",CNA
-http://www.diffn.xyz:28000/live/XWq5kBlakcQ/index.m3u8
-#EXTINF:-1 tvg-id="CNAHD" group-title="国际新闻",CNAHD
-http://www.diffn.xyz:28000/live/fSUMKrxPEd8/index.m3u8
+http://www.diffn.xyz:28000/live/-PWMxjBgr0k/index.m3u8
 #EXTINF:-1 tvg-id="ABCAUSTRALIA" group-title="国际新闻",ABCAUSTRALIA
 http://www.diffn.xyz:28000/live/vOTiJkg1voo/index.m3u8
 #EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
@@ -63,6 +63,8 @@ http://www.diffn.xyz:28000/live/8uNelFh0oz4/index.m3u8
 http://www.diffn.xyz:28000/live/ouuCjEjyKVI/index.m3u8
 #EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
 http://www.diffn.xyz:28000/live/ztmY_cCtUl0/index.m3u8
+#EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
+http://www.diffn.xyz:28000/live/bkV9Gisa2Ls/index.m3u8
 #EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
 http://www.diffn.xyz:28000/live/LuKwFajn37U/index.m3u8
 #EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
