@@ -26,12 +26,13 @@
     {"name": "大愛電視HD", "group": "综合", "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"},
     {"name": "大愛二台HD", "group": "综合", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"},
 
+    {"name": "skynews", "group": "国际新闻", "url": "https://www.youtube.com/@SkyNews"},
+
     
-    {"name": "半島國際新聞台", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"},
-    {"name": "EURONEWS", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"},
-    {"name": "FRANCE24(ENGLISH)", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=Ap-UM1O9RBU"},
-    {"name": "CNA", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=XWq5kBlakcQ"},
-    {"name": "CNAHD", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=fSUMKrxPEd8"},
+    {"name": "半島國際新聞台", "group": "国际新闻", "url": "https://www.youtube.com/@aljazeeraenglish"},
+    {"name": "EURONEWS", "group": "国际新闻", "url": "https://www.youtube.com/@euronews"},
+    {"name": "FRANCE24(ENGLISH)", "group": "国际新闻", "url": "https://www.youtube.com/@FRANCE24"},
+    {"name": "CNA", "group": "国际新闻", "url": "https://www.youtube.com/@channelnewsasia"},
 
     
     {"name": "ABCAUSTRALIA", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=vOTiJkg1voo"},
@@ -41,7 +42,7 @@
     {"name": "Show TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ouuCjEjyKVI"},
 
     {"name": "SÖZCÜ TV Canlı Yayını ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"},
-    {"name": "DW德國之聲", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=LuKwFajn37U"},
+    {"name": "DW德國之聲", "group": "国际新闻", "url": "https://www.youtube.com/@dwnews"},
     {"name": "BLOOMBERGORIGINALS", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=DxmDPrfinXY"},
     {"name": "Bloomberg Business News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iEpJwprxDdk"},
     {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iipR5yUp36o"}
