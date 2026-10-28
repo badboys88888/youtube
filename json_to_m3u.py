@@ -5,7 +5,7 @@ INPUT_FILE = "Global_Vision_list.json"
 OUTPUT_FILE = "live.m3u"
 ICON_MAP_FILE = "icons_map.json"
 
-BASE_URL = "http://192.168.6.7:28000/live/"
+BASE_URL = "http://www.diffn.xyz:28000/live/"
 URL_SUFFIX = "/index.m3u8"
 
 # =========================
