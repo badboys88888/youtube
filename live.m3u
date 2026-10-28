@@ -1,73 +1,73 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
 #EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
-http://192.168.6.7:28000/live/Ry--eMIjYLQ/index.m3u8
+http://www.diffn.xyz:28000/live/Ry--eMIjYLQ/index.m3u8
 #EXTINF:-1 tvg-id="中天新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新聞台
-http://192.168.6.7:28000/live/vr3XyVCR4T0/index.m3u8
+http://www.diffn.xyz:28000/live/vr3XyVCR4T0/index.m3u8
 #EXTINF:-1 tvg-id="寰宇新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_CH_logo.png" group-title="新闻",寰宇新聞台
-http://192.168.6.7:28000/live/6IquAgfvYmc/index.m3u8
+http://www.diffn.xyz:28000/live/6IquAgfvYmc/index.m3u8
 #EXTINF:-1 tvg-id="寰宇新聞台灣台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_TW_logo.png" group-title="新闻",寰宇新聞台灣台
-http://192.168.6.7:28000/live/w87VGpgd90U/index.m3u8
+http://www.diffn.xyz:28000/live/w87VGpgd90U/index.m3u8
 #EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
-http://192.168.6.7:28000/live/m_dhMSvUCIc/index.m3u8
+http://www.diffn.xyz:28000/live/m_dhMSvUCIc/index.m3u8
 #EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
-http://192.168.6.7:28000/live/2mCSYvcfhtc/index.m3u8
+http://www.diffn.xyz:28000/live/2mCSYvcfhtc/index.m3u8
 #EXTINF:-1 tvg-id="東森財經新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森财经新闻台.png" group-title="财经",東森財經新聞台
-http://192.168.6.7:28000/live/1I2iq41Akmo/index.m3u8
+http://www.diffn.xyz:28000/live/1I2iq41Akmo/index.m3u8
 #EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
-http://192.168.6.7:28000/live/E0zhe2gkXBs/index.m3u8
+http://www.diffn.xyz:28000/live/E0zhe2gkXBs/index.m3u8
 #EXTINF:-1 tvg-id="东森综合二台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森综合二台.jpg" group-title="综合",东森综合二台
-http://192.168.6.7:28000/live/cimbpAZUjzw/index.m3u8
+http://www.diffn.xyz:28000/live/cimbpAZUjzw/index.m3u8
 #EXTINF:-1 tvg-id="台視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/台视新闻.jpg" group-title="新闻",台視新聞台
-http://192.168.6.7:28000/live/xL0ch83RAK8/index.m3u8
+http://www.diffn.xyz:28000/live/xL0ch83RAK8/index.m3u8
 #EXTINF:-1 tvg-id="華視新聞資訊HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/华视新闻.jpg" group-title="新闻",華視新聞資訊HD
-http://192.168.6.7:28000/live/wM0g8EoUZ_E/index.m3u8
+http://www.diffn.xyz:28000/live/wM0g8EoUZ_E/index.m3u8
 #EXTINF:-1 tvg-id="中視新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/中视新闻.jpg" group-title="新闻",中視新聞
-http://192.168.6.7:28000/live/TCnaIE_SAtM/index.m3u8
+http://www.diffn.xyz:28000/live/TCnaIE_SAtM/index.m3u8
 #EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://192.168.6.7:28000/live/ylYJSBUgaMA/index.m3u8
+http://www.diffn.xyz:28000/live/ylYJSBUgaMA/index.m3u8
 #EXTINF:-1 tvg-id="公視(HD)" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公視(HD)
-http://192.168.6.7:28000/live/quwqlazU-c8/index.m3u8
+http://www.diffn.xyz:28000/live/quwqlazU-c8/index.m3u8
 #EXTINF:-1 tvg-id="三立新聞INEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立新聞INEWS
-http://192.168.6.7:28000/live/pF507BLtbqU/index.m3u8
+http://www.diffn.xyz:28000/live/pF507BLtbqU/index.m3u8
 #EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://192.168.6.7:28000/live/QsGswQvRmtU/index.m3u8
+http://www.diffn.xyz:28000/live/QsGswQvRmtU/index.m3u8
 #EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://192.168.6.7:28000/live/5n0y6b0Q25o/index.m3u8
+http://www.diffn.xyz:28000/live/5n0y6b0Q25o/index.m3u8
 #EXTINF:-1 tvg-id="CCTV4美洲" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4美洲.jpg" group-title="综合",CCTV4美洲
-http://192.168.6.7:28000/live/f6Kq93wnaZ8/index.m3u8
+http://www.diffn.xyz:28000/live/f6Kq93wnaZ8/index.m3u8
 #EXTINF:-1 tvg-id="新唐人亞太台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/新唐人亚太台.jpg" group-title="综合",新唐人亞太台
-http://192.168.6.7:28000/live/Bhp_V7H5QoY/index.m3u8
+http://www.diffn.xyz:28000/live/Bhp_V7H5QoY/index.m3u8
 #EXTINF:-1 tvg-id="大愛電視HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="综合",大愛電視HD
-http://192.168.6.7:28000/live/pM-1ytfQhos/index.m3u8
+http://www.diffn.xyz:28000/live/pM-1ytfQhos/index.m3u8
 #EXTINF:-1 tvg-id="大愛二台HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱二台.jpg" group-title="综合",大愛二台HD
-http://192.168.6.7:28000/live/QDxRJP-wfeI/index.m3u8
+http://www.diffn.xyz:28000/live/QDxRJP-wfeI/index.m3u8
 #EXTINF:-1 tvg-id="半島國際新聞台" group-title="国际新闻",半島國際新聞台
-http://192.168.6.7:28000/live/gCNeDWCI0vo/index.m3u8
+http://www.diffn.xyz:28000/live/gCNeDWCI0vo/index.m3u8
 #EXTINF:-1 tvg-id="EURONEWS" group-title="国际新闻",EURONEWS
-http://192.168.6.7:28000/live/pykpO5kQJ98/index.m3u8
+http://www.diffn.xyz:28000/live/pykpO5kQJ98/index.m3u8
 #EXTINF:-1 tvg-id="FRANCE24(ENGLISH)" group-title="国际新闻",FRANCE24(ENGLISH)
-http://192.168.6.7:28000/live/Ap-UM1O9RBU/index.m3u8
+http://www.diffn.xyz:28000/live/Ap-UM1O9RBU/index.m3u8
 #EXTINF:-1 tvg-id="CNA" group-title="国际新闻",CNA
-http://192.168.6.7:28000/live/XWq5kBlakcQ/index.m3u8
+http://www.diffn.xyz:28000/live/XWq5kBlakcQ/index.m3u8
 #EXTINF:-1 tvg-id="CNAHD" group-title="国际新闻",CNAHD
-http://192.168.6.7:28000/live/fSUMKrxPEd8/index.m3u8
+http://www.diffn.xyz:28000/live/fSUMKrxPEd8/index.m3u8
 #EXTINF:-1 tvg-id="ABCAUSTRALIA" group-title="国际新闻",ABCAUSTRALIA
-http://192.168.6.7:28000/live/vOTiJkg1voo/index.m3u8
+http://www.diffn.xyz:28000/live/vOTiJkg1voo/index.m3u8
 #EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
-http://192.168.6.7:28000/live/6N8_r2uwLEc/index.m3u8
+http://www.diffn.xyz:28000/live/6N8_r2uwLEc/index.m3u8
 #EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
-http://192.168.6.7:28000/live/RNVNlJSUFoE/index.m3u8
+http://www.diffn.xyz:28000/live/RNVNlJSUFoE/index.m3u8
 #EXTINF:-1 tvg-id="HALK TV CANLI YAYINI" group-title="国际新闻",HALK TV CANLI YAYINI
-http://192.168.6.7:28000/live/8uNelFh0oz4/index.m3u8
+http://www.diffn.xyz:28000/live/8uNelFh0oz4/index.m3u8
 #EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
-http://192.168.6.7:28000/live/ouuCjEjyKVI/index.m3u8
+http://www.diffn.xyz:28000/live/ouuCjEjyKVI/index.m3u8
 #EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
-http://192.168.6.7:28000/live/ztmY_cCtUl0/index.m3u8
+http://www.diffn.xyz:28000/live/ztmY_cCtUl0/index.m3u8
 #EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
-http://192.168.6.7:28000/live/LuKwFajn37U/index.m3u8
+http://www.diffn.xyz:28000/live/LuKwFajn37U/index.m3u8
 #EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
-http://192.168.6.7:28000/live/DxmDPrfinXY/index.m3u8
+http://www.diffn.xyz:28000/live/DxmDPrfinXY/index.m3u8
 #EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
-http://192.168.6.7:28000/live/iEpJwprxDdk/index.m3u8
+http://www.diffn.xyz:28000/live/iEpJwprxDdk/index.m3u8
 #EXTINF:-1 tvg-id="ABC News" group-title="国际新闻",ABC News
-http://192.168.6.7:28000/live/iipR5yUp36o/index.m3u8
+http://www.diffn.xyz:28000/live/iipR5yUp36o/index.m3u8
