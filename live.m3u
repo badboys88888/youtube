@@ -35,7 +35,7 @@ http://www.diffn.xyz:28000/live/sllFR9qNfcE/index.m3u8
 http://www.diffn.xyz:28000/live/hg4nYb3jE9A/index.m3u8
 #EXTINF:-1 tvg-id="三立新聞INEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立新聞INEWS
 http://www.diffn.xyz:28000/live/pF507BLtbqU/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
+#EXTINF:-1 tvg-id="三立新聞直播 LIVE ｜ 24小時線上直播｜新竹市便當店嚴重氣爆｜台湾のニュースチャンネル｜뉴스 채널 @setnews-ch54​" group-title="新闻",三立新聞直播 LIVE ｜ 24小時線上直播｜新竹市便當店嚴重氣爆｜台湾のニュースチャンネル｜뉴스 채널 @setnews-ch54​
 http://www.diffn.xyz:28000/live/QsGswQvRmtU/index.m3u8
 #EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
 http://www.diffn.xyz:28000/live/5n0y6b0Q25o/index.m3u8
@@ -73,7 +73,7 @@ http://www.diffn.xyz:28000/live/ztmY_cCtUl0/index.m3u8
 http://www.diffn.xyz:28000/live/LuKwFajn37U/index.m3u8
 #EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
 http://www.diffn.xyz:28000/live/DxmDPrfinXY/index.m3u8
-#EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
+#EXTINF:-1 tvg-id="Bloomberg Business News Live" group-title="国际新闻",Bloomberg Business News Live
 http://www.diffn.xyz:28000/live/iEpJwprxDdk/index.m3u8
-#EXTINF:-1 tvg-id="ABC News" group-title="国际新闻",ABC News
+#EXTINF:-1 tvg-id="LIVE: ABC News Live - 24/7 news, context and analysis" group-title="国际新闻",LIVE: ABC News Live - 24/7 news, context and analysis
 http://www.diffn.xyz:28000/live/iipR5yUp36o/index.m3u8
