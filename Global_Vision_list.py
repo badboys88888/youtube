@@ -6,6 +6,7 @@ import json
 import time
 import os
 import re
+import urllib.request
 from urllib.parse import quote
 from datetime import datetime
 
@@ -23,7 +24,6 @@ def load_channels():
 
 def list_icon_files():
     if not os.path.isdir(ICONS_DIR):
-        print(f"⚠️ 未找到 {ICONS_DIR}/ 目录")
         return []
     exts = (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg")
     return [f for f in os.listdir(ICONS_DIR) if f.lower().endswith(exts)]
@@ -36,69 +36,60 @@ def norm_text(s):
     return s
 
 def match_icon_by_name(name, icon_files):
-    if not name:
-        return None
+    if not name: return None
     n = norm_text(name)
-    if not n:
-        return None
+    if not n: return None
     for f in icon_files:
-        if norm_text(os.path.splitext(f)[0]) == n:
-            return f
+        if norm_text(os.path.splitext(f)[0]) == n: return f
     for f in icon_files:
         base = norm_text(os.path.splitext(f)[0])
-        if n in base or (base and base in n):
-            return f
+        if n in base or (base and base in n): return f
     return None
 
-def resolve_logo(ch, icon_files, web_thumbnail):
-    """
-    Logo 优先级：
-    1. icons/ 里匹配到的图
-    2. channels.json 里指定的 icon 或 logo
-    3. 网页抓取的真实缩略图
-    """
-    # 1. 优先匹配本地 icons 文件夹
+def resolve_logo(ch, icon_files, vid):
+    """优先本地匹配 -> 指定文件 -> 网页标准缩略图"""
     matched = match_icon_by_name(ch.get("name", ""), icon_files)
     if matched:
         return RAW_BASE + quote(matched)
-
-    # 2. 检查 channels.json 是否手动指定
+    
     icon_file = (ch.get("icon") or "").strip()
     if icon_file:
         return RAW_BASE + quote(icon_file)
+        
     preset_logo = (ch.get("logo") or "").strip()
     if preset_logo:
         return preset_logo
+        
+    # 直接拼 YouTube 官方固定图床
+    return f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
 
-    # 3. 用网页缩略图兜底
-    return web_thumbnail or ""
+# ===================== 网页爬取标题 ===================== #
 
-# ===================== 核心抓取逻辑 ===================== #
-
-def get_video_real_metadata(vid):
+def fetch_title_from_web(vid):
     """
-    针对具体的视频 ID 发起请求，抓取真实的网页标题和缩略图
+    直接请求网页 HTML，用正则抓 <title>。完全不用 yt-dlp。
     """
     url = f"https://www.youtube.com/watch?v={vid}"
-    cmd = [
-        "yt-dlp", "--quiet", "--no-warnings",
-        "--print", "%(title)s",
-        "--print", "%(thumbnail)s",
-        "--no-check-certificates", url
-    ]
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        lines = (r.stdout or "").strip().splitlines()
-        if len(lines) >= 2:
-            return lines[0].strip(), lines[1].strip()
-    except Exception:
-        pass
-    return "", f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as response:
+            html = response.read().decode('utf-8', errors='ignore')
+            match = re.search(r'<title>(.*?)</title>', html)
+            if match:
+                title = match.group(1).strip()
+                # 去掉 YouTube 后缀
+                title = re.sub(r'\s*-\s*YouTube$', '', title)
+                return title
+    except Exception as e:
+        print(f"   ⚠️ 网页标题获取失败: {e}")
+    return ""
 
-def get_live_items_from_streams(streams_url, timeout=60):
-    """
-    第一步：拉取前 10 条，快速找出哪些是直播 ID
-    """
+# ===================== ID 提取 ===================== #
+
+def get_live_ids_from_streams(streams_url, timeout=60):
     cmd = [
         "yt-dlp", "--quiet", "--no-warnings", "--dump-json",
         "--flat-playlist", "--playlist-end", "10",
@@ -112,17 +103,19 @@ def get_live_items_from_streams(streams_url, timeout=60):
 
         live_ids = []
         for line in (r.stdout or "").strip().splitlines():
-            if not line.strip():
-                continue
+            if not line.strip(): continue
             try:
                 info = json.loads(line)
-            except json.JSONDecodeError:
-                continue
+            except json.JSONDecodeError: continue
 
             vid = info.get("id") or ""
             if info.get("live_status") == "is_live" and len(vid) >= 10:
                 live_ids.append(vid)
+                print(f"   🎥 直播: {vid}")
         return live_ids
+    except subprocess.TimeoutExpired:
+        print(f"   ⏱ 超时({timeout}s): {streams_url}")
+        return []
     except Exception as e:
         print(f"   ❌ 错误: {e}")
         return []
@@ -130,45 +123,41 @@ def get_live_items_from_streams(streams_url, timeout=60):
 def is_channel_home(url):
     return any(m in url for m in ["/@", "/channel/", "/c/", "/user/"])
 
-def get_live_ids(url):
+def get_video_ids(url):
     if "v=" in url:
         vid = url.split("v=")[1].split("&")[0]
         return [vid] if vid else []
 
     if is_channel_home(url):
         base = url.rstrip("/")
-        if base.endswith("/streams"):
-            streams_url = base
-        elif base.endswith("/live"):
-            streams_url = base[:-len("/live")] + "/streams"
-        else:
-            streams_url = base + "/streams"
-        return get_live_items_from_streams(streams_url)
+        if base.endswith("/streams"): streams_url = base
+        elif base.endswith("/live"): streams_url = base[:-len("/live")] + "/streams"
+        else: streams_url = base + "/streams"
+        return get_live_ids_from_streams(streams_url)
 
-    return get_live_items_from_streams(url)
+    return get_live_ids_from_streams(url)
 
 # ===================== 主流程 ===================== #
 
 def run():
     CHANNELS = load_channels()
     output = []
-    if not CHANNELS:
-        return
+    if not CHANNELS: return
 
     icon_files = list_icon_files()
-
     total = len(CHANNELS)
+
     for idx, ch in enumerate(CHANNELS, 1):
         name = ch.get("name", "unknown")
         print(f"🔍 [{idx}/{total}] 检测: {name}")
 
         url = ch.get("url")
-        if not url:
-            continue
+        if not url: continue
 
         try:
-            vids = get_live_ids(url)
-        except Exception:
+            vids = get_video_ids(url)
+        except Exception as e:
+            print(f"   ❌ 处理异常: {e}")
             vids = []
 
         if not vids:
@@ -177,22 +166,26 @@ def run():
             continue
 
         for vid in vids:
-            # 关键点：拿到直播 ID 后，单独请求一次去抓真实页面信息
             print(f"   🔄 获取详情: {vid} ...")
-            real_title, web_thumbnail = get_video_real_metadata(vid)
             
-            logo_url = resolve_logo(ch, icon_files, web_thumbnail)
+            # 用 Python 原生爬 HTML 获取真实网页标题
+            real_title = fetch_title_from_web(vid)
+            if not real_title:
+                real_title = name
+                
+            # 匹配台标（本地图优先，最后强拼官方缩略图）
+            logo_url = resolve_logo(ch, icon_files, vid)
 
             output.append({
                 "name": name,
-                "title": real_title,       # 网页真实标题
+                "title": real_title,
                 "group": ch.get("group", "LIVE"),
                 "id": vid,
-                "logo": logo_url,          # 匹配的台标
+                "logo": logo_url,
                 "url": f"https://www.youtube.com/watch?v={vid}"
             })
-            print(f"   ✅ 成功: {vid} | 标题: {real_title[:30]}...")
-            time.sleep(1) # 防止短时间内请求太密集
+            print(f"   ✅ 成功: {vid} | 标题: {real_title[:30]} | Logo: {'有' if logo_url else '无'}")
+            time.sleep(1) # 控制抓取网页频率
 
         time.sleep(1.5)
 
