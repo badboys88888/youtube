@@ -25,12 +25,12 @@ http://www.diffn.xyz:28000/live/KMMHw8rllic/index.m3u8
 http://www.diffn.xyz:28000/live/wM0g8EoUZ_E/index.m3u8
 #EXTINF:-1 tvg-id="中視新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/中视新闻.jpg" group-title="新闻",中視新聞
 http://www.diffn.xyz:28000/live/TCnaIE_SAtM/index.m3u8
-#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
+#EXTINF:-1 tvg-id="【直播完整版】1029 羅智強、葛如鈞紅樓地圖區抄襲議題回應｜民視快新聞｜" group-title="新闻",【直播完整版】1029 羅智強、葛如鈞紅樓地圖區抄襲議題回應｜民視快新聞｜
 http://www.diffn.xyz:28000/live/OUKUetyZXu8/index.m3u8
 #EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://www.diffn.xyz:28000/live/-J3nIMb5h-s/index.m3u8
-#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
 http://www.diffn.xyz:28000/live/sllFR9qNfcE/index.m3u8
+#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
+http://www.diffn.xyz:28000/live/iNsyypomwo8/index.m3u8
 #EXTINF:-1 tvg-id="公視(HD)" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公視(HD)
 http://www.diffn.xyz:28000/live/hg4nYb3jE9A/index.m3u8
 #EXTINF:-1 tvg-id="三立新聞INEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立新聞INEWS
@@ -40,7 +40,7 @@ http://www.diffn.xyz:28000/live/QsGswQvRmtU/index.m3u8
 #EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
 http://www.diffn.xyz:28000/live/5n0y6b0Q25o/index.m3u8
 #EXTINF:-1 tvg-id="CCTV4美洲" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4美洲.jpg" group-title="综合",CCTV4美洲
-http://www.diffn.xyz:28000/live/f6Kq93wnaZ8/index.m3u8
+http://www.diffn.xyz:28000/live/PiSwAy-blvA/index.m3u8
 #EXTINF:-1 tvg-id="新唐人亞太台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/新唐人亚太台.jpg" group-title="综合",新唐人亞太台
 http://www.diffn.xyz:28000/live/Bhp_V7H5QoY/index.m3u8
 #EXTINF:-1 tvg-id="大愛電視HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="综合",大愛電視HD
