@@ -19,27 +19,29 @@ def load_channels():
 
 # ===================== 工具函数 ===================== #
 
-def get_live_ids_from_streams(streams_url, timeout=60):
+def get_longest_live_id(streams_url, timeout=120, playlist_end=15):
     """
-    拉取频道 /streams 页面，筛选 live_status == 'is_live' 的条目。
-    返回 video id 列表。
+    拉取频道 /streams 页面，真正解析前 playlist_end 条，
+    筛选 live_status == 'is_live' 的条目，
+    返回时长最长的那个 video id；没有直播返回 None。
     """
     cmd = [
         "yt-dlp",
         "--quiet",
         "--no-warnings",
         "--dump-json",
-        "--flat-playlist",
+        "--playlist-end", str(playlist_end),
         "--no-check-certificates",
         streams_url
     ]
     print(f"   执行: {' '.join(cmd)}")
+
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
         if r.returncode != 0 and r.stderr:
             print(f"   ⚠️ yt-dlp stderr: {r.stderr.strip()[:300]}")
 
-        live_ids = []
+        live_items = []
         for line in (r.stdout or "").strip().splitlines():
             if not line.strip():
                 continue
@@ -51,17 +53,30 @@ def get_live_ids_from_streams(streams_url, timeout=60):
             live_status = info.get("live_status")
             vid = info.get("id") or ""
 
-            # 只保留正在直播、且 id 像正常 YouTube video id
-            if live_status == "is_live" and len(vid) >= 10:
-                live_ids.append(vid)
-                print(f"   🎥 直播: {vid} | {info.get('title', '')[:60]}")
-        return live_ids
+            # 只看正在直播、且 id 像正常 YouTube video id 的条目
+            if live_status != "is_live" or len(vid) < 10:
+                continue
+
+            duration = info.get("duration") or 0
+            title = info.get("title", "")
+            live_items.append((vid, duration, title))
+            print(f"   🎥 直播: {vid} | 时长: {duration}s | {title[:50]}")
+
+        if not live_items:
+            return None
+
+        # 选时长最长的
+        live_items.sort(key=lambda x: x[1], reverse=True)
+        best_vid, best_dur, best_title = live_items[0]
+        print(f"   🏆 选中最长直播: {best_vid} ({best_dur}s) | {best_title[:50]}")
+        return best_vid
+
     except subprocess.TimeoutExpired:
         print(f"   ⏱ 超时({timeout}s): {streams_url}")
-        return []
+        return None
     except Exception as e:
         print(f"   ❌ 错误: {e}")
-        return []
+        return None
 
 
 def is_channel_home(url):
@@ -69,14 +84,16 @@ def is_channel_home(url):
     return any(m in url for m in markers)
 
 
-def get_video_ids(url):
+def get_video_id(url):
     """
-    返回该频道下所有正在直播的 video id 列表。
+    返回该频道下时长最长的正在直播 video id，没有则 None。
     """
+    # 普通视频
     if "v=" in url:
         vid = url.split("v=")[1].split("&")[0]
-        return [vid] if vid else []
+        return vid if vid else None
 
+    # 频道主页：统一走 /streams
     if is_channel_home(url):
         base = url.rstrip("/")
         if base.endswith("/streams"):
@@ -85,9 +102,10 @@ def get_video_ids(url):
             streams_url = base[:-len("/live")] + "/streams"
         else:
             streams_url = base + "/streams"
-        return get_live_ids_from_streams(streams_url)
+        return get_longest_live_id(streams_url)
 
-    return get_live_ids_from_streams(url)
+    # 其他链接兜底
+    return get_longest_live_id(url)
 
 
 # ===================== 主流程 ===================== #
@@ -111,24 +129,23 @@ def run():
             continue
 
         try:
-            vids = get_video_ids(url)
+            vid = get_video_id(url)
         except Exception as e:
             print(f"   ❌ 处理异常: {e}")
-            vids = []
+            vid = None
 
-        if not vids:
+        if not vid:
             print("   ⚠️ 未直播 / 无效")
             time.sleep(1.5)
             continue
 
-        for vid in vids:
-            output.append({
-                "name": name,
-                "group": ch.get("group", "LIVE"),
-                "id": vid,
-                "url": f"https://www.youtube.com/watch?v={vid}"
-            })
-            print(f"   ✅ 成功: {vid}")
+        output.append({
+            "name": name,
+            "group": ch.get("group", "LIVE"),
+            "id": vid,
+            "url": f"https://www.youtube.com/watch?v={vid}"
+        })
+        print(f"   ✅ 成功: {vid}")
 
         time.sleep(1.5)
 
