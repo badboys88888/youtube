@@ -1,149 +1,110 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-import subprocess
 import json
-import time
-from datetime import datetime
+import os
 
-# ===================== 频道加载 ===================== #
+INPUT_FILE = "Global_Vision_list.json"
+OUTPUT_FILE = "live.m3u"
+ICON_MAP_FILE = "icons_map.json"
 
-def load_channels():
+BASE_URL = "http://www.diffn.xyz:28000/live/"
+URL_SUFFIX = "/index.m3u8"
+
+# EPG地址
+EPG_URL = "http://192.168.6.15:5678/t.xml.gz"
+
+# 图标前缀
+BASE_ICON_URL = "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/"
+
+def load_icon_map():
+    if not os.path.exists(ICON_MAP_FILE):
+        print("⚠️ icons_map.json 不存在，将仅使用网页抓取Logo")
+        return {}
     try:
-        with open("channels.json", "r", encoding="utf-8") as f:
+        with open(ICON_MAP_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
-        print(f"❌ channels.json 读取失败: {e}")
-        return []
+        print("❌ icons_map.json 读取失败:", e)
+        return {}
 
+def get_live_list(data):
+    if isinstance(data.get("直播"), dict):
+        return data["直播"].get("所有直播", [])
+    if isinstance(data.get("data"), list):
+        return data["data"]
+    if isinstance(data, list):
+        return data
+    return []
 
-# ===================== 工具函数 ===================== #
+def get_display_name(item):
+    # 优先使用网页抓取的真实标题，没有再用频道名
+    return item.get("title") or item.get("name") or "NO_TITLE"
 
-def get_live_ids_from_streams(streams_url, timeout=60):
+def get_channel_id(item):
+    # 必须用频道名，这样 EPG (t.xml.gz) 才能对应上
+    return item.get("name") or "NO_ID"
+
+def resolve_icon(item, icon_map):
     """
-    拉取频道 /streams 页面，只取前 10 条，
-    筛选 live_status == 'is_live' 的条目，返回 video id 列表。
+    图标优先级：
+    1. icons_map.json 强制指定的
+    2. Global_Vision_list.json 里的 logo（本地匹配或网页缩略图）
     """
-    cmd = [
-        "yt-dlp",
-        "--quiet",
-        "--no-warnings",
-        "--dump-json",
-        "--flat-playlist",
-        "--playlist-end", "10",
-        "--no-check-certificates",
-        streams_url
-    ]
-    print(f"   执行: {' '.join(cmd)}")
+    name = item.get("name") or ""
+    
+    # 优先查 icons_map
+    icon = icon_map.get(name, "")
+    if icon:
+        if icon.startswith("http"):
+            return icon
+        return BASE_ICON_URL + icon
+        
+    # 如果没有，就用 JSON 里带过来的
+    return item.get("logo", "") or ""
+
+def main():
+    if not os.path.exists(INPUT_FILE):
+        print("❌ 找不到文件:", INPUT_FILE)
+        return
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-        if r.returncode != 0 and r.stderr:
-            print(f"   ⚠️ yt-dlp stderr: {r.stderr.strip()[:300]}")
-
-        live_ids = []
-        for line in (r.stdout or "").strip().splitlines():
-            if not line.strip():
-                continue
-            try:
-                info = json.loads(line)
-            except json.JSONDecodeError:
-                continue
-
-            live_status = info.get("live_status")
-            vid = info.get("id") or ""
-
-            # 只保留正在直播、且 id 像正常 YouTube video id
-            if live_status == "is_live" and len(vid) >= 10:
-                live_ids.append(vid)
-                print(f"   🎥 直播: {vid} | {info.get('title', '')[:60]}")
-        return live_ids
-    except subprocess.TimeoutExpired:
-        print(f"   ⏱ 超时({timeout}s): {streams_url}")
-        return []
+        with open(INPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
     except Exception as e:
-        print(f"   ❌ 错误: {e}")
-        return []
-
-
-def is_channel_home(url):
-    markers = ["/@", "/channel/", "/c/", "/user/"]
-    return any(m in url for m in markers)
-
-
-def get_video_ids(url):
-    """
-    返回该频道下所有正在直播的 video id 列表。
-    """
-    if "v=" in url:
-        vid = url.split("v=")[1].split("&")[0]
-        return [vid] if vid else []
-
-    if is_channel_home(url):
-        base = url.rstrip("/")
-        if base.endswith("/streams"):
-            streams_url = base
-        elif base.endswith("/live"):
-            streams_url = base[:-len("/live")] + "/streams"
-        else:
-            streams_url = base + "/streams"
-        return get_live_ids_from_streams(streams_url)
-
-    return get_live_ids_from_streams(url)
-
-
-# ===================== 主流程 ===================== #
-
-def run():
-    CHANNELS = load_channels()
-    output = []
-
-    if not CHANNELS:
-        print("⚠️ 没有加载到频道数据")
+        print("❌ JSON解析失败:", e)
         return
 
-    total = len(CHANNELS)
-    for idx, ch in enumerate(CHANNELS, 1):
-        name = ch.get("name", "unknown")
-        print(f"🔍 [{idx}/{total}] 检测: {name}")
+    ICON_MAP = load_icon_map()
+    live_list = get_live_list(data)
+    if not live_list:
+        print("⚠️ 没有直播数据")
+        return
 
-        url = ch.get("url")
-        if not url:
-            print("   ⚠️ 缺少 url，跳过")
+    lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
+    count = 0
+
+    for item in live_list:
+        vid = item.get("id")
+        if not vid:
             continue
 
-        try:
-            vids = get_video_ids(url)
-        except Exception as e:
-            print(f"   ❌ 处理异常: {e}")
-            vids = []
+        channel_id = get_channel_id(item)      # tvg-id
+        display_name = get_display_name(item)  # 逗号后显示名
+        group = item.get("group") or "LIVE"
+        url = f"{BASE_URL}{vid}{URL_SUFFIX}"
+        icon = resolve_icon(item, ICON_MAP)
 
-        if not vids:
-            print("   ⚠️ 未直播 / 无效")
-            time.sleep(1.5)
-            continue
+        if icon:
+            lines.append(
+                f'#EXTINF:-1 tvg-id="{channel_id}" tvg-logo="{icon}" group-title="{group}",{display_name}'
+            )
+        else:
+            lines.append(
+                f'#EXTINF:-1 tvg-id="{channel_id}" group-title="{group}",{display_name}'
+            )
+        lines.append(url)
+        count += 1
 
-        for vid in vids:
-            output.append({
-                "name": name,
-                "group": ch.get("group", "LIVE"),
-                "id": vid,
-                "url": f"https://www.youtube.com/watch?v={vid}"
-            })
-            print(f"   ✅ 成功: {vid}")
-
-        time.sleep(1.5)
-
-    result = {
-        "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "count": len(output),
-        "data": output
-    }
-
-    with open("Global_Vision_list.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
-    print(f"\n🎉 JSON生成完成，共 {len(output)} 条直播")
-
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"✅ M3U生成完成，共 {count} 条")
 
 if __name__ == "__main__":
-    run()
+    main()
