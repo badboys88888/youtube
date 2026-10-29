@@ -26,7 +26,11 @@ http://www.diffn.xyz:28000/live/wM0g8EoUZ_E/index.m3u8
 #EXTINF:-1 tvg-id="中視新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/中视新闻.jpg" group-title="新闻",中視新聞
 http://www.diffn.xyz:28000/live/TCnaIE_SAtM/index.m3u8
 #EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://www.diffn.xyz:28000/live/ylYJSBUgaMA/index.m3u8
+http://www.diffn.xyz:28000/live/OUKUetyZXu8/index.m3u8
+#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
+http://www.diffn.xyz:28000/live/-J3nIMb5h-s/index.m3u8
+#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
+http://www.diffn.xyz:28000/live/sllFR9qNfcE/index.m3u8
 #EXTINF:-1 tvg-id="公視(HD)" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公視(HD)
 http://www.diffn.xyz:28000/live/hg4nYb3jE9A/index.m3u8
 #EXTINF:-1 tvg-id="三立新聞INEWS" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立INEWS.jpg" group-title="新闻",三立新聞INEWS
