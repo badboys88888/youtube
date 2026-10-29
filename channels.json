@@ -10,11 +10,11 @@
     {"name": "東森新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=E0zhe2gkXBs"},
     {"name": "东森综合二台", "group": "综合", "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"},
     
-    {"name": "台視新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=xL0ch83RAK8"},
-    {"name": "華視新聞資訊HD", "group": "新闻", "url": "https://www.youtube.com/watch?v=wM0g8EoUZ_E"},
-    {"name": "中視新聞", "group": "新闻", "url": "https://www.youtube.com/watch?v=TCnaIE_SAtM"},
-    {"name": "民視新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"},
-    {"name": "公視(HD)", "group": "新闻", "url": "https://www.youtube.com/watch?v=quwqlazU-c8"},
+    {"name": "台視新聞台", "group": "新闻", "url": "https://www.youtube.com/@TTV_NEWS"},
+    {"name": "華視新聞資訊HD", "group": "新闻", "url": "https://www.youtube.com/@CtsTw"},
+    {"name": "中視新聞", "group": "新闻", "url": "https://www.youtube.com/@twctvnews"},
+    {"name": "民視新聞台", "group": "新闻", "url": "https://www.youtube.com/@FTV_News"},
+    {"name": "公視(HD)", "group": "新闻", "url": "https://www.youtube.com/@PNNPTS"},
 
     {"name": "三立新聞INEWS", "group": "新闻", "url": "https://www.youtube.com/watch?v=pF507BLtbqU"},
     {"name": "三立新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=QsGswQvRmtU"},
