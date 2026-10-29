@@ -1,7 +1,13 @@
 {
-  "update_time": "2026-10-29 01:18:45",
-  "count": 25,
+  "update_time": "2026-10-29 01:23:55",
+  "count": 37,
   "data": [
+    {
+      "name": "凤凰资讯",
+      "group": "新闻",
+      "id": "Ry--eMIjYLQ",
+      "url": "https://www.youtube.com/watch?v=Ry--eMIjYLQ"
+    },
     {
       "name": "中天新聞台",
       "group": "新闻",
@@ -51,6 +57,42 @@
       "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"
     },
     {
+      "name": "台視新聞台",
+      "group": "新闻",
+      "id": "9iRAqBMakXY",
+      "url": "https://www.youtube.com/watch?v=9iRAqBMakXY"
+    },
+    {
+      "name": "華視新聞資訊HD",
+      "group": "新闻",
+      "id": "KMMHw8rllic",
+      "url": "https://www.youtube.com/watch?v=KMMHw8rllic"
+    },
+    {
+      "name": "華視新聞資訊HD",
+      "group": "新闻",
+      "id": "wM0g8EoUZ_E",
+      "url": "https://www.youtube.com/watch?v=wM0g8EoUZ_E"
+    },
+    {
+      "name": "中視新聞",
+      "group": "新闻",
+      "id": "TCnaIE_SAtM",
+      "url": "https://www.youtube.com/watch?v=TCnaIE_SAtM"
+    },
+    {
+      "name": "民視新聞台",
+      "group": "新闻",
+      "id": "ylYJSBUgaMA",
+      "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"
+    },
+    {
+      "name": "公視(HD)",
+      "group": "新闻",
+      "id": "hg4nYb3jE9A",
+      "url": "https://www.youtube.com/watch?v=hg4nYb3jE9A"
+    },
+    {
       "name": "三立新聞INEWS",
       "group": "新闻",
       "id": "pF507BLtbqU",
@@ -93,10 +135,34 @@
       "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
     },
     {
+      "name": "skynews",
+      "group": "国际新闻",
+      "id": "umLWFz4izTM",
+      "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+    },
+    {
+      "name": "半島國際新聞台",
+      "group": "国际新闻",
+      "id": "gCNeDWCI0vo",
+      "url": "https://www.youtube.com/watch?v=gCNeDWCI0vo"
+    },
+    {
       "name": "EURONEWS",
       "group": "国际新闻",
       "id": "pykpO5kQJ98",
       "url": "https://www.youtube.com/watch?v=pykpO5kQJ98"
+    },
+    {
+      "name": "FRANCE24(ENGLISH)",
+      "group": "国际新闻",
+      "id": "a47ckXKZjxI",
+      "url": "https://www.youtube.com/watch?v=a47ckXKZjxI"
+    },
+    {
+      "name": "CNA",
+      "group": "国际新闻",
+      "id": "-PWMxjBgr0k",
+      "url": "https://www.youtube.com/watch?v=-PWMxjBgr0k"
     },
     {
       "name": "ABCAUSTRALIA",
@@ -133,6 +199,12 @@
       "group": "国际新闻",
       "id": "ztmY_cCtUl0",
       "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"
+    },
+    {
+      "name": "DW德國之聲",
+      "group": "国际新闻",
+      "id": "LuKwFajn37U",
+      "url": "https://www.youtube.com/watch?v=LuKwFajn37U"
     },
     {
       "name": "BLOOMBERGORIGINALS",
