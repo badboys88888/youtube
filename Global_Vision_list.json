@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-10-29 01:52:37",
-  "count": 39,
+  "update_time": "2026-11-02 03:21:47",
+  "count": 41,
   "data": [
     {
       "name": "凤凰资讯",
@@ -98,6 +98,16 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
+      "id": "HexTl28qj_g",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=HexTl28qj_g"
+    },
+    {
+      "name": "台視新聞台",
+      "title": "台視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
       "id": "9iRAqBMakXY",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=9iRAqBMakXY"
@@ -134,13 +144,13 @@
     },
     {
       "name": "民視新聞台",
-      "title": "【直播完整版】1029 羅智強、葛如鈞紅樓地圖區抄襲議題回應｜民視快新聞｜",
+      "title": "民視新聞台",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/OUKUetyZXu8/maxresdefault.jpg?v=6ae2a482",
-      "id": "OUKUetyZXu8",
-      "logo": "https://i.ytimg.com/vi/OUKUetyZXu8/maxresdefault.jpg?v=6ae2a482",
-      "url": "https://www.youtube.com/watch?v=OUKUetyZXu8"
+      "tvg-logo": "",
+      "id": "z3neGgHrOEY",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=z3neGgHrOEY"
     },
     {
       "name": "民視新聞台",
@@ -148,9 +158,9 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "sllFR9qNfcE",
+      "id": "LzIVIlFoFXo",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=sllFR9qNfcE"
+      "url": "https://www.youtube.com/watch?v=LzIVIlFoFXo"
     },
     {
       "name": "民視新聞台",
@@ -158,9 +168,9 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "iNsyypomwo8",
+      "id": "ylYJSBUgaMA",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=iNsyypomwo8"
+      "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"
     },
     {
       "name": "公視(HD)",
@@ -201,6 +211,16 @@
       "id": "5n0y6b0Q25o",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"
+    },
+    {
+      "name": "CCTV4美洲",
+      "title": "CCTV4美洲",
+      "group": "综合",
+      "tvg-id": "",
+      "tvg-logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "id": "cAqktxCy0ls",
+      "logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "url": "https://www.youtube.com/watch?v=cAqktxCy0ls"
     },
     {
       "name": "CCTV4美洲",
