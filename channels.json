@@ -8,6 +8,7 @@
     {"name": "TVBS新聞台", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS01"},
     {"name": "東森財經新聞台", "group": "财经", "url": "https://www.youtube.com/@57ETFN"},
     {"name": "東森新聞台", "group": "新闻", "url": "https://www.youtube.com/@newsebc"},
+    {"name": "公視新聞", "group": "新闻", "url": "https://www.youtube.com/@PNNPTS"},
    
     
     {"name": "台視新聞台", "group": "新闻", "url": "https://www.youtube.com/@TTV_NEWS"},
@@ -18,7 +19,8 @@
 
     {"name": "三立新聞INEWS", "group": "新闻", "url": "https://www.youtube.com/@%E4%B8%89%E7%AB%8B%E8%B2%A1%E7%B6%93iNEWS"},
     {"name": "三立新聞台", "group": "新闻", "url": "https://www.youtube.com/@setnews-ch54"},
-
+    {"name": "CGTN", "group": "新闻", "url": "https://www.youtube.com/@cgtn"},
+    {"name": "USTV 非凡電視", "group": "新闻", "url": "https://www.youtube.com/@ustv"},
     
     {"name": "鏡電視新聞台", "group": "新闻", "url": "https://www.youtube.com/@mnews-tw"},
     {"name": "CCTV4美洲", "group": "综合", "url": "https://www.youtube.com/@LiveNow24H"},
@@ -44,5 +46,18 @@
     {"name": "DW德國之聲", "group": "国际新闻", "url": "https://www.youtube.com/@dwnews"},
     {"name": "BLOOMBERGORIGINALS", "group": "国际新闻", "url": "https://www.youtube.com/@business"},
     {"name": "Bloomberg Business News", "group": "国际新闻", "url": "https://www.youtube.com/@markets"},
-    {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/@ABCNews"}
+
+
+    {"name": "CBS News", "group": "国际新闻", "url": "https://www.youtube.com/@CBSNews"},
+    {"name": "TRT World", "group": "国际新闻", "url": "https://www.youtube.com/@trtworld"},
+    {"name": "联合国", "group": "国际新闻", "url": "https://www.youtube.com/@unitednations"},
+    {"name": "DW News", "group": "国际新闻", "url": "https://www.youtube.com/@dwnews"},
+    {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/@ABCNews"},
+
+    {"name": "연합뉴스TV", "group": "日韩新闻", "url": "https://www.youtube.com/@yonhapnewstv23"},
+    {"name": "KBS WORLD TV", "group": "日韩新闻", "url": "https://www.youtube.com/@kbsworldtv"},
+    {"name": "YTN", "group": "日韩新闻", "url": "https://www.youtube.com/@ytnnews24"},
+    {"name": "MBCNEWS", "group": "日韩新闻", "url": "https://www.youtube.com/@MBCNEWS11"},
+
+    {"name": "Claude FM", "group": "音乐", "url": "https://www.youtube.com/@claude"}
 ]
