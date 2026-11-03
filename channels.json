@@ -4,11 +4,11 @@
     {"name": "寰宇新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=6IquAgfvYmc"},
     {"name": "寰宇新聞台灣台", "group": "新闻", "url": "https://www.youtube.com/watch?v=w87VGpgd90U"},
 
-    {"name": "TVBS新聞", "group": "新闻", "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc"},
-    {"name": "TVBS新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=2mCSYvcfhtc"},
-    {"name": "東森財經新聞台", "group": "财经", "url": "https://www.youtube.com/watch?v=1I2iq41Akmo"},
-    {"name": "東森新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=E0zhe2gkXBs"},
-    {"name": "东森综合二台", "group": "综合", "url": "https://www.youtube.com/watch?v=cimbpAZUjzw"},
+    {"name": "TVBS新聞", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS02"},
+    {"name": "TVBS新聞台", "group": "新闻", "url": "https://www.youtube.com/@TVBSNEWS01"},
+    {"name": "東森財經新聞台", "group": "财经", "url": "https://www.youtube.com/@57ETFN"},
+    {"name": "東森新聞台", "group": "新闻", "url": "https://www.youtube.com/@newsebc"},
+   
     
     {"name": "台視新聞台", "group": "新闻", "url": "https://www.youtube.com/@TTV_NEWS"},
     {"name": "華視新聞資訊HD", "group": "新闻", "url": "https://www.youtube.com/@CtsTw"},
@@ -16,15 +16,15 @@
     {"name": "民視新聞台", "group": "新闻", "url": "https://www.youtube.com/@FTV_News"},
     {"name": "公視(HD)", "group": "新闻", "url": "https://www.youtube.com/@PNNPTS"},
 
-    {"name": "三立新聞INEWS", "group": "新闻", "url": "https://www.youtube.com/watch?v=pF507BLtbqU"},
-    {"name": "三立新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=QsGswQvRmtU"},
+    {"name": "三立新聞INEWS", "group": "新闻", "url": "https://www.youtube.com/@%E4%B8%89%E7%AB%8B%E8%B2%A1%E7%B6%93iNEWS"},
+    {"name": "三立新聞台", "group": "新闻", "url": "https://www.youtube.com/@setnews-ch54"},
 
     
-    {"name": "鏡電視新聞台", "group": "新闻", "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"},
+    {"name": "鏡電視新聞台", "group": "新闻", "url": "https://www.youtube.com/@mnews-tw"},
     {"name": "CCTV4美洲", "group": "综合", "url": "https://www.youtube.com/@LiveNow24H"},
-    {"name": "新唐人亞太台", "group": "综合", "url": "https://www.youtube.com/watch?v=Bhp_V7H5QoY"},
-    {"name": "大愛電視HD", "group": "综合", "url": "https://www.youtube.com/watch?v=pM-1ytfQhos"},
-    {"name": "大愛二台HD", "group": "综合", "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"},
+    {"name": "新唐人亞太台", "group": "综合", "url": "https://www.youtube.com/@NTDCHINESE"},
+    {"name": "大愛電視HD", "group": "综合", "url": "https://www.youtube.com/@DaAiVideo"},
+    
 
     {"name": "skynews", "group": "国际新闻", "url": "https://www.youtube.com/@SkyNews"},
 
@@ -35,15 +35,14 @@
     {"name": "CNA", "group": "国际新闻", "url": "https://www.youtube.com/@channelnewsasia"},
 
     
-    {"name": "ABCAUSTRALIA", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=vOTiJkg1voo"},
-    {"name": "CNN TÜRK", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=6N8_r2uwLEc"},
-    {"name": "Habertürk TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=RNVNlJSUFoE"},
-    {"name": "HALK TV CANLI YAYINI", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=8uNelFh0oz4"},
-    {"name": "Show TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ouuCjEjyKVI"},
+    {"name": "ABCAUSTRALIA", "group": "国际新闻", "url": "https://www.youtube.com/@abcaustralia"},
+    {"name": "CNN TÜRK", "group": "国际新闻", "url": "https://www.youtube.com/@cnnturk"},
+    {"name": "Habertürk TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/@haberturktv"},
+    {"name": "Show TV Canlı Yayın ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/@showtv"},
 
-    {"name": "SÖZCÜ TV Canlı Yayını ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"},
+    {"name": "SÖZCÜ TV Canlı Yayını ᴴᴰ", "group": "国际新闻", "url": "https://www.youtube.com/@Sozcutelevizyonu"},
     {"name": "DW德國之聲", "group": "国际新闻", "url": "https://www.youtube.com/@dwnews"},
-    {"name": "BLOOMBERGORIGINALS", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=DxmDPrfinXY"},
-    {"name": "Bloomberg Business News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iEpJwprxDdk"},
-    {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/watch?v=iipR5yUp36o"}
+    {"name": "BLOOMBERGORIGINALS", "group": "国际新闻", "url": "https://www.youtube.com/@business"},
+    {"name": "Bloomberg Business News", "group": "国际新闻", "url": "https://www.youtube.com/@markets"},
+    {"name": "ABC News", "group": "国际新闻", "url": "https://www.youtube.com/@ABCNews"}
 ]
