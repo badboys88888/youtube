@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-11-03 18:35:00",
-  "count": 85,
+  "update_time": "2026-11-09 03:41:56",
+  "count": 89,
   "data": [
     {
       "name": "凤凰资讯",
@@ -48,6 +48,36 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
+      "id": "PBGL8xfHsqk",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=PBGL8xfHsqk"
+    },
+    {
+      "name": "TVBS新聞",
+      "title": "TVBS新聞",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "2RaDQORXQww",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=2RaDQORXQww"
+    },
+    {
+      "name": "TVBS新聞",
+      "title": "TVBS新聞",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "Ch4i2M8bQrQ",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=Ch4i2M8bQrQ"
+    },
+    {
+      "name": "TVBS新聞",
+      "title": "TVBS新聞",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
       "id": "LT2UpPGZsAA",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=LT2UpPGZsAA"
@@ -71,6 +101,16 @@
       "id": "o_-hSMgpAzs",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=o_-hSMgpAzs"
+    },
+    {
+      "name": "TVBS新聞台",
+      "title": "TVBS新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "DBxjVOVxnjk",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=DBxjVOVxnjk"
     },
     {
       "name": "TVBS新聞台",
@@ -148,6 +188,16 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
+      "id": "kQQkDU6cT5g",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=kQQkDU6cT5g"
+    },
+    {
+      "name": "台視新聞台",
+      "title": "台視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
       "id": "9iRAqBMakXY",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=9iRAqBMakXY"
@@ -188,6 +238,46 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
+      "id": "sWsQ7Z33-Wk",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=sWsQ7Z33-Wk"
+    },
+    {
+      "name": "民視新聞台",
+      "title": "民視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "ScL6AyG9YwI",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=ScL6AyG9YwI"
+    },
+    {
+      "name": "民視新聞台",
+      "title": "民視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "TwHdrieeEeI",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=TwHdrieeEeI"
+    },
+    {
+      "name": "民視新聞台",
+      "title": "民視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "1KxIquPzkbU",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=1KxIquPzkbU"
+    },
+    {
+      "name": "民視新聞台",
+      "title": "民視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
       "id": "ylYJSBUgaMA",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"
@@ -201,6 +291,16 @@
       "id": "hg4nYb3jE9A",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=hg4nYb3jE9A"
+    },
+    {
+      "name": "三立新聞台",
+      "title": "三立新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "G80EhPFMH6Q",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=G80EhPFMH6Q"
     },
     {
       "name": "三立新聞台",
@@ -231,6 +331,16 @@
       "id": "hGJkDZDchYI",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=hGJkDZDchYI"
+    },
+    {
+      "name": "CGTN",
+      "title": "CGTN",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "Cw-vctmoOrY",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=Cw-vctmoOrY"
     },
     {
       "name": "CGTN",
@@ -278,6 +388,16 @@
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "",
+      "id": "Cg2xAu6eg4g",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=Cg2xAu6eg4g"
+    },
+    {
+      "name": "鏡電視新聞台",
+      "title": "鏡電視新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
       "id": "5n0y6b0Q25o",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=5n0y6b0Q25o"
@@ -303,16 +423,6 @@
       "url": "https://www.youtube.com/watch?v=PiSwAy-blvA"
     },
     {
-      "name": "新唐人亞太台",
-      "title": "新唐人亞太台",
-      "group": "综合",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "XJZQ_YcNYV8",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=XJZQ_YcNYV8"
-    },
-    {
       "name": "大愛電視HD",
       "title": "大愛電視HD",
       "group": "综合",
@@ -331,16 +441,6 @@
       "id": "QDxRJP-wfeI",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
-    },
-    {
-      "name": "skynews",
-      "title": "skynews",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "aPxWXFjcYXg",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=aPxWXFjcYXg"
     },
     {
       "name": "skynews",
@@ -398,16 +498,6 @@
       "group": "国际新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "KUapJ0XknMk",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=KUapJ0XknMk"
-    },
-    {
-      "name": "CNN TÜRK",
-      "title": "CNN TÜRK",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
       "id": "ogMaukPITDE",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=ogMaukPITDE"
@@ -421,26 +511,6 @@
       "id": "6N8_r2uwLEc",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=6N8_r2uwLEc"
-    },
-    {
-      "name": "Habertürk TV Canlı Yayın ᴴᴰ",
-      "title": "Habertürk TV Canlı Yayın ᴴᴰ",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "XTK-I4Rb5uc",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=XTK-I4Rb5uc"
-    },
-    {
-      "name": "Habertürk TV Canlı Yayın ᴴᴰ",
-      "title": "Habertürk TV Canlı Yayın ᴴᴰ",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "e5NHJwrSn9w",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=e5NHJwrSn9w"
     },
     {
       "name": "Habertürk TV Canlı Yayın ᴴᴰ",
@@ -518,26 +588,6 @@
       "group": "国际新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "nbPswVbdr_Q",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=nbPswVbdr_Q"
-    },
-    {
-      "name": "SÖZCÜ TV Canlı Yayını ᴴᴰ",
-      "title": "SÖZCÜ TV Canlı Yayını ᴴᴰ",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "gPHM74gjecc",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=gPHM74gjecc"
-    },
-    {
-      "name": "SÖZCÜ TV Canlı Yayını ᴴᴰ",
-      "title": "SÖZCÜ TV Canlı Yayını ᴴᴰ",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
       "id": "ztmY_cCtUl0",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=ztmY_cCtUl0"
@@ -573,24 +623,14 @@
       "url": "https://www.youtube.com/watch?v=QB5BNdBFujE"
     },
     {
-      "name": "CBS News",
-      "title": "CBS News",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "74WjpIH4jeE",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=74WjpIH4jeE"
-    },
-    {
       "name": "TRT World",
       "title": "TRT World",
       "group": "国际新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "adUSssjOCLY",
+      "id": "JV5w1MhzcfQ",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=adUSssjOCLY"
+      "url": "https://www.youtube.com/watch?v=JV5w1MhzcfQ"
     },
     {
       "name": "联合国",
@@ -614,13 +654,13 @@
     },
     {
       "name": "ABC News",
-      "title": "LIVE: Election Day in America: Vote 2026 | ABC News",
+      "title": "ABC News",
       "group": "国际新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/wF8X-K_l5kY/maxresdefault.jpg?v=6ae8d60c",
-      "id": "wF8X-K_l5kY",
-      "logo": "https://i.ytimg.com/vi/wF8X-K_l5kY/maxresdefault.jpg?v=6ae8d60c",
-      "url": "https://www.youtube.com/watch?v=wF8X-K_l5kY"
+      "tvg-logo": "",
+      "id": "l2CF4rOllmU",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=l2CF4rOllmU"
     },
     {
       "name": "ABC News",
@@ -638,9 +678,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "eavRHxbVHwk",
+      "id": "mElj9a_HFCQ",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=eavRHxbVHwk"
+      "url": "https://www.youtube.com/watch?v=mElj9a_HFCQ"
     },
     {
       "name": "연합뉴스TV",
@@ -648,9 +688,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "ahdEMVhxpJU",
+      "id": "LZqVHneXOdQ",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=ahdEMVhxpJU"
+      "url": "https://www.youtube.com/watch?v=LZqVHneXOdQ"
     },
     {
       "name": "연합뉴스TV",
@@ -658,9 +698,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "hryiaJG3uwE",
+      "id": "bfpImO02eZI",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=hryiaJG3uwE"
+      "url": "https://www.youtube.com/watch?v=bfpImO02eZI"
     },
     {
       "name": "연합뉴스TV",
@@ -668,9 +708,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "ZPqqG7-xszY",
+      "id": "4IeQjbq8Lmw",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=ZPqqG7-xszY"
+      "url": "https://www.youtube.com/watch?v=4IeQjbq8Lmw"
     },
     {
       "name": "연합뉴스TV",
@@ -678,9 +718,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "GwydmZ0-7QI",
+      "id": "W0PsElUHoKo",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=GwydmZ0-7QI"
+      "url": "https://www.youtube.com/watch?v=W0PsElUHoKo"
     },
     {
       "name": "연합뉴스TV",
@@ -688,9 +728,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "kF4BiMIgYQs",
+      "id": "bExy4qP2X0w",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=kF4BiMIgYQs"
+      "url": "https://www.youtube.com/watch?v=bExy4qP2X0w"
     },
     {
       "name": "연합뉴스TV",
@@ -728,9 +768,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "RE6ypZNTvKA",
+      "id": "rNKLLkHOaok",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=RE6ypZNTvKA"
+      "url": "https://www.youtube.com/watch?v=rNKLLkHOaok"
     },
     {
       "name": "YTN",
@@ -738,9 +778,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "B0hHx7zDRCo",
+      "id": "vQtKbPaohuU",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=B0hHx7zDRCo"
+      "url": "https://www.youtube.com/watch?v=vQtKbPaohuU"
     },
     {
       "name": "YTN",
@@ -748,9 +788,19 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "G6SkaSZJDLY",
+      "id": "eAtdZdgRcWQ",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=G6SkaSZJDLY"
+      "url": "https://www.youtube.com/watch?v=eAtdZdgRcWQ"
+    },
+    {
+      "name": "YTN",
+      "title": "YTN",
+      "group": "日韩新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "id": "IniSw3rKYv8",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=IniSw3rKYv8"
     },
     {
       "name": "YTN",
@@ -768,9 +818,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "wpcpeC3m2PU",
+      "id": "l-Ffdb9D5Kk",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=wpcpeC3m2PU"
+      "url": "https://www.youtube.com/watch?v=l-Ffdb9D5Kk"
     },
     {
       "name": "MBCNEWS",
@@ -778,9 +828,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "OXQg7weRqQA",
+      "id": "ikr3cRNGups",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=OXQg7weRqQA"
+      "url": "https://www.youtube.com/watch?v=ikr3cRNGups"
     },
     {
       "name": "MBCNEWS",
@@ -788,9 +838,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "6GN26fhsijE",
+      "id": "vIQaz4GfNkg",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=6GN26fhsijE"
+      "url": "https://www.youtube.com/watch?v=vIQaz4GfNkg"
     },
     {
       "name": "MBCNEWS",
@@ -798,9 +848,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "3w1D2kdU088",
+      "id": "nRJP7zFiCBY",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=3w1D2kdU088"
+      "url": "https://www.youtube.com/watch?v=nRJP7zFiCBY"
     },
     {
       "name": "MBCNEWS",
@@ -808,9 +858,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "nkyA8ANi1hI",
+      "id": "-WFPjDVC5Ms",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=nkyA8ANi1hI"
+      "url": "https://www.youtube.com/watch?v=-WFPjDVC5Ms"
     },
     {
       "name": "MBCNEWS",
@@ -818,19 +868,9 @@
       "group": "日韩新闻",
       "tvg-id": "",
       "tvg-logo": "",
-      "id": "KiUJBytU0os",
+      "id": "8WIAnIVRfrE",
       "logo": "",
-      "url": "https://www.youtube.com/watch?v=KiUJBytU0os"
-    },
-    {
-      "name": "MBCNEWS",
-      "title": "MBCNEWS",
-      "group": "日韩新闻",
-      "tvg-id": "",
-      "tvg-logo": "",
-      "id": "94zXfM-q_Gg",
-      "logo": "",
-      "url": "https://www.youtube.com/watch?v=94zXfM-q_Gg"
+      "url": "https://www.youtube.com/watch?v=8WIAnIVRfrE"
     },
     {
       "name": "MBCNEWS",
