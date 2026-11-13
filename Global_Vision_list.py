@@ -9,11 +9,20 @@ import re
 import urllib.request
 import html
 from urllib.parse import quote
-from datetime import datetime
+from datetime import datetime, timezone
 
 # ===================== 配置 ===================== #
 RAW_BASE = "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/"
 ICONS_DIR = "icons"
+OUTPUT_FILE = "Global_Vision_list.json"
+
+# 只保留已持续开播至少这么久的直播（小时）。临时/事件型直播一般几小时就结束，
+# 常驻台的流动辄几周；定 48 小时是怕误杀隔几天重启一次的常驻流。
+MIN_LIVE_HOURS = 48
+
+# 覆盖保底：新列表条数低于旧文件的这个比例时，判定本次抓取异常，
+# 不覆盖旧文件，改写到 .new.json 供人工检查。
+MIN_KEEP_RATIO = 0.7
 
 
 def load_channels():
@@ -56,8 +65,74 @@ def match_icon_by_name(name, icon_files):
     return None
 
 
+def parse_iso_ts(s):
+    """解析 YouTube 页面里的时间戳（ISO 8601），失败返回 None。"""
+    if not s:
+        return None
+    try:
+        dt = datetime.fromisoformat(s.strip().replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+
+def parse_live_details(page):
+    """从视频页 HTML 里提取 liveBroadcastDetails。
+
+    YouTube 的 microformat 里带这段:
+      "liveBroadcastDetails":{"isLiveNow":true,
+                              "startTimestamp":"2026-11-09T03:41:56+00:00",
+                              "endTimestamp":"..."}   # 仅已结束的流才有
+    提取不到（页面变体/被拦）时返回 None —— 调用方按"无法验证"处理，不误杀。
+    """
+    best = None
+    for m in re.finditer(r'"liveBroadcastDetails"\s*:\s*\{', page):
+        chunk = page[m.end():m.end() + 600]
+        d = {}
+        mm = re.search(r'"isLiveNow"\s*:\s*(true|false)', chunk)
+        if mm:
+            d["is_live_now"] = (mm.group(1) == "true")
+        mm = re.search(r'"startTimestamp"\s*:\s*"([^"]+)"', chunk)
+        if mm:
+            d["start"] = parse_iso_ts(mm.group(1))
+        mm = re.search(r'"endTimestamp"\s*:\s*"([^"]+)"', chunk)
+        if mm:
+            d["end"] = parse_iso_ts(mm.group(1))
+        if d:
+            # 优先带开播时间的那一段（页面里可能出现多段）
+            if best is None or ("start" in d and "start" not in best):
+                best = d
+            if "start" in d and "is_live_now" in d:
+                break
+    return best
+
+
+def judge_live(live):
+    """判断一条流是否收录。返回 (是否保留, 原因)。
+
+    原则: 能证明是"已结束/临时/未开播"的才剔除; 验证不到的一律放行, 怕误杀。
+    """
+    if not live:
+        return True, "页面无直播信息, 无法验证, 放行"
+    if live.get("end"):
+        return False, "已结束的直播(已变录播)"
+    if live.get("is_live_now"):
+        start = live.get("start")
+        if start:
+            age_h = (datetime.now(timezone.utc) - start).total_seconds() / 3600
+            if age_h >= MIN_LIVE_HOURS:
+                return True, f"已开播 {age_h:.0f} 小时"
+            return False, f"临时直播(仅开播 {age_h:.1f} 小时, 不满 {MIN_LIVE_HOURS} 小时)"
+        return True, "直播中但页面无开播时间, 放行"
+    if live.get("start"):
+        return False, "未开播(预约流)"
+    return True, "无法判定状态, 放行"
+
+
 def fetch_video_page_metadata(vid):
-    """从 YouTube 视频页面读取标题和页面声明的缩略图 URL。"""
+    """从 YouTube 视频页面读取标题、缩略图 URL 和直播状态。返回 (title, logo, live)。"""
     url = f"https://www.youtube.com/watch?v={vid}"
     headers = {
         "User-Agent": (
@@ -92,10 +167,11 @@ def fetch_video_page_metadata(vid):
         title = re.sub(r"\s*-\s*YouTube$", "", title).strip()
 
         logo = get_meta("og:image") or get_meta("twitter:image")
-        return title, logo
+        live = parse_live_details(page)
+        return title, logo, live
     except Exception as e:
         print(f"   ⚠️ 网页信息获取失败: {e}")
-        return "", ""
+        return "", "", None
 
 
 def resolve_logo(ch, icon_files, page_logo):
@@ -171,6 +247,20 @@ def get_video_ids(url):
     return get_live_ids_from_streams(url)
 
 
+def old_output_count():
+    """读现有输出文件的条数, 用于覆盖保底比较。没有/损坏返回 0。"""
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        if isinstance(old, dict) and isinstance(old.get("data"), list):
+            return len(old["data"])
+        if isinstance(old, list):
+            return len(old)
+    except Exception:
+        pass
+    return 0
+
+
 # ===================== 主流程 ===================== #
 def run():
     CHANNELS = load_channels()
@@ -180,6 +270,7 @@ def run():
 
     icon_files = list_icon_files()
     total = len(CHANNELS)
+    dropped = {"ended": 0, "temp": 0, "upcoming": 0}
 
     for idx, ch in enumerate(CHANNELS, 1):
         name = ch.get("name", "unknown")
@@ -206,8 +297,21 @@ def run():
         for vid in vids:
             print(f"   🔄 获取详情: {vid} ...")
 
-            # 标题和 tvg-logo 均优先从视频网页读取。
-            real_title, page_logo = fetch_video_page_metadata(vid)
+            # 标题和 tvg-logo 均优先从视频网页读取；同一页顺带验直播状态。
+            real_title, page_logo, live = fetch_video_page_metadata(vid)
+            keep, reason = judge_live(live)
+            if not keep:
+                if "已结束" in reason:
+                    dropped["ended"] += 1
+                elif "未开播" in reason:
+                    dropped["upcoming"] += 1
+                else:
+                    dropped["temp"] += 1
+                print(f"   🚫 跳过: {vid} | {reason}")
+                time.sleep(1)
+                continue
+            print(f"   ⏱ 状态: {reason}")
+
             if not real_title:
                 real_title = name
 
@@ -234,9 +338,21 @@ def run():
         "count": len(output),
         "data": output
     }
-    with open("Global_Vision_list.json", "w", encoding="utf-8") as f:
+
+    # 覆盖保底: 新条数骤降说明这次抓取大概率出问题了, 保留旧文件。
+    old_n = old_output_count()
+    if old_n and len(output) < old_n * MIN_KEEP_RATIO:
+        alt = OUTPUT_FILE.replace(".json", ".new.json")
+        with open(alt, "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
+        print(f"\n⚠️ 新列表仅 {len(output)} 条, 低于旧文件 {old_n} 条的 {MIN_KEEP_RATIO:.0%}, "
+              f"疑似抓取异常 — 未覆盖 {OUTPUT_FILE}, 新结果写到 {alt} 供检查")
+        return
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"\n🎉 JSON生成完成，共 {len(output)} 条直播")
+    print(f"\n🎉 JSON生成完成，共 {len(output)} 条直播"
+          f"（剔除: 已结束 {dropped['ended']} / 临时 {dropped['temp']} / 未开播 {dropped['upcoming']}）")
 
 
 if __name__ == "__main__":
