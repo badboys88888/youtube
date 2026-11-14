@@ -1,11 +1,15 @@
 # 点播地址清单: 一行一个, # 开头是注释, 空行随便留。
 # 可以放单个视频、播放列表、频道视频页, 保存后触发
 # Actions 里的 "VOD Update" (或等每天自动跑), 甲骨文那边次日自动生成 strm。
-# 播放列表会被当成一部剧: 自动按集数生成 S01E01、S01E02... (BL剧/连续剧放整个列表即可)。
+# 播放列表会被当成一部剧: 自动按集数生成 S01E01、S01E02... (连续剧放整个列表即可)。
+# 数量设置: 地址后面加 " | 数量" 只取前 N 个; 加 " | 起-止" 取区间。
+# 频道页视频很多时务必设数量, 不然会把预告/花絮/MV 全拉进来。
 # 例:
 # https://www.youtube.com/playlist?list=PLxxxxxxxxxxxx
 # https://www.youtube.com/watch?v=xxxxxxxxxxx
+# https://www.youtube.com/@GMMTV/videos | 200
+# https://www.youtube.com/@SomeChannel/videos | 20-80
 # 【全球大視野】完整版
-https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY
+https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY | 10
 # 新聞大白話
-https://www.youtube.com/show/VLPLUWMO_IcbA0U?sbp=KgtlRlg5WEI4VjhDRUAB
+https://www.youtube.com/show/VLPLUWMO_IcbA0U?sbp=KgtlRlg5WEI4VjhDRUAB | 10
