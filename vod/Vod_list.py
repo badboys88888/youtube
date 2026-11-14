@@ -29,13 +29,30 @@ MAX_VIDEOS = 2000  # 全清单上限, 防某个超大播放列表把任务跑爆
 
 
 def load_urls():
+    """读地址清单, 返回 [(url, start, end), ...]。
+    行格式: 地址, 或 地址 | 数量 (只取前 N 个), 或 地址 | 起-止 (取区间)。
+    例: https://www.youtube.com/@GMMTV/videos | 200"""
     urls = []
     try:
         with open(URLS_FILE, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
-                if line and not line.startswith("#"):
-                    urls.append(line)
+                if not line or line.startswith("#"):
+                    continue
+                start = end = None
+                if "|" in line:
+                    line, _, rng = line.partition("|")
+                    line = line.strip()
+                    rng = rng.strip()
+                    try:
+                        if "-" in rng:
+                            a, b = rng.split("-", 1)
+                            start, end = int(a), int(b)
+                        elif rng:
+                            end = int(rng)
+                    except ValueError:
+                        print(f"⚠️ 数量格式不对, 忽略数量: {rng}")
+                urls.append((line, start, end))
     except Exception as e:
         print(f"❌ {URLS_FILE} 读取失败: {e}")
     return urls
@@ -55,14 +72,20 @@ def ytdlp_json(cmd, timeout):
     return out
 
 
-def expand_url(url):
+def expand_url(url, start=None, end=None):
     """把一个地址展开成 [(vid, series, episode), ...] (播放列表/频道页/单视频通用)。
     地址本身是播放列表时, 顺带记下列表名和第几集, 下游按剧集建库 (连续剧/BL剧用);
-    其他地址 series/episode 为空, 下游当单片处理。"""
+    其他地址 series/episode 为空, 下游当单片处理。
+    start/end 来自 txt 里的数量设置 (取第 start~end 个), 没设就全取。"""
     is_playlist = ("list=" in url) or ("/playlist" in url)
     cmd = ["yt-dlp", "--quiet", "--no-warnings", "--dump-json",
-           "--flat-playlist", "--no-check-certificates", url]
-    print(f"   展开: {url}")
+           "--flat-playlist", "--no-check-certificates"]
+    if start:
+        cmd += ["--playlist-start", str(start)]
+    if end:
+        cmd += ["--playlist-end", str(end)]
+    cmd.append(url)
+    print(f"   展开: {url}" + (f" (取 {start or 1}~{end or '末尾'})" if (start or end) else ""))
     try:
         infos = ytdlp_json(cmd, timeout=300)
     except subprocess.TimeoutExpired:
@@ -153,8 +176,8 @@ def run():
 
     # 1) 展开所有地址, 收集视频 ID (记住来源地址和剧集信息)
     order, source, series_of = [], {}, {}
-    for url in urls:
-        for vid, series, episode in expand_url(url):
+    for url, start, end in urls:
+        for vid, series, episode in expand_url(url, start, end):
             if vid not in source:
                 source[vid] = url
                 series_of[vid] = (series, episode)
