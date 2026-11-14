@@ -29,15 +29,23 @@ MAX_VIDEOS = 2000  # 全清单上限, 防某个超大播放列表把任务跑爆
 
 
 def load_urls():
-    """读地址清单, 返回 [(url, start, end), ...]。
+    """读地址清单, 返回 [(url, start, end, group), ...]。
     行格式: 地址, 或 地址 | 数量 (只取前 N 个), 或 地址 | 起-止 (取区间)。
+    分组: 单独一行 "# @分组名" 后, 下面所有条目都归到该分组 (下游生成到
+    同名文件夹下); 再写一行 "# @" (后面不带名字) 就退出分组, 回到根目录。
     例: https://www.youtube.com/@GMMTV/videos | 200"""
     urls = []
+    group = ""
     try:
         with open(URLS_FILE, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
-                if not line or line.startswith("#"):
+                if not line:
+                    continue
+                if line.startswith("#"):
+                    m = re.match(r"#\s*@\s*(.*)$", line)
+                    if m:
+                        group = m.group(1).strip()
                     continue
                 start = end = None
                 if "|" in line:
@@ -52,7 +60,7 @@ def load_urls():
                             end = int(rng)
                     except ValueError:
                         print(f"⚠️ 数量格式不对, 忽略数量: {rng}")
-                urls.append((line, start, end))
+                urls.append((line, start, end, group))
     except Exception as e:
         print(f"❌ {URLS_FILE} 读取失败: {e}")
     return urls
@@ -174,13 +182,14 @@ def run():
     old = load_old()
     print(f"旧清单 {len(old)} 条")
 
-    # 1) 展开所有地址, 收集视频 ID (记住来源地址和剧集信息)
-    order, source, series_of = [], {}, {}
-    for url, start, end in urls:
+    # 1) 展开所有地址, 收集视频 ID (记住来源地址、剧集信息和分组)
+    order, source, series_of, group_of = [], {}, {}, {}
+    for url, start, end, grp in urls:
         for vid, series, episode in expand_url(url, start, end):
             if vid not in source:
                 source[vid] = url
                 series_of[vid] = (series, episode)
+                group_of[vid] = grp
                 order.append(vid)
         time.sleep(1)
     print(f"\n共展开 {len(order)} 个不重复视频")
@@ -197,6 +206,7 @@ def run():
             e["source"] = source[vid]
             e["series"] = series
             e["episode"] = episode
+            e["group"] = group_of.get(vid, "")
             output.append(e)
             continue
         print(f"🔍 [{idx}/{len(order)}] 新视频取详情: {vid}")
@@ -222,6 +232,7 @@ def run():
             "upload_date": det["upload_date"],
             "series": series,
             "episode": episode,
+            "group": group_of.get(vid, ""),
             "source": source[vid],
             "url": f"https://www.youtube.com/watch?v={vid}",
         })
