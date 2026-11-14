@@ -143,10 +143,56 @@ def _json_str(page, key, scope=None):
         return ""
 
 
+def fetch_metadata_ytdlp(vid):
+    """用 yt-dlp 取一条视频的元数据 (标题/封面/频道/简介/直播状态)。
+
+    为什么不用网页抓: GitHub Actions 的机房 IP 打开 watch 页拿到的是
+    拦截/验证页 (没有 og 标签也没有 videoDetails), 字段全空; 而 yt-dlp
+    走接口在同一环境是通的 (频道直播列表就是它枚举出来的)。
+    成功返回 (title, logo, live, author, desc), 失败返回 None。
+    """
+    url = f"https://www.youtube.com/watch?v={vid}"
+    cmd = ["yt-dlp", "--quiet", "--no-warnings", "--dump-json",
+           "--no-playlist", "--no-check-certificates", url]
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+        if r.returncode != 0:
+            print(f"   ⚠️ yt-dlp 取详情失败: {(r.stderr or '').strip()[:200]}")
+            return None
+        info = json.loads(r.stdout)
+    except Exception as e:
+        print(f"   ⚠️ yt-dlp 取详情异常: {e}")
+        return None
+
+    title = (info.get("title") or "").strip()
+    logo = (info.get("thumbnail") or "").strip()
+    if not logo and info.get("thumbnails"):
+        logo = (info["thumbnails"][-1].get("url") or "").strip()
+    author = (info.get("uploader") or info.get("channel") or "").strip()
+    desc = re.sub(r"\n{3,}", "\n\n", (info.get("description") or "").strip())[:1000]
+
+    live = None
+    status = info.get("live_status") or ""
+    ts = info.get("release_timestamp") or info.get("timestamp")
+    start = datetime.fromtimestamp(ts, timezone.utc) if ts else None
+    if status == "is_live":
+        live = {"is_live_now": True, "start": start}
+    elif status == "was_live":
+        live = {"is_live_now": False, "start": start,
+                "end": start or datetime.now(timezone.utc)}
+    elif status == "is_upcoming":
+        live = {"is_live_now": False, "start": start}
+    if not (title or logo or author or desc):
+        return None
+    return title, logo, live, author, desc
+
+
 def fetch_video_page_metadata(vid):
-    """从 YouTube 视频页面读取标题、缩略图 URL、直播状态和详情。
-    返回 (title, logo, live, author, desc): author 是频道名, desc 是视频简介,
-    供下游 (盒子上的 Emby 库生成器) 写带详情的 nfo, 同一页顺带取, 不多发请求。"""
+    """取视频的标题、封面、直播状态和详情, 返回 (title, logo, live, author, desc)。
+    主力 yt-dlp (见上), 网页抓取兜底 (本地等不被拦的网络下可用)。"""
+    got = fetch_metadata_ytdlp(vid)
+    if got:
+        return got
     url = f"https://www.youtube.com/watch?v={vid}"
     headers = {
         "User-Agent": (
@@ -197,17 +243,14 @@ def fetch_video_page_metadata(vid):
 
 
 def resolve_logo(ch, icon_files, page_logo):
-    """优先使用网页获取的缩略图；网页没有时回退至本地/JSON配置。"""
+    """只用 yt-dlp/网页拿到的真实封面; 拿不到就留空。
+
+    不再拿仓库 icons/ 的台标凑数: 匹配率很低 (91 条只中 2 条), 且不是真实封面。
+    留空时下游 (盒子上的生成器) 会自动退回该直播的缩略图, 不会开天窗。
+    icon_files 参数保留只是为了调用处签名不变。
+    """
     if page_logo:
         return page_logo
-
-    matched = match_icon_by_name(ch.get("name", ""), icon_files)
-    if matched:
-        return RAW_BASE + quote(matched)
-
-    icon_file = (ch.get("icon") or "").strip()
-    if icon_file:
-        return RAW_BASE + quote(icon_file)
 
     preset_logo = (ch.get("logo") or ch.get("tvg-logo") or "").strip()
     return preset_logo
@@ -353,7 +396,7 @@ def run():
                 "logo": logo_url,
                 "url": f"https://www.youtube.com/watch?v={vid}"
             })
-            print(f"   ✅ 成功: {vid} | 标题: {real_title[:30]} | Logo: {'有' if logo_url else '无'}")
+            print(f"   ✅ 成功: {vid} | 标题: {real_title[:30]} | Logo: {'有' if logo_url else '无'} | 详情: {'有' if (author or desc) else '无'}")
             time.sleep(1)  # 控制抓取网页频率
 
         time.sleep(1.5)
