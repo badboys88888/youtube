@@ -1,0 +1,8 @@
+# 点播地址清单: 一行一个, # 开头是注释, 空行随便留。
+# 可以放单个视频、播放列表、频道视频页, 保存后触发
+# Actions 里的 "VOD Update" (或等每天自动跑), 甲骨文那边次日自动生成 strm。
+# 播放列表会被当成一部剧: 自动按集数生成 S01E01、S01E02... (BL剧/连续剧放整个列表即可)。
+# 例:
+# https://www.youtube.com/playlist?list=PLxxxxxxxxxxxx
+# https://www.youtube.com/watch?v=xxxxxxxxxxx
+
