@@ -187,10 +187,41 @@ def fetch_metadata_ytdlp(vid):
     return title, logo, live, author, desc
 
 
+def fetch_metadata_oembed(vid):
+    """yt-dlp 拿不到时的兜底: oEmbed 有标题/频道/封面, 没有简介和直播状态。
+
+    跟点播脚本 Vod_list.py 里那套一模一样, 那边已在 Actions 上证实能通
+    (905 条全靠它救回标题/频道/封面)。直播这边原来缺这一层, yt-dlp 一拦
+    就直接掉进同样被拦的网页抓取, 所以全空。
+    成功返回 (title, logo, None, author, ""), 失败返回 None。
+    live 状态给 None, 下游 judge_live 按"无法验证, 放行"处理, 不误杀。
+    """
+    try:
+        req = urllib.request.Request(
+            "https://www.youtube.com/oembed?url="
+            f"https://www.youtube.com/watch?v={vid}&format=json",
+            headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            oe = json.loads(r.read().decode("utf-8", "replace"))
+        title = (oe.get("title") or "").strip()
+        logo = (oe.get("thumbnail_url") or "").strip()
+        author = (oe.get("author_name") or "").strip()
+        if not (title or logo or author):
+            return None
+        return title, logo, None, author, ""
+    except Exception as e:
+        print(f"   ⚠️ oEmbed 取详情失败: {e}")
+        return None
+
+
 def fetch_video_page_metadata(vid):
     """取视频的标题、封面、直播状态和详情, 返回 (title, logo, live, author, desc)。
-    主力 yt-dlp (见上), 网页抓取兜底 (本地等不被拦的网络下可用)。"""
+    主力 yt-dlp (见上), oEmbed 兜底 (Actions 上已证实能通), 网页抓取最后兜底
+    (本地等不被拦的网络下可用)。"""
     got = fetch_metadata_ytdlp(vid)
+    if got:
+        return got
+    got = fetch_metadata_oembed(vid)
     if got:
         return got
     url = f"https://www.youtube.com/watch?v={vid}"
