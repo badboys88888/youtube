@@ -1,197 +1,191 @@
 #EXTM3U x-tvg-url="http://192.168.6.15:5678/t.xml.gz"
-#EXTINF:-1 tvg-id="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Phoenix_InfoNews.svg" group-title="新闻",凤凰资讯
+#EXTINF:-1 tvg-id="【鳳凰衛視#24小時直播間 】美國航管局：地面停飛令已解除｜外交部談中俄美元首會晤最新進展：保持溝通｜特朗普釋對伊矛盾信號 稱不需達成協議｜24-hour live news｜24小时直播间#鳳凰衛視" group-title="新闻",【鳳凰衛視#24小時直播間 】美國航管局：地面停飛令已解除｜外交部談中俄美元首會晤最新進展：保持溝通｜特朗普釋對伊矛盾信號 稱不需達成協議｜24-hour live news｜24小时直播间#鳳凰衛視
 http://www.diffn.xyz:28000/live/Ry--eMIjYLQ/index.m3u8
-#EXTINF:-1 tvg-id="中天新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CTI_News_Logo.jpg" group-title="新闻",中天新聞台
+#EXTINF:-1 tvg-id="【#中天新聞不斷電直播Live】 CTI中天新聞24小時HD新聞直播 │ CTITV Taiwan News HD Live｜台湾のHDニュース放送｜ 대만 HD 뉴스 방송@中天電視CtiTv" group-title="新闻",【#中天新聞不斷電直播Live】 CTI中天新聞24小時HD新聞直播 │ CTITV Taiwan News HD Live｜台湾のHDニュース放送｜ 대만 HD 뉴스 방송@中天電視CtiTv
 http://www.diffn.xyz:28000/live/vr3XyVCR4T0/index.m3u8
-#EXTINF:-1 tvg-id="寰宇新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_CH_logo.png" group-title="新闻",寰宇新聞台
+#EXTINF:-1 tvg-id="寰宇新聞24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송" group-title="新闻",寰宇新聞24小時線上直播｜GlobalNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中 ｜대만 뉴스 생방송
 http://www.diffn.xyz:28000/live/6IquAgfvYmc/index.m3u8
-#EXTINF:-1 tvg-id="寰宇新聞台灣台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/Global_News_TW_logo.png" group-title="新闻",寰宇新聞台灣台
+#EXTINF:-1 tvg-id="寰宇新聞台灣台 24小時直播｜TaiwanNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中  @globalnewstw" group-title="新闻",寰宇新聞台灣台 24小時直播｜TaiwanNewsTV 24h live news｜ 台湾のニュース24時間ライブ配信中  @globalnewstw
 http://www.diffn.xyz:28000/live/w87VGpgd90U/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
-http://www.diffn.xyz:28000/live/M5h7S9dF2l0/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
+#EXTINF:-1 tvg-id="賴清德、蔡英文站台 蘇巧慧新莊造勢晚會｜LIVE" group-title="新闻",賴清德、蔡英文站台 蘇巧慧新莊造勢晚會｜LIVE
+http://www.diffn.xyz:28000/live/wU5x3x5EaZM/index.m3u8
+#EXTINF:-1 tvg-id="【LIVE】周六下午變天下雨｜20261114｜TVBS新聞網" group-title="新闻",【LIVE】周六下午變天下雨｜20261114｜TVBS新聞網
 http://www.diffn.xyz:28000/live/Azn6EW2AHCE/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
+#EXTINF:-1 tvg-id="🔴【LIVE】#TVBS政經說 "選"出好政論！24小時陪你聊時事 #新聞大白話 #少康戰情室 #國民大會 #國民開小會" group-title="新闻",🔴【LIVE】#TVBS政經說 "選"出好政論！24小時陪你聊時事 #新聞大白話 #少康戰情室 #國民大會 #國民開小會
 http://www.diffn.xyz:28000/live/LT2UpPGZsAA/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
+#EXTINF:-1 tvg-id="🔴【LIVE】TVBS新聞網最新地震觀測｜AI即時地震速報｜Earthquake" group-title="新闻",🔴【LIVE】TVBS新聞網最新地震觀測｜AI即時地震速報｜Earthquake
 http://www.diffn.xyz:28000/live/0eOhU2J_MXE/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbsnews.jpg" group-title="新闻",TVBS新聞
+#EXTINF:-1 tvg-id="【ON AIR】TVBS 56頻道 24小時LIVE直播│대만 TVBS 24시간 생방송│TVBS 24時間ライブ配信中" group-title="新闻",【ON AIR】TVBS 56頻道 24小時LIVE直播│대만 TVBS 24시간 생방송│TVBS 24時間ライブ配信中
 http://www.diffn.xyz:28000/live/o_-hSMgpAzs/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
-http://www.diffn.xyz:28000/live/-AkDLFJIQSM/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
-http://www.diffn.xyz:28000/live/9LgzoICoTBw/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
-http://www.diffn.xyz:28000/live/dl4JyMqQne8/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
+#EXTINF:-1 tvg-id="賴清德、蔡英文站台 蘇巧慧新莊造勢晚會｜LIVE" group-title="新闻",賴清德、蔡英文站台 蘇巧慧新莊造勢晚會｜LIVE
+http://www.diffn.xyz:28000/live/i2GSB-WU3uo/index.m3u8
+#EXTINF:-1 tvg-id="🔴11/14【LIVE】TVBS NEWS晚間整點新聞 重點直播 Taiwan News 20261114" group-title="新闻",🔴11/14【LIVE】TVBS NEWS晚間整點新聞 重點直播 Taiwan News 20261114
+http://www.diffn.xyz:28000/live/_Vt_dOG7iz0/index.m3u8
+#EXTINF:-1 tvg-id="🔴LIVE：TVBS NEWS網路獨家新聞24小時直播 Taiwan News 24hr 台湾世界中のニュースを24時間配信中 대만24시간뉴스채널 55台" group-title="新闻",🔴LIVE：TVBS NEWS網路獨家新聞24小時直播 Taiwan News 24hr 台湾世界中のニュースを24時間配信中 대만24시간뉴스채널 55台
 http://www.diffn.xyz:28000/live/m_dhMSvUCIc/index.m3u8
-#EXTINF:-1 tvg-id="TVBS新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/tvbs新闻台.png" group-title="新闻",TVBS新聞台
+#EXTINF:-1 tvg-id="【ON AIR】TVBS新聞台 24 小時直播 |Taiwan News Live|台湾TVBS NEWS世界中のニュースを24時間配信中 | 대만 TVBS뉴스 24시간 생방송" group-title="新闻",【ON AIR】TVBS新聞台 24 小時直播 |Taiwan News Live|台湾TVBS NEWS世界中のニュースを24時間配信中 | 대만 TVBS뉴스 24시간 생방송
 http://www.diffn.xyz:28000/live/2mCSYvcfhtc/index.m3u8
-#EXTINF:-1 tvg-id="東森財經新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森财经新闻台.png" group-title="财经",東森財經新聞台
+#EXTINF:-1 tvg-id="EBC 東森財經新聞24小時線上直播｜Taiwan EBC Financial News｜台湾 EBC 金融ニュース｜대만 뉴스 생방송" group-title="财经",EBC 東森財經新聞24小時線上直播｜Taiwan EBC Financial News｜台湾 EBC 金融ニュース｜대만 뉴스 생방송
 http://www.diffn.xyz:28000/live/1I2iq41Akmo/index.m3u8
-#EXTINF:-1 tvg-id="東森財經新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森财经新闻台.png" group-title="财经",東森財經新聞台
+#EXTINF:-1 tvg-id="【看盤不中斷】EBC東森財經股市24小時直播｜Taiwan EBC Financial News 24hr Live｜台湾 EBC 金融ニュース24 時間オンライン放送｜대만 뉴스 생방송" group-title="财经",【看盤不中斷】EBC東森財經股市24小時直播｜Taiwan EBC Financial News 24hr Live｜台湾 EBC 金融ニュース24 時間オンライン放送｜대만 뉴스 생방송
 http://www.diffn.xyz:28000/live/AEBeWMM1atA/index.m3u8
-#EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
-http://www.diffn.xyz:28000/live/KJ3bhR2HFpc/index.m3u8
-#EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
-http://www.diffn.xyz:28000/live/R6YB6w2LzMg/index.m3u8
-#EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
-http://www.diffn.xyz:28000/live/m2oMA9TZf-k/index.m3u8
-#EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
+#EXTINF:-1 tvg-id="🔴東森新聞 51 頻道 24 小時直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송" group-title="新闻",🔴東森新聞 51 頻道 24 小時直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송
 http://www.diffn.xyz:28000/live/V1p33hqPrUk/index.m3u8
-#EXTINF:-1 tvg-id="東森新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/东森新闻台.jpg" group-title="新闻",東森新聞台
+#EXTINF:-1 tvg-id="EBC 東森新聞 51 頻道 24小時線上直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송" group-title="新闻",EBC 東森新聞 51 頻道 24小時線上直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송
 http://www.diffn.xyz:28000/live/E0zhe2gkXBs/index.m3u8
-#EXTINF:-1 tvg-id="公視新聞" group-title="新闻",公視新聞
+#EXTINF:-1 tvg-id="【#PLive】第22案全國性公民投票案意見發表會 第二場 現場直播" group-title="新闻",【#PLive】第22案全國性公民投票案意見發表會 第二場 現場直播
+http://www.diffn.xyz:28000/live/jK5boZN6G4o/index.m3u8
+#EXTINF:-1 tvg-id="公視新聞 PTS News  24小時線上直播 ｜PNN Taiwan News 24h Live｜台湾の最新ニュース24時間配信中｜대만 뉴스 라이브 스트리밍 #live #news" group-title="新闻",公視新聞 PTS News  24小時線上直播 ｜PNN Taiwan News 24h Live｜台湾の最新ニュース24時間配信中｜대만 뉴스 라이브 스트리밍 #live #news
 http://www.diffn.xyz:28000/live/hg4nYb3jE9A/index.m3u8
-#EXTINF:-1 tvg-id="台視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/台视新闻.jpg" group-title="新闻",台視新聞台
-http://www.diffn.xyz:28000/live/kKjvZWmMtNo/index.m3u8
-#EXTINF:-1 tvg-id="台視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/台视新闻.jpg" group-title="新闻",台視新聞台
-http://www.diffn.xyz:28000/live/U4jBvVEHCRs/index.m3u8
-#EXTINF:-1 tvg-id="台視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/台视新闻.jpg" group-title="新闻",台視新聞台
+#EXTINF:-1 tvg-id="【完整公開】LIVE 賴清德、蔡英文站台 蘇巧慧新莊造勢晚會" group-title="新闻",【完整公開】LIVE 賴清德、蔡英文站台 蘇巧慧新莊造勢晚會
+http://www.diffn.xyz:28000/live/Iqg9yOqVBqQ/index.m3u8
+#EXTINF:-1 tvg-id="【完整公開】 LIVE 公投第22案 意見發表會（第二場）" group-title="新闻",【完整公開】 LIVE 公投第22案 意見發表會（第二場）
+http://www.diffn.xyz:28000/live/bcH8DqrY1Ag/index.m3u8
+#EXTINF:-1 tvg-id="2026.11.14 晚間大頭條：彰化1個月4起候選人死亡 村長夫妻倒臥家中亡【台視晚間新聞】" group-title="新闻",2026.11.14 晚間大頭條：彰化1個月4起候選人死亡 村長夫妻倒臥家中亡【台視晚間新聞】
+http://www.diffn.xyz:28000/live/mt_NFj1T6yY/index.m3u8
+#EXTINF:-1 tvg-id="台視新聞台HD 24 小時線上直播｜TAIWAN TTV NEWS HD (Live)｜台湾のTTV ニュースHD (生放送)｜대만 뉴스 라이브" group-title="新闻",台視新聞台HD 24 小時線上直播｜TAIWAN TTV NEWS HD (Live)｜台湾のTTV ニュースHD (生放送)｜대만 뉴스 라이브
 http://www.diffn.xyz:28000/live/9iRAqBMakXY/index.m3u8
-#EXTINF:-1 tvg-id="華視新聞資訊HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/华视新闻.jpg" group-title="新闻",華視新聞資訊HD
+#EXTINF:-1 tvg-id="地震即時警報與監測直播｜降雨即時資訊｜華視公眾安全資訊觀測站" group-title="新闻",地震即時警報與監測直播｜降雨即時資訊｜華視公眾安全資訊觀測站
 http://www.diffn.xyz:28000/live/KMMHw8rllic/index.m3u8
-#EXTINF:-1 tvg-id="華視新聞資訊HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/华视新闻.jpg" group-title="新闻",華視新聞資訊HD
+#EXTINF:-1 tvg-id="#LIVE: 華視新聞直播 CH52 | Taiwan CTS News | 台湾のニュースを24時間配信 | 대만 24시간 뉴스채널 | 24小時 線上看 LIVE新聞【On Air】" group-title="新闻",#LIVE: 華視新聞直播 CH52 | Taiwan CTS News | 台湾のニュースを24時間配信 | 대만 24시간 뉴스채널 | 24小時 線上看 LIVE新聞【On Air】
 http://www.diffn.xyz:28000/live/wM0g8EoUZ_E/index.m3u8
-#EXTINF:-1 tvg-id="中視新聞" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/中视新闻.jpg" group-title="新闻",中視新聞
+#EXTINF:-1 tvg-id="中視新聞LIVE直播頻道24小時線上直播｜Taiwan CTV news HD 24h live news |台湾のCTV ニュースHD 대만 24시간 뉴스채널  | (生放送)" group-title="新闻",中視新聞LIVE直播頻道24小時線上直播｜Taiwan CTV news HD 24h live news |台湾のCTV ニュースHD 대만 24시간 뉴스채널  | (生放送)
 http://www.diffn.xyz:28000/live/TCnaIE_SAtM/index.m3u8
-#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://www.diffn.xyz:28000/live/gGGpzUBHNbk/index.m3u8
-#EXTINF:-1 tvg-id="民視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/民视新闻.jpg" group-title="新闻",民視新聞台
-http://www.diffn.xyz:28000/live/1fJJXzGyvH8/index.m3u8
-#EXTINF:-1 tvg-id="公視(HD)" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/公视.png" group-title="新闻",公視(HD)
+#EXTINF:-1 tvg-id="【直播完整版】1114 韓國瑜、盧秀燕合體力挺！ 李四川中和團結之夜｜民視快新聞｜" group-title="新闻",【直播完整版】1114 韓國瑜、盧秀燕合體力挺！ 李四川中和團結之夜｜民視快新聞｜
+http://www.diffn.xyz:28000/live/2kb0AAWOYkA/index.m3u8
+#EXTINF:-1 tvg-id="【直播完整版】1114 全國性公民投票案第22案意見發表會（第二場）｜民視快新聞｜" group-title="新闻",【直播完整版】1114 全國性公民投票案第22案意見發表會（第二場）｜民視快新聞｜
+http://www.diffn.xyz:28000/live/Ze8sdlbZJK4/index.m3u8
+#EXTINF:-1 tvg-id="【直播完整版】1114 蔡英文、賴清德、陳其邁鑽石陣容助陣！蘇巧慧新北慧贏新莊大造勢｜民視快新聞｜" group-title="新闻",【直播完整版】1114 蔡英文、賴清德、陳其邁鑽石陣容助陣！蘇巧慧新北慧贏新莊大造勢｜民視快新聞｜
+http://www.diffn.xyz:28000/live/xwxu5E6Z46U/index.m3u8
+#EXTINF:-1 tvg-id="⏰2026/11/14【#民視晚間新聞 LIVE】 主委盧秀燕、妻石舫亘扛遊行　安心大遊行雨中起步／大洋流壓軸場水路奇襲無望？支持者轟突收公文如黑道施壓／賴清德為劉建國站台！不捨鄉親淋雨提前到場致詞" group-title="新闻",⏰2026/11/14【#民視晚間新聞 LIVE】 主委盧秀燕、妻石舫亘扛遊行　安心大遊行雨中起步／大洋流壓軸場水路奇襲無望？支持者轟突收公文如黑道施壓／賴清德為劉建國站台！不捨鄉親淋雨提前到場致詞
+http://www.diffn.xyz:28000/live/V4-F3QkRSIs/index.m3u8
+#EXTINF:-1 tvg-id="【直播完整版】1114 沈伯洋、石舫亘、林國漳、吳宗憲拚選戰！同場北市宜蘭同鄉會會員大會｜民視快新聞｜" group-title="新闻",【直播完整版】1114 沈伯洋、石舫亘、林國漳、吳宗憲拚選戰！同場北市宜蘭同鄉會會員大會｜民視快新聞｜
+http://www.diffn.xyz:28000/live/5ks_OC_gULk/index.m3u8
+#EXTINF:-1 tvg-id="【直播完整版】1114 「洋流祭」二二八公園登場 ！知名獨立樂團輪番開唱 沈伯洋現身開唱「台北順起來」｜民視快新聞｜" group-title="新闻",【直播完整版】1114 「洋流祭」二二八公園登場 ！知名獨立樂團輪番開唱 沈伯洋現身開唱「台北順起來」｜民視快新聞｜
+http://www.diffn.xyz:28000/live/3pg6n2t3YO8/index.m3u8
+#EXTINF:-1 tvg-id="🟢LIVE 民視新聞24小時直播  FTV 新聞直播｜Taiwan News Live｜台湾ニュース Live｜대만 뉴스 방송 Live @FTV_News" group-title="新闻",🟢LIVE 民視新聞24小時直播  FTV 新聞直播｜Taiwan News Live｜台湾ニュース Live｜대만 뉴스 방송 Live @FTV_News
+http://www.diffn.xyz:28000/live/ylYJSBUgaMA/index.m3u8
+#EXTINF:-1 tvg-id="【#PLive】第22案全國性公民投票案意見發表會 第二場 現場直播" group-title="新闻",【#PLive】第22案全國性公民投票案意見發表會 第二場 現場直播
+http://www.diffn.xyz:28000/live/jK5boZN6G4o/index.m3u8
+#EXTINF:-1 tvg-id="公視新聞 PTS News  24小時線上直播 ｜PNN Taiwan News 24h Live｜台湾の最新ニュース24時間配信中｜대만 뉴스 라이브 스트리밍 #live #news" group-title="新闻",公視新聞 PTS News  24小時線上直播 ｜PNN Taiwan News 24h Live｜台湾の最新ニュース24時間配信中｜대만 뉴스 라이브 스트리밍 #live #news
 http://www.diffn.xyz:28000/live/hg4nYb3jE9A/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://www.diffn.xyz:28000/live/RXllVmeWPu0/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://www.diffn.xyz:28000/live/lbte4gFphds/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
+#EXTINF:-1 tvg-id="【#直播中LIVE】蘇巧慧「慧聚繁星」新莊晚會　賴清德.蔡英文.陳其邁站台｜三立新聞LIVE" group-title="新闻",【#直播中LIVE】蘇巧慧「慧聚繁星」新莊晚會　賴清德.蔡英文.陳其邁站台｜三立新聞LIVE
+http://www.diffn.xyz:28000/live/491QCMjvddE/index.m3u8
+#EXTINF:-1 tvg-id="【#直播中LIVE】 「洋流祭」228公園登場！陳明章、拍謝少年輪番唱 沈伯洋獻唱主題曲　時間 : 2026/11/14（六）14:30～19:00　地點：二二八和平紀念公園｜三立新聞LIVE" group-title="新闻",【#直播中LIVE】 「洋流祭」228公園登場！陳明章、拍謝少年輪番唱 沈伯洋獻唱主題曲　時間 : 2026/11/14（六）14:30～19:00　地點：二二八和平紀念公園｜三立新聞LIVE
 http://www.diffn.xyz:28000/live/Q-0H0YLEntw/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://www.diffn.xyz:28000/live/qO3ZVtzv55A/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
-http://www.diffn.xyz:28000/live/qvepbBjJVSY/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
+#EXTINF:-1 tvg-id="🔴【LIVE】全台灣地震即時監測 ｜台湾地震速報｜ Taiwan Earthquake News" group-title="新闻",🔴【LIVE】全台灣地震即時監測 ｜台湾地震速報｜ Taiwan Earthquake News
 http://www.diffn.xyz:28000/live/0pSsOaSxWhE/index.m3u8
-#EXTINF:-1 tvg-id="三立新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/三立新闻.png" group-title="新闻",三立新聞台
+#EXTINF:-1 tvg-id="🔴LIVE 三立新聞 CH54頻道｜台灣24小時即時新聞｜Taiwan SET News 24h Live｜@setnews-ch54" group-title="新闻",🔴LIVE 三立新聞 CH54頻道｜台灣24小時即時新聞｜Taiwan SET News 24h Live｜@setnews-ch54
 http://www.diffn.xyz:28000/live/yeYC0mbSIOo/index.m3u8
-#EXTINF:-1 tvg-id="CGTN" group-title="新闻",CGTN
-http://www.diffn.xyz:28000/live/MLEFH_BchgM/index.m3u8
-#EXTINF:-1 tvg-id="CGTN" group-title="新闻",CGTN
+#EXTINF:-1 tvg-id="🔴 三立新聞 LIVE 海外版直播|SET Live NEWS│SET LIVE ニュースオンライン放送│대만 채널SET뉴스 24시대만 SET뉴스 채널   @setnews-ch54" group-title="新闻",🔴 三立新聞 LIVE 海外版直播|SET Live NEWS│SET LIVE ニュースオンライン放送│대만 채널SET뉴스 24시대만 SET뉴스 채널   @setnews-ch54
+http://www.diffn.xyz:28000/live/hGJkDZDchYI/index.m3u8
+#EXTINF:-1 tvg-id="🔴 Watch CGTN LIVE 24/7 #CGTNLIVE" group-title="新闻",🔴 Watch CGTN LIVE 24/7 #CGTNLIVE
 http://www.diffn.xyz:28000/live/0i7n3r01L2U/index.m3u8
-#EXTINF:-1 tvg-id="CGTN" group-title="新闻",CGTN
+#EXTINF:-1 tvg-id="LIVE: The 24/7 China Travel Experience" group-title="新闻",LIVE: The 24/7 China Travel Experience
 http://www.diffn.xyz:28000/live/LJgXwC-AKu8/index.m3u8
-#EXTINF:-1 tvg-id="USTV 非凡電視" group-title="新闻",USTV 非凡電視
+#EXTINF:-1 tvg-id="USTV非凡電視" group-title="新闻",USTV非凡電視
 http://www.diffn.xyz:28000/live/wAUx3pywTt8/index.m3u8
-#EXTINF:-1 tvg-id="USTV 非凡電視" group-title="新闻",USTV 非凡電視
+#EXTINF:-1 tvg-id="【@投資看非凡 】 非凡財經節目新聞24小時直播｜台股盤中即時分析｜股市現場｜全球財經世界報導 @ustvbiz" group-title="新闻",【@投資看非凡 】 非凡財經節目新聞24小時直播｜台股盤中即時分析｜股市現場｜全球財經世界報導 @ustvbiz
 http://www.diffn.xyz:28000/live/eA6Aczd3FZM/index.m3u8
-#EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://www.diffn.xyz:28000/live/qGTbFgcWQCs/index.m3u8
-#EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://www.diffn.xyz:28000/live/TPdjeuoszYk/index.m3u8
-#EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://www.diffn.xyz:28000/live/yK7uJAGvPO8/index.m3u8
-#EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
-http://www.diffn.xyz:28000/live/O_AlLibUypg/index.m3u8
-#EXTINF:-1 tvg-id="鏡電視新聞台" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/镜新闻.jpg" group-title="新闻",鏡電視新聞台
+#EXTINF:-1 tvg-id="直播／「慧聚繁星」造勢晚會！　蔡英文、賴清德、陳其邁力挺蘇巧慧｜20261114" group-title="新闻",直播／「慧聚繁星」造勢晚會！　蔡英文、賴清德、陳其邁力挺蘇巧慧｜20261114
+http://www.diffn.xyz:28000/live/VF-z7U3HzeE/index.m3u8
+#EXTINF:-1 tvg-id="鏡新聞 線上看 24小時 新聞直播｜mnews Taiwan News 24H Live｜台湾のニュース24時間オンライン放送" group-title="新闻",鏡新聞 線上看 24小時 新聞直播｜mnews Taiwan News 24H Live｜台湾のニュース24時間オンライン放送
 http://www.diffn.xyz:28000/live/5n0y6b0Q25o/index.m3u8
-#EXTINF:-1 tvg-id="CCTV4美洲" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4美洲.jpg" group-title="综合",CCTV4美洲
+#EXTINF:-1 tvg-id="【正在直播：CCTV中文国际（亚洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW" group-title="综合",【正在直播：CCTV中文国际（亚洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW
 http://www.diffn.xyz:28000/live/X-HTZdV960U/index.m3u8
-#EXTINF:-1 tvg-id="CCTV4美洲" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4美洲.jpg" group-title="综合",CCTV4美洲
+#EXTINF:-1 tvg-id="【正在直播：CCTV中文国际（美洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW" group-title="综合",【正在直播：CCTV中文国际（美洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW
 http://www.diffn.xyz:28000/live/PiSwAy-blvA/index.m3u8
-#EXTINF:-1 tvg-id="大愛電視HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="综合",大愛電視HD
+#EXTINF:-1 tvg-id="大愛一臺HD Live 全球直播 | 現正播映：大愛夜安新聞-2 LIVE" group-title="综合",大愛一臺HD Live 全球直播 | 現正播映：大愛夜安新聞-2 LIVE
 http://www.diffn.xyz:28000/live/pM-1ytfQhos/index.m3u8
-#EXTINF:-1 tvg-id="大愛電視HD" tvg-logo="https://raw.githubusercontent.com/badboys88888/youtube/main/icons/大爱一台.jpg" group-title="综合",大愛電視HD
+#EXTINF:-1 tvg-id="大愛二臺HD Live 全球直播  | 現正播映：大愛夜安新聞-2 LIVE" group-title="综合",大愛二臺HD Live 全球直播  | 現正播映：大愛夜安新聞-2 LIVE
 http://www.diffn.xyz:28000/live/QDxRJP-wfeI/index.m3u8
-#EXTINF:-1 tvg-id="skynews" group-title="国际新闻",skynews
-http://www.diffn.xyz:28000/live/GPpOPaNQoss/index.m3u8
-#EXTINF:-1 tvg-id="skynews" group-title="国际新闻",skynews
+#EXTINF:-1 tvg-id="SpaceX launches its 15th Starship flight as booster explodes in sea after lift-off" group-title="国际新闻",SpaceX launches its 15th Starship flight as booster explodes in sea after lift-off
+http://www.diffn.xyz:28000/live/huDipD3GbG4/index.m3u8
+#EXTINF:-1 tvg-id="Watch Sky News live" group-title="国际新闻",Watch Sky News live
 http://www.diffn.xyz:28000/live/umLWFz4izTM/index.m3u8
-#EXTINF:-1 tvg-id="半島國際新聞台" group-title="国际新闻",半島國際新聞台
+#EXTINF:-1 tvg-id="🔴 Al Jazeera English | Live" group-title="国际新闻",🔴 Al Jazeera English | Live
 http://www.diffn.xyz:28000/live/gCNeDWCI0vo/index.m3u8
-#EXTINF:-1 tvg-id="EURONEWS" group-title="国际新闻",EURONEWS
+#EXTINF:-1 tvg-id="Euronews English Live" group-title="国际新闻",Euronews English Live
 http://www.diffn.xyz:28000/live/pykpO5kQJ98/index.m3u8
-#EXTINF:-1 tvg-id="FRANCE24(ENGLISH)" group-title="国际新闻",FRANCE24(ENGLISH)
+#EXTINF:-1 tvg-id="FRANCE 24 – EN DIRECT – Info et actualités internationales en continu 24h/24" group-title="国际新闻",FRANCE 24 – EN DIRECT – Info et actualités internationales en continu 24h/24
 http://www.diffn.xyz:28000/live/a47ckXKZjxI/index.m3u8
-#EXTINF:-1 tvg-id="CNA" group-title="国际新闻",CNA
+#EXTINF:-1 tvg-id="CNA 24/7 LIVE: Breaking news on Asia and award-winning documentaries and shows" group-title="国际新闻",CNA 24/7 LIVE: Breaking news on Asia and award-winning documentaries and shows
 http://www.diffn.xyz:28000/live/-PWMxjBgr0k/index.m3u8
-#EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
-http://www.diffn.xyz:28000/live/StAW66CJIm4/index.m3u8
-#EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
+#EXTINF:-1 tvg-id="Mossad Şefinin Rotası: Beyaz Saray-Miami! | CANLI HABER" group-title="国际新闻",Mossad Şefinin Rotası: Beyaz Saray-Miami! | CANLI HABER
+http://www.diffn.xyz:28000/live/qWJVquVfLu0/index.m3u8
+#EXTINF:-1 tvg-id="ABD Üssünde "Sığınaklara" Talimatı! | CANLI HABER" group-title="国际新闻",ABD Üssünde "Sığınaklara" Talimatı! | CANLI HABER
+http://www.diffn.xyz:28000/live/lBZBtVeM91w/index.m3u8
+#EXTINF:-1 tvg-id="LIVE: Latest News Headlines and Events From All Over the World" group-title="国际新闻",LIVE: Latest News Headlines and Events From All Over the World
 http://www.diffn.xyz:28000/live/ogMaukPITDE/index.m3u8
-#EXTINF:-1 tvg-id="CNN TÜRK" group-title="国际新闻",CNN TÜRK
+#EXTINF:-1 tvg-id="CNN TÜRK - 🔴 Canlı Yayın ᴴᴰ - Canlı TV izle | HABER" group-title="国际新闻",CNN TÜRK - 🔴 Canlı Yayın ᴴᴰ - Canlı TV izle | HABER
 http://www.diffn.xyz:28000/live/6N8_r2uwLEc/index.m3u8
-#EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="#CANLI - Dünyanın İklim Gündemi Antalya'da; COP31 Başladı!" group-title="国际新闻",#CANLI - Dünyanın İklim Gündemi Antalya'da; COP31 Başladı!
 http://www.diffn.xyz:28000/live/s4KIyYkwiM0/index.m3u8
-#EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="🔴 CANLI | Son Dakika, Sıcak Gelişmeler, Gündem" group-title="国际新闻",🔴 CANLI | Son Dakika, Sıcak Gelişmeler, Gündem
 http://www.diffn.xyz:28000/live/CJHVSYHpVvc/index.m3u8
-#EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="CANLI SONDAKİKA -  Habertürk TV Canlı TV İzle ᴴᴰ" group-title="国际新闻",CANLI SONDAKİKA -  Habertürk TV Canlı TV İzle ᴴᴰ
 http://www.diffn.xyz:28000/live/CPXn_5nTtao/index.m3u8
-#EXTINF:-1 tvg-id="Habertürk TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Habertürk TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="Habertürk Canlı Yayın | Canlı Haber – Son Dakika Haberleri | Canlı TV İzle" group-title="国际新闻",Habertürk Canlı Yayın | Canlı Haber – Son Dakika Haberleri | Canlı TV İzle
 http://www.diffn.xyz:28000/live/RNVNlJSUFoE/index.m3u8
 #EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
 http://www.diffn.xyz:28000/live/WxeHEn5N1vk/index.m3u8
-#EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="Show Türk Canlı Yayın" group-title="国际新闻",Show Türk Canlı Yayın
 http://www.diffn.xyz:28000/live/cbgKyiqOljQ/index.m3u8
-#EXTINF:-1 tvg-id="Show TV Canlı Yayın ᴴᴰ" group-title="国际新闻",Show TV Canlı Yayın ᴴᴰ
+#EXTINF:-1 tvg-id="Show MAX Canlı Yayın" group-title="国际新闻",Show MAX Canlı Yayın
 http://www.diffn.xyz:28000/live/Y3vGHFrsqrs/index.m3u8
-#EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
-http://www.diffn.xyz:28000/live/wEouGaWONIU/index.m3u8
+#EXTINF:-1 tvg-id="#CANLI Gülinay Selçuk İle Haber Bülteni" group-title="国际新闻",#CANLI Gülinay Selçuk İle Haber Bülteni
+http://www.diffn.xyz:28000/live/F_j7NuwKm4E/index.m3u8
+#EXTINF:-1 tvg-id="YENİ Parti 1. Olağan Kurultayı'ndan Anbean Canlı Yayın | Özgür Özel'in Açıklaması Ne Olacak?" group-title="国际新闻",YENİ Parti 1. Olağan Kurultayı'ndan Anbean Canlı Yayın | Özgür Özel'in Açıklaması Ne Olacak?
+http://www.diffn.xyz:28000/live/gsruDx6o3_Y/index.m3u8
 #EXTINF:-1 tvg-id="SÖZCÜ TV Canlı Yayını ᴴᴰ" group-title="国际新闻",SÖZCÜ TV Canlı Yayını ᴴᴰ
 http://www.diffn.xyz:28000/live/ztmY_cCtUl0/index.m3u8
-#EXTINF:-1 tvg-id="DW德國之聲" group-title="国际新闻",DW德國之聲
+#EXTINF:-1 tvg-id="DW News livestream | Headline news from around the world" group-title="国际新闻",DW News livestream | Headline news from around the world
 http://www.diffn.xyz:28000/live/LuKwFajn37U/index.m3u8
-#EXTINF:-1 tvg-id="BLOOMBERGORIGINALS" group-title="国际新闻",BLOOMBERGORIGINALS
+#EXTINF:-1 tvg-id="Bloomberg Originals LIVE | News, Documentaries & More" group-title="国际新闻",Bloomberg Originals LIVE | News, Documentaries & More
 http://www.diffn.xyz:28000/live/OlUMDZchivQ/index.m3u8
-#EXTINF:-1 tvg-id="Bloomberg Business News" group-title="国际新闻",Bloomberg Business News
+#EXTINF:-1 tvg-id="Bloomberg Business News Live" group-title="国际新闻",Bloomberg Business News Live
 http://www.diffn.xyz:28000/live/QB5BNdBFujE/index.m3u8
-#EXTINF:-1 tvg-id="TRT World" group-title="国际新闻",TRT World
+#EXTINF:-1 tvg-id="LIVE: Watch TRT World" group-title="国际新闻",LIVE: Watch TRT World
 http://www.diffn.xyz:28000/live/JV5w1MhzcfQ/index.m3u8
-#EXTINF:-1 tvg-id="联合国" group-title="国际新闻",联合国
+#EXTINF:-1 tvg-id="United Nations - LIVE" group-title="国际新闻",United Nations - LIVE
 http://www.diffn.xyz:28000/live/vYRfQo6JMxc/index.m3u8
-#EXTINF:-1 tvg-id="DW News" group-title="国际新闻",DW News
+#EXTINF:-1 tvg-id="DW News livestream | Headline news from around the world" group-title="国际新闻",DW News livestream | Headline news from around the world
 http://www.diffn.xyz:28000/live/LuKwFajn37U/index.m3u8
-#EXTINF:-1 tvg-id="ABC News" group-title="国际新闻",ABC News
+#EXTINF:-1 tvg-id="LIVE: ABC News Live - 24/7 news, context and analysis" group-title="国际新闻",LIVE: ABC News Live - 24/7 news, context and analysis
 http://www.diffn.xyz:28000/live/KQhNZQ_Uag8/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
+#EXTINF:-1 tvg-id="[🔴속보] 한동훈 "음성녹음 있는데 막 우기면 좀 추해"…최민희 "한동훈 거짓말 하지 마라!"…李·尹 재판 두고 한동훈-최민희 SNS 공방/ 연합뉴스TV(YonhapnewsTV)" group-title="日韩新闻",[🔴속보] 한동훈 "음성녹음 있는데 막 우기면 좀 추해"…최민희 "한동훈 거짓말 하지 마라!"…李·尹 재판 두고 한동훈-최민희 SNS 공방/ 연합뉴스TV(YonhapnewsTV)
+http://www.diffn.xyz:28000/live/4kzLR2C2Dzk/index.m3u8
+#EXTINF:-1 tvg-id=""어찌되든 상관없다"…카리스마 사라진 젠슨 황｜"가장 큰 관심사는 부인…자신과 얽힌 여성들 인생 망가지지 않길" [뉴스쏙]  / 연합뉴스TV(YonhapnewsTV)" group-title="日韩新闻","어찌되든 상관없다"…카리스마 사라진 젠슨 황｜"가장 큰 관심사는 부인…자신과 얽힌 여성들 인생 망가지지 않길" [뉴스쏙]  / 연합뉴스TV(YonhapnewsTV)
 http://www.diffn.xyz:28000/live/cBIcMFXf-oI/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
-http://www.diffn.xyz:28000/live/eOQU8xQ6av0/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
-http://www.diffn.xyz:28000/live/7onxNtI_X9Q/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
-http://www.diffn.xyz:28000/live/HVNaR5cbUbM/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
+#EXTINF:-1 tvg-id="[🔴속보] 젠슨 황 불륜녀 앨리스 황, 중국 정보기관 '반도체팀' 소속 비밀 공작원?｜대만 매체 "앨리스 황, 국가안전부장의 직접 지휘 받아"/연합뉴스TV(YonhapnewsTV)" group-title="日韩新闻",[🔴속보] 젠슨 황 불륜녀 앨리스 황, 중국 정보기관 '반도체팀' 소속 비밀 공작원?｜대만 매체 "앨리스 황, 국가안전부장의 직접 지휘 받아"/연합뉴스TV(YonhapnewsTV)
 http://www.diffn.xyz:28000/live/jncFy4mq5KI/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
+#EXTINF:-1 tvg-id="[🔴속보] 美 러트닉 상무장관 '경질설'…젠슨 황 스캔들이 쏘아 올린 공｜베선트 재무장관 "상무부 탓" 공개 저격 / 연합뉴스TV(YonhapnewsTV)" group-title="日韩新闻",[🔴속보] 美 러트닉 상무장관 '경질설'…젠슨 황 스캔들이 쏘아 올린 공｜베선트 재무장관 "상무부 탓" 공개 저격 / 연합뉴스TV(YonhapnewsTV)
 http://www.diffn.xyz:28000/live/Ofd3uMd-8p8/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
+#EXTINF:-1 tvg-id="[🔴속보] 단풍 떨어트리는 겨울비…'최대 60mm' 전국 적신다｜당분간 평년보다 포근 / 연합뉴스TV(YonhapnewsTV)" group-title="日韩新闻",[🔴속보] 단풍 떨어트리는 겨울비…'최대 60mm' 전국 적신다｜당분간 평년보다 포근 / 연합뉴스TV(YonhapnewsTV)
 http://www.diffn.xyz:28000/live/P9n_V3hH6F8/index.m3u8
-#EXTINF:-1 tvg-id="연합뉴스TV" group-title="日韩新闻",연합뉴스TV
+#EXTINF:-1 tvg-id="[생방송] 24시간 현장을 전합니다 / 연합뉴스TV  (YonhapnewsTV)" group-title="日韩新闻",[생방송] 24시간 현장을 전합니다 / 연합뉴스TV  (YonhapnewsTV)
 http://www.diffn.xyz:28000/live/6QZ_qc75ihU/index.m3u8
-#EXTINF:-1 tvg-id="KBS WORLD TV" group-title="日韩新闻",KBS WORLD TV
+#EXTINF:-1 tvg-id="Vibing with K-POP | KBS WORLD TV" group-title="日韩新闻",Vibing with K-POP | KBS WORLD TV
 http://www.diffn.xyz:28000/live/-rleEnGt__s/index.m3u8
-#EXTINF:-1 tvg-id="KBS WORLD TV" group-title="日韩新闻",KBS WORLD TV
+#EXTINF:-1 tvg-id="KBS KOREA On-Air" group-title="日韩新闻",KBS KOREA On-Air
 http://www.diffn.xyz:28000/live/OxQQsIvJTTU/index.m3u8
-#EXTINF:-1 tvg-id="YTN" group-title="日韩新闻",YTN
+#EXTINF:-1 tvg-id="트럼프 "주저하지 않겠다"...이란 공격 재개 경고에 중동 '일촉즉발' [이슈픽] / YTN" group-title="日韩新闻",트럼프 "주저하지 않겠다"...이란 공격 재개 경고에 중동 '일촉즉발' [이슈픽] / YTN
+http://www.diffn.xyz:28000/live/7QtAbPbLA3c/index.m3u8
+#EXTINF:-1 tvg-id="젠슨 황 사임 직전까지 이런 일이...트럼프까지 뒤흔든 스캔들 '후폭풍' [에디터픽] / YTN" group-title="日韩新闻",젠슨 황 사임 직전까지 이런 일이...트럼프까지 뒤흔든 스캔들 '후폭풍' [에디터픽] / YTN
 http://www.diffn.xyz:28000/live/CcuMxOyolw4/index.m3u8
-#EXTINF:-1 tvg-id="YTN" group-title="日韩新闻",YTN
-http://www.diffn.xyz:28000/live/ZMEsMs1PBAg/index.m3u8
-#EXTINF:-1 tvg-id="YTN" group-title="日韩新闻",YTN
+#EXTINF:-1 tvg-id="9·11 테러 이후 또다시 긴급 명령...미국 전역 하늘길 마비 '대혼란' [에디터픽] / YTN" group-title="日韩新闻",9·11 테러 이후 또다시 긴급 명령...미국 전역 하늘길 마비 '대혼란' [에디터픽] / YTN
 http://www.diffn.xyz:28000/live/nE0luTlRG2Q/index.m3u8
-#EXTINF:-1 tvg-id="YTN" group-title="日韩新闻",YTN
+#EXTINF:-1 tvg-id=""젠슨 황 다시 데려와라"...엔비디아 내부서 심상찮은 움직임 [에디터픽] / YTN" group-title="日韩新闻","젠슨 황 다시 데려와라"...엔비디아 내부서 심상찮은 움직임 [에디터픽] / YTN
 http://www.diffn.xyz:28000/live/nniWCgl8pUE/index.m3u8
-#EXTINF:-1 tvg-id="YTN" group-title="日韩新闻",YTN
+#EXTINF:-1 tvg-id="[LIVE] 대한민국 24시간 뉴스채널 YTN" group-title="日韩新闻",[LIVE] 대한민국 24시간 뉴스채널 YTN
 http://www.diffn.xyz:28000/live/aZyD6EPl6KU/index.m3u8
-#EXTINF:-1 tvg-id="MBCNEWS" group-title="日韩新闻",MBCNEWS
-http://www.diffn.xyz:28000/live/G-UwIh2yo0w/index.m3u8
-#EXTINF:-1 tvg-id="MBCNEWS" group-title="日韩新闻",MBCNEWS
+#EXTINF:-1 tvg-id="美 항공편 '올스톱'..1만 5천편 지연·결항 - [LIVE] MBC 뉴스데스크 2026년 11월 14일" group-title="日韩新闻",美 항공편 '올스톱'..1만 5천편 지연·결항 - [LIVE] MBC 뉴스데스크 2026년 11월 14일
+http://www.diffn.xyz:28000/live/tV8vqYWXyks/index.m3u8
+#EXTINF:-1 tvg-id=""전부 관둔다" 가짜 서한..사내게시판 '폭발', 엔비디아 '술렁'..머스크 "복직청원 서명할 것"-[핫이슈PLAY] MBC뉴스 2026년 11월 14일" group-title="日韩新闻","전부 관둔다" 가짜 서한..사내게시판 '폭발', 엔비디아 '술렁'..머스크 "복직청원 서명할 것"-[핫이슈PLAY] MBC뉴스 2026년 11월 14일
 http://www.diffn.xyz:28000/live/vmX32ELBnug/index.m3u8
-#EXTINF:-1 tvg-id="MBCNEWS" group-title="日韩新闻",MBCNEWS
+#EXTINF:-1 tvg-id="하늘 날고..운전대·페달 없앤 테슬라..스페이스X와 합병 임박.."다음 회심작은?!" - [핫이슈PLAY] MBC뉴스 2026년 11월 14일" group-title="日韩新闻",하늘 날고..운전대·페달 없앤 테슬라..스페이스X와 합병 임박.."다음 회심작은?!" - [핫이슈PLAY] MBC뉴스 2026년 11월 14일
 http://www.diffn.xyz:28000/live/FP8LeZZwDcU/index.m3u8
-#EXTINF:-1 tvg-id="MBCNEWS" group-title="日韩新闻",MBCNEWS
-http://www.diffn.xyz:28000/live/Fzl4huPdHyI/index.m3u8
-#EXTINF:-1 tvg-id="MBCNEWS" group-title="日韩新闻",MBCNEWS
+#EXTINF:-1 tvg-id="[ON AIR] 1위 뉴스채널, 24시간 최신 MBC뉴스" group-title="日韩新闻",[ON AIR] 1위 뉴스채널, 24시간 최신 MBC뉴스
 http://www.diffn.xyz:28000/live/q9bM12ucTIY/index.m3u8
-#EXTINF:-1 tvg-id="Claude FM" group-title="音乐",Claude FM
+#EXTINF:-1 tvg-id="Claude FM 🎵 music for thinking and building" group-title="音乐",Claude FM 🎵 music for thinking and building
 http://www.diffn.xyz:28000/live/tRsQsTMvPNg/index.m3u8
