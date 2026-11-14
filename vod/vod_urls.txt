@@ -5,4 +5,7 @@
 # 例:
 # https://www.youtube.com/playlist?list=PLxxxxxxxxxxxx
 # https://www.youtube.com/watch?v=xxxxxxxxxxx
-
+# 【全球大視野】完整版
+https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY
+# 新聞大白話
+https://www.youtube.com/show/VLPLUWMO_IcbA0U?sbp=KgtlRlg5WEI4VjhDRUAB
