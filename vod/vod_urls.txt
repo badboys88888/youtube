@@ -20,9 +20,14 @@
 # @
 # https://www.youtube.com/playlist?list=PLzzzz (这条在根目录)
 
+# @全球大视野
+#【全球大視野】完整版
+https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY | 20
+
 
 # @BL剧/泰剧
-https://www.youtube.com/playlist?list=PLOjvj11wUnJG6Z8NBnjYHGE0g96-egfve (爱情理论 Theory of Love)
+# 爱情理论 Theory of Love
+https://www.youtube.com/playlist?list=PLOjvj11wUnJG6Z8NBnjYHGE0g96-egfve
 # 深蓝之吻 Dark Blue Kiss
 https://www.youtube.com/playlist?list=PLszepnkojZI5pgFDoEpjH8LFqthm6JR7j
 # 天上的鱼 Fish Upon the Sky
