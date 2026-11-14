@@ -50,8 +50,9 @@ def load_urls():
                 start = end = None
                 if "|" in line:
                     line, _, rng = line.partition("|")
-                    line = line.strip()
                     rng = rng.strip()
+                    # 数量后面隔空格跟的备注自动忽略, 只取第一段
+                    rng = rng.split()[0] if rng.split() else ""
                     try:
                         if "-" in rng:
                             a, b = rng.split("-", 1)
@@ -60,6 +61,9 @@ def load_urls():
                             end = int(rng)
                     except ValueError:
                         print(f"⚠️ 数量格式不对, 忽略数量: {rng}")
+                # 地址后隔空格跟的备注自动忽略 (地址本身不含空格, 取第一段)
+                parts = line.split()
+                line = parts[0] if parts else ""
                 urls.append((line, start, end, group))
     except Exception as e:
         print(f"❌ {URLS_FILE} 读取失败: {e}")
