@@ -4,12 +4,46 @@
 # 播放列表会被当成一部剧: 自动按集数生成 S01E01、S01E02... (连续剧放整个列表即可)。
 # 数量设置: 地址后面加 " | 数量" 只取前 N 个; 加 " | 起-止" 取区间。
 # 频道页视频很多时务必设数量, 不然会把预告/花絮/MV 全拉进来。
+# 分组 (大类/小类): 单独一行 "# @大类名" 后, 下面所有条目生成到该大类文件夹下;
+# 写 "# @大类名/小类名" 就是两级; 再写一行 "# @" (不带名字) 退出分组, 回到根目录。
+# 一部剧永远是自己一个文件夹, 结构: 大类/小类/剧名/Season 1/剧名 S01E01.strm
 # 例:
 # https://www.youtube.com/playlist?list=PLxxxxxxxxxxxx
 # https://www.youtube.com/watch?v=xxxxxxxxxxx
 # https://www.youtube.com/@GMMTV/videos | 200
 # https://www.youtube.com/@SomeChannel/videos | 20-80
-# 【全球大視野】完整版
-https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY | 10
-# 新聞大白話
-https://www.youtube.com/show/VLPLUWMO_IcbA0U?sbp=KgtlRlg5WEI4VjhDRUAB | 10
+#
+# @BL剧/泰剧
+# https://www.youtube.com/playlist?list=PLxxxx (2gether)
+# @BL剧/国产剧
+# https://www.youtube.com/playlist?list=PLyyyy (陈情令)
+# @
+# https://www.youtube.com/playlist?list=PLzzzz (这条在根目录)
+
+
+# @BL剧/泰剧
+https://www.youtube.com/playlist?list=PLOjvj11wUnJG6Z8NBnjYHGE0g96-egfve (爱情理论 Theory of Love)
+# 深蓝之吻 Dark Blue Kiss
+https://www.youtube.com/playlist?list=PLszepnkojZI5pgFDoEpjH8LFqthm6JR7j
+# 天上的鱼 Fish Upon the Sky
+https://www.youtube.com/playlist?list=PLszepnkojZI4rYdmvANDXm4Dx6_xi4Xfi
+# 千星传说 A Tale of Thousand Stars
+https://www.youtube.com/playlist?list=PLszepnkojZI4DTG4wQ60bVOgIkN6ZjW2s
+# 爱之全蚀 The Eclipse
+https://www.youtube.com/playlist?list=PLszepnkojZI4cCpcFB24EWUXV6ZN0NTt7
+# 月光鸡饭 Moonlight Chicken
+https://www.youtube.com/playlist?list=PLszepnkojZI61h2re8vVQsdkWCiFMKk14
+# 只因朋友 Only Friends
+https://www.youtube.com/playlist?list=PLo8dqgdBbe4U0KDJEIOjrkz3Bf7CsdWqf
+# 未曾遗忘 Last Twilight
+https://www.youtube.com/playlist?list=PLszepnkojZI6WHRUbXqh_x0MpChCqkquA
+# 正反之我 Vice Versa
+https://www.youtube.com/playlist?list=PLa6HxdVh8zgkgeKJrcqOV7YGmdCOslDma
+# 绝不放手 Never Let Me Go
+https://www.youtube.com/playlist?list=PLCp8eLohm10LSpa_Mfu03htguH2MJPXs5
+# 老板和宝贝 A Boss and a Babe
+https://www.youtube.com/playlist?list=PLa6HxdVh8zgk3OWtsiBc971BMnlXUr4MK
+# 谁是我命中注定的他 Enchanté
+https://www.youtube.com/playlist?list=PLszepnkojZI6cpA0Q4_1ifJY6WFw75wQc
+
+
