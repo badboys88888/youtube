@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-11-14 08:02:41",
+  "update_time": "2026-11-14 11:27:52",
   "count": 905,
   "data": [
     {
@@ -14,7 +14,7 @@
       "episode": 1,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=NLxJg_GXar4",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "ge9SOW1948s",
@@ -28,7 +28,7 @@
       "episode": 2,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=ge9SOW1948s",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "Howu1P8CapM",
@@ -42,7 +42,7 @@
       "episode": 3,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=Howu1P8CapM",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "INXek8vTU9w",
@@ -56,7 +56,7 @@
       "episode": 4,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=INXek8vTU9w",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "Uf7f-qGX_-0",
@@ -70,7 +70,7 @@
       "episode": 5,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=Uf7f-qGX_-0",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "tysCuJGVY7c",
@@ -84,7 +84,7 @@
       "episode": 6,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=tysCuJGVY7c",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "56yduNPy55g",
@@ -98,7 +98,7 @@
       "episode": 7,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=56yduNPy55g",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "O2YIsMPG-Z0",
@@ -112,7 +112,7 @@
       "episode": 8,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=O2YIsMPG-Z0",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "X8hzzIU3OnI",
@@ -126,7 +126,7 @@
       "episode": 9,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=X8hzzIU3OnI",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "PVwdDiCo4TI",
@@ -140,7 +140,7 @@
       "episode": 10,
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=PVwdDiCo4TI",
-      "group": "全球大视野"
+      "group": "youtube"
     },
     {
       "id": "KJNZGnnNW8c",
@@ -152,7 +152,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 11,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=KJNZGnnNW8c"
     },
@@ -166,7 +166,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 12,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=QkgDfhTaybo"
     },
@@ -180,7 +180,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 13,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=vB4nhoZY0Pg"
     },
@@ -194,7 +194,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 14,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=H0J__KRowrg"
     },
@@ -208,7 +208,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 15,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=6X5Zqs5YCW8"
     },
@@ -222,7 +222,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 16,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=ZEdjXFquKxo"
     },
@@ -236,7 +236,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 17,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=pYSKsJ1F-Pc"
     },
@@ -250,7 +250,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 18,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=F3KTBwc1zfk"
     },
@@ -264,7 +264,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 19,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=oaBXmw-vbI4"
     },
@@ -278,7 +278,7 @@
       "upload_date": "",
       "series": "【全球大視野】完整版",
       "episode": 20,
-      "group": "全球大视野",
+      "group": "youtube",
       "source": "https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY",
       "url": "https://www.youtube.com/watch?v=mQ7B6upRahY"
     },
