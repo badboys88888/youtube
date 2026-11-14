@@ -24,8 +24,42 @@ from datetime import datetime
 
 URLS_FILE = "vod_urls.txt"
 OUTPUT_FILE = "Vod_list.json"
+M3U_FILE = "Vod_list.m3u"
+M3U_TIER = "vod4k"  # m3u 里用哪条线: vod4k (有 4K 出 4K) 或 vod (1080 AVC)
+PLAY_BASE = "https://youtube.embyonline.dpdns.org"
 MIN_KEEP_RATIO = 0.7
 MAX_VIDEOS = 2000  # 全清单上限, 防某个超大播放列表把任务跑爆
+
+
+def _m3u_attr(s):
+    return (s or "").replace('"', "'").replace("\n", " ").strip()
+
+
+def write_m3u(entries):
+    """顺带写一份 aPTV 能直接订阅的 m3u: 剧集按剧名分组, 单片按分类分组。"""
+    lines = ["#EXTM3U"]
+    for e in entries:
+        vid = e["id"]
+        title = (e.get("title") or vid).replace("\n", " ").strip()
+        series = (e.get("series") or "").strip()
+        ep = e.get("episode")
+        group = (e.get("group") or "").strip()
+        if series:
+            gname = series
+            if ep:
+                name = f"{series} S01E{ep:02d}"
+                if title and title != series:
+                    name += f" {title}"
+            else:
+                name = title
+        else:
+            gname = group or "单片"
+            name = title
+        cover = _m3u_attr(e.get("cover"))
+        lines.append(f'#EXTINF:-1 tvg-logo="{cover}" group-title="{_m3u_attr(gname)}",{name}')
+        lines.append(f"{PLAY_BASE}/live/{vid}/{M3U_TIER}.m3u8")
+    with open(M3U_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
 
 
 def load_urls():
@@ -257,7 +291,9 @@ def run():
         return
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    print(f"\n🎉 点播清单生成完成: 共 {len(output)} 条 (新增 {n_new}, 跳过 {n_skip})")
+    write_m3u(output)
+    print(f"\n🎉 点播清单生成完成: 共 {len(output)} 条 (新增 {n_new}, 跳过 {n_skip}), "
+          f"另写 {M3U_FILE} ({M3U_TIER} 线)")
 
 
 if __name__ == "__main__":
