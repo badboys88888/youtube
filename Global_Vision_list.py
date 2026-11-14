@@ -131,8 +131,22 @@ def judge_live(live):
     return True, "无法判定状态, 放行"
 
 
+def _json_str(page, key, scope=None):
+    """提取页面 JSON 里的字符串字段 (带转义处理), 失败返回空串。"""
+    text = scope if scope is not None else page
+    m = re.search(r'"%s":"((?:[^"\\]|\\.)*)"' % key, text)
+    if not m:
+        return ""
+    try:
+        return json.loads('"' + m.group(1) + '"')
+    except Exception:
+        return ""
+
+
 def fetch_video_page_metadata(vid):
-    """从 YouTube 视频页面读取标题、缩略图 URL 和直播状态。返回 (title, logo, live)。"""
+    """从 YouTube 视频页面读取标题、缩略图 URL、直播状态和详情。
+    返回 (title, logo, live, author, desc): author 是频道名, desc 是视频简介,
+    供下游 (盒子上的 Emby 库生成器) 写带详情的 nfo, 同一页顺带取, 不多发请求。"""
     url = f"https://www.youtube.com/watch?v={vid}"
     headers = {
         "User-Agent": (
@@ -168,10 +182,18 @@ def fetch_video_page_metadata(vid):
 
         logo = get_meta("og:image") or get_meta("twitter:image")
         live = parse_live_details(page)
-        return title, logo, live
+
+        # 详情: 在 videoDetails 附近找频道名和简介 (整页找兜底), 简介截断防 JSON 膨胀
+        vd = page.find('"videoDetails"')
+        scope = page[vd:vd + 25000] if vd >= 0 else page
+        author = _json_str(page, "author", scope) or _json_str(page, "author")
+        desc = _json_str(page, "shortDescription", scope) or \
+            _json_str(page, "shortDescription") or get_meta("og:description")
+        desc = re.sub(r"\n{3,}", "\n\n", desc.strip())[:1000]
+        return title, logo, live, author, desc
     except Exception as e:
         print(f"   ⚠️ 网页信息获取失败: {e}")
-        return "", "", None
+        return "", "", None, "", ""
 
 
 def resolve_logo(ch, icon_files, page_logo):
@@ -297,8 +319,8 @@ def run():
         for vid in vids:
             print(f"   🔄 获取详情: {vid} ...")
 
-            # 标题和 tvg-logo 均优先从视频网页读取；同一页顺带验直播状态。
-            real_title, page_logo, live = fetch_video_page_metadata(vid)
+            # 标题和 tvg-logo 均优先从视频网页读取；同一页顺带验直播状态、取详情。
+            real_title, page_logo, live, author, desc = fetch_video_page_metadata(vid)
             keep, reason = judge_live(live)
             if not keep:
                 if "已结束" in reason:
@@ -323,6 +345,9 @@ def run():
                 "group": ch.get("group", "LIVE"),
                 "tvg-id": channel_tvg_id,
                 "tvg-logo": logo_url,
+                # 网页详情: 频道名 + 简介, 下游写 nfo 用 (老读取程序忽略即可)。
+                "author": author,
+                "desc": desc,
                 # 保留原有字段，方便兼容现有读取程序。
                 "id": vid,
                 "logo": logo_url,
