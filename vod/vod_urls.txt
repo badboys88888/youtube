@@ -20,7 +20,7 @@
 # @
 # https://www.youtube.com/playlist?list=PLzzzz (这条在根目录)
 
-# @全球大视野
+# @youtube
 #【全球大視野】完整版
 https://www.youtube.com/playlist?list=PLvHT0yeWYIuDyLVv1yDiIxhtk1ZQ92_RY | 20
 
