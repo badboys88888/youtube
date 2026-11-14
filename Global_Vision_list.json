@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-11-14 06:03:15",
-  "count": 91,
+  "update_time": "2026-11-14 06:13:35",
+  "count": 98,
   "data": [
     {
       "name": "凤凰资讯",
@@ -58,6 +58,18 @@
       "tvg-logo": "",
       "author": "",
       "desc": "",
+      "id": "M5h7S9dF2l0",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=M5h7S9dF2l0"
+    },
+    {
+      "name": "TVBS新聞",
+      "title": "TVBS新聞",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
       "id": "Azn6EW2AHCE",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=Azn6EW2AHCE"
@@ -97,6 +109,30 @@
       "id": "o_-hSMgpAzs",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=o_-hSMgpAzs"
+    },
+    {
+      "name": "TVBS新聞台",
+      "title": "TVBS新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "-AkDLFJIQSM",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=-AkDLFJIQSM"
+    },
+    {
+      "name": "TVBS新聞台",
+      "title": "TVBS新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "9LgzoICoTBw",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=9LgzoICoTBw"
     },
     {
       "name": "TVBS新聞台",
@@ -157,6 +193,18 @@
       "id": "AEBeWMM1atA",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=AEBeWMM1atA"
+    },
+    {
+      "name": "東森新聞台",
+      "title": "東森新聞台",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "KJ3bhR2HFpc",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=KJ3bhR2HFpc"
     },
     {
       "name": "東森新聞台",
@@ -535,11 +583,11 @@
       "title": "CCTV4美洲",
       "group": "综合",
       "tvg-id": "",
-      "tvg-logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "tvg-logo": "",
       "author": "",
       "desc": "",
       "id": "X-HTZdV960U",
-      "logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "logo": "",
       "url": "https://www.youtube.com/watch?v=X-HTZdV960U"
     },
     {
@@ -547,11 +595,11 @@
       "title": "CCTV4美洲",
       "group": "综合",
       "tvg-id": "",
-      "tvg-logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "tvg-logo": "",
       "author": "",
       "desc": "",
       "id": "PiSwAy-blvA",
-      "logo": "https://raw.githubusercontent.com/badboys88888/youtube/main/icons/CCTV4%E7%BE%8E%E6%B4%B2.jpg",
+      "logo": "",
       "url": "https://www.youtube.com/watch?v=PiSwAy-blvA"
     },
     {
@@ -577,6 +625,18 @@
       "id": "QDxRJP-wfeI",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=QDxRJP-wfeI"
+    },
+    {
+      "name": "skynews",
+      "title": "skynews",
+      "group": "国际新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "GPpOPaNQoss",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=GPpOPaNQoss"
     },
     {
       "name": "skynews",
@@ -637,6 +697,18 @@
       "id": "-PWMxjBgr0k",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=-PWMxjBgr0k"
+    },
+    {
+      "name": "CNN TÜRK",
+      "title": "CNN TÜRK",
+      "group": "国际新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "StAW66CJIm4",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=StAW66CJIm4"
     },
     {
       "name": "CNN TÜRK",
@@ -853,6 +925,18 @@
       "id": "KQhNZQ_Uag8",
       "logo": "",
       "url": "https://www.youtube.com/watch?v=KQhNZQ_Uag8"
+    },
+    {
+      "name": "연합뉴스TV",
+      "title": "연합뉴스TV",
+      "group": "日韩新闻",
+      "tvg-id": "",
+      "tvg-logo": "",
+      "author": "",
+      "desc": "",
+      "id": "cBIcMFXf-oI",
+      "logo": "",
+      "url": "https://www.youtube.com/watch?v=cBIcMFXf-oI"
     },
     {
       "name": "연합뉴스TV",
