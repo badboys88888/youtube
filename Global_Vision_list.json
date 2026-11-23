@@ -1,10 +1,10 @@
 {
-  "update_time": "2026-11-16 03:51:01",
-  "count": 89,
+  "update_time": "2026-11-23 04:45:57",
+  "count": 87,
   "data": [
     {
       "name": "凤凰资讯",
-      "title": "【鳳凰衛視#24小時直播間 】習近平將同普京特朗普於周四舉行中俄美元首會晤｜12位APEC經濟體領導人出席工商峰會｜美“羅斯福”航母抵中東｜24-hour live news｜24小时直播间#鳳凰衛視",
+      "title": "【鳳凰衛視#24小時直播間 】美提醒在巴林公民警惕 敵對行動升級｜特朗普擬對歐澳韓啟動數字貿易調查｜中方：堅決反對美聯邦通信委員會濫用權力｜24-hour live news｜24小时直播间#鳳凰衛視",
       "group": "新闻",
       "tvg-id": "",
       "tvg-logo": "https://i.ytimg.com/vi/Ry--eMIjYLQ/hqdefault.jpg",
@@ -52,27 +52,39 @@
     },
     {
       "name": "TVBS新聞",
-      "title": "【LIVE】20261116　馬斯克領軍16萬人聯署 力挺黃仁勳回鍋輝達　英媒爆料 矽谷大咖組戰情室 遊說輝達董事會和白宮挺黃　美財長貝森特強硬表態 輝達必須找外部執行長｜FOCUS世界新聞",
+      "title": "【LIVE】20261123 AI股崩跌 亞洲紛紛推穩市機制 黃仁勳回歸? 貝森特態度放軟｜FOCUS世界新聞",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/RBge9UQkwR0/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/l9yAU4hjDYM/hqdefault.jpg",
       "author": "TVBS選新聞",
       "desc": "",
-      "id": "RBge9UQkwR0",
-      "logo": "https://i.ytimg.com/vi/RBge9UQkwR0/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=RBge9UQkwR0"
+      "id": "l9yAU4hjDYM",
+      "logo": "https://i.ytimg.com/vi/l9yAU4hjDYM/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=l9yAU4hjDYM"
     },
     {
       "name": "TVBS新聞",
-      "title": "【LIVE】周四起低溫探12度｜20261116｜TVBS新聞網",
+      "title": "何欣純持續啟動車掃 今赴台中太平、大里區｜LIVE",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/yg7NuHgIFao/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/4-ySMi5h8LU/hqdefault.jpg",
       "author": "TVBS選新聞",
       "desc": "",
-      "id": "yg7NuHgIFao",
-      "logo": "https://i.ytimg.com/vi/yg7NuHgIFao/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=yg7NuHgIFao"
+      "id": "4-ySMi5h8LU",
+      "logo": "https://i.ytimg.com/vi/4-ySMi5h8LU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=4-ySMi5h8LU"
+    },
+    {
+      "name": "TVBS新聞",
+      "title": "【LIVE】台股限空令升級 平盤下全面禁止放空｜20261123｜TVBS新聞網",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/tJCGqekNgw0/hqdefault.jpg",
+      "author": "TVBS選新聞",
+      "desc": "",
+      "id": "tJCGqekNgw0",
+      "logo": "https://i.ytimg.com/vi/tJCGqekNgw0/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=tJCGqekNgw0"
     },
     {
       "name": "TVBS新聞",
@@ -109,6 +121,30 @@
       "id": "o_-hSMgpAzs",
       "logo": "https://i.ytimg.com/vi/o_-hSMgpAzs/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=o_-hSMgpAzs"
+    },
+    {
+      "name": "TVBS新聞台",
+      "title": "🔴11/23【LIVE】TVBS NEWS午間整點新聞 重點直播 Taiwan News 20261123",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/iVrXEAPMyjM/hqdefault.jpg",
+      "author": "TVBS NEWS",
+      "desc": "",
+      "id": "iVrXEAPMyjM",
+      "logo": "https://i.ytimg.com/vi/iVrXEAPMyjM/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=iVrXEAPMyjM"
+    },
+    {
+      "name": "TVBS新聞台",
+      "title": "何欣純持續啟動車掃 今赴台中太平、大里區｜LIVE",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/rELoYeRBm5Q/hqdefault.jpg",
+      "author": "TVBS NEWS",
+      "desc": "",
+      "id": "rELoYeRBm5Q",
+      "logo": "https://i.ytimg.com/vi/rELoYeRBm5Q/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=rELoYeRBm5Q"
     },
     {
       "name": "TVBS新聞台",
@@ -160,6 +196,18 @@
     },
     {
       "name": "東森新聞台",
+      "title": "🔴1123【Live】1140-1400東森午安新聞／本周天氣三溫暖！明起北東濕冷連3天「低溫探1字頭」／黃仁勳小三只是門面！晶片走私「幕後操盤手」曝／台積電穩守2千元關卡 聯發科、台達電飆漲逾6%",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/sVB2YEMdblE/hqdefault.jpg",
+      "author": "東森新聞 CH51",
+      "desc": "",
+      "id": "sVB2YEMdblE",
+      "logo": "https://i.ytimg.com/vi/sVB2YEMdblE/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=sVB2YEMdblE"
+    },
+    {
+      "name": "東森新聞台",
       "title": "🔴東森新聞 51 頻道 24 小時直播｜Taiwan EBC 24h live news｜台湾 EBC ニュース24 時間オンライン放送｜대만 뉴스 생방송",
       "group": "新闻",
       "tvg-id": "",
@@ -196,27 +244,15 @@
     },
     {
       "name": "台視新聞台",
-      "title": "2026.11.16 台語大頭條：【台視台語新聞】",
+      "title": "2026.11.23午間大頭條：金馬63影帝劉冠廷 回顧20年演員路激動哽咽【台視午間新聞】",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/w6tU98aM4BI/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/GQgt0QzC1Co/hqdefault.jpg",
       "author": "台視新聞 TTV NEWS",
       "desc": "",
-      "id": "w6tU98aM4BI",
-      "logo": "https://i.ytimg.com/vi/w6tU98aM4BI/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=w6tU98aM4BI"
-    },
-    {
-      "name": "台視新聞台",
-      "title": "【完整公開】LIVE 蘇巧慧 新店大車掃",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/mFF_VtUTRL8/hqdefault.jpg",
-      "author": "台視新聞 TTV NEWS",
-      "desc": "",
-      "id": "mFF_VtUTRL8",
-      "logo": "https://i.ytimg.com/vi/mFF_VtUTRL8/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=mFF_VtUTRL8"
+      "id": "GQgt0QzC1Co",
+      "logo": "https://i.ytimg.com/vi/GQgt0QzC1Co/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GQgt0QzC1Co"
     },
     {
       "name": "台視新聞台",
@@ -268,63 +304,27 @@
     },
     {
       "name": "民視新聞台",
-      "title": "⏰2026/11/16【#民視午間新聞 LIVE】直攻小草票! 蔣萬安合體館長.黃國昌 掃臨江街夜市／台南電動車\"3米窄巷內暴衝\" 沿途撞毀12汽機車／造謠沈伯洋\"跟女性上摩鐵\" 女網友20萬交保",
+      "title": "【直播完整版】1123 灣仔庄福德堂三官大帝聖誕 沈伯洋台北隊參拜祝壽｜民視快新聞｜",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/St3eQFgF4PU/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/XH13RMFzUZw/hqdefault.jpg",
       "author": "民視新聞網 Formosa TV News network",
       "desc": "",
-      "id": "St3eQFgF4PU",
-      "logo": "https://i.ytimg.com/vi/St3eQFgF4PU/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=St3eQFgF4PU"
+      "id": "XH13RMFzUZw",
+      "logo": "https://i.ytimg.com/vi/XH13RMFzUZw/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=XH13RMFzUZw"
     },
     {
       "name": "民視新聞台",
-      "title": "【直播完整版】1116 民調封關倒數！台北市長激戰信民協會最新民調出爐｜民視快新聞｜",
+      "title": "⏰2026/11/23【#民視午間新聞 LIVE】紐時曝中國國安部涉走私輝達晶片 太子集團也遭點名／憶起童永恩情淚崩 賴清德力挺童子瑋：用公道伯精神團結基隆／劉嘉玲香檳金禮服登場 喊明年揪梁朝偉一起來",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/6k5HMatUsXQ/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/nYSofqoW2yE/hqdefault.jpg",
       "author": "民視新聞網 Formosa TV News network",
       "desc": "",
-      "id": "6k5HMatUsXQ",
-      "logo": "https://i.ytimg.com/vi/6k5HMatUsXQ/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=6k5HMatUsXQ"
-    },
-    {
-      "name": "民視新聞台",
-      "title": "【直播完整版】1116 新北第①粉紅超跑繼續衝！蘇巧慧太平宮參香新店大車掃｜民視快新聞｜",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/a9NeGdX4qR0/hqdefault.jpg",
-      "author": "民視新聞網 Formosa TV News network",
-      "desc": "",
-      "id": "a9NeGdX4qR0",
-      "logo": "https://i.ytimg.com/vi/a9NeGdX4qR0/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=a9NeGdX4qR0"
-    },
-    {
-      "name": "民視新聞台",
-      "title": "【直播完整版】1116 士北壓軸車掃小水滴塞爆關渡！沈伯洋立院回應時事｜民視快新聞｜",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/FKsqkVhA8iM/hqdefault.jpg",
-      "author": "民視新聞網 Formosa TV News network",
-      "desc": "",
-      "id": "FKsqkVhA8iM",
-      "logo": "https://i.ytimg.com/vi/FKsqkVhA8iM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=FKsqkVhA8iM"
-    },
-    {
-      "name": "民視新聞台",
-      "title": "🟢LIVE 民視新聞24小時直播  FTV 新聞直播｜Taiwan News Live｜台湾ニュース Live｜대만 뉴스 방송 Live @FTV_News",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/ylYJSBUgaMA/hqdefault.jpg",
-      "author": "民視新聞網 Formosa TV News network",
-      "desc": "",
-      "id": "ylYJSBUgaMA",
-      "logo": "https://i.ytimg.com/vi/ylYJSBUgaMA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=ylYJSBUgaMA"
+      "id": "nYSofqoW2yE",
+      "logo": "https://i.ytimg.com/vi/nYSofqoW2yE/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=nYSofqoW2yE"
     },
     {
       "name": "公視(HD)",
@@ -340,15 +340,27 @@
     },
     {
       "name": "三立新聞台",
-      "title": "【#直播中LIVE】北市激戰！沈伯洋vs.蔣萬安誰勝? 戴立安公布選情「封關民調」 ｜三立新聞LIVE",
+      "title": "【#直播中LIVE】選前關鍵時間催票！沈伯洋赴內湖灣仔庄福德堂祝壽祈福／時間：11/23(一)12:00 地點：台北內湖灣仔庄福德堂(臺北市內湖區石潭路28號)｜三立新聞LIVE",
       "group": "新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/ySiL4cXXg_g/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/vcAhGwbj0EY/hqdefault.jpg",
       "author": "三立新聞LIVE",
       "desc": "",
-      "id": "ySiL4cXXg_g",
-      "logo": "https://i.ytimg.com/vi/ySiL4cXXg_g/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=ySiL4cXXg_g"
+      "id": "vcAhGwbj0EY",
+      "logo": "https://i.ytimg.com/vi/vcAhGwbj0EY/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=vcAhGwbj0EY"
+    },
+    {
+      "name": "三立新聞台",
+      "title": "【#直播中LIVE】首都選舉衝刺！沈伯洋現身台美21世紀醫療合作論壇／時間：11/23(一)09:00　地點：臺大醫院國際會議中心101會議室(臺北市中正區徐州路2號)｜三立新聞LIVE",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/BONaYLXr7Oo/hqdefault.jpg",
+      "author": "三立新聞LIVE",
+      "desc": "",
+      "id": "BONaYLXr7Oo",
+      "logo": "https://i.ytimg.com/vi/BONaYLXr7Oo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=BONaYLXr7Oo"
     },
     {
       "name": "三立新聞台",
@@ -385,30 +397,6 @@
       "id": "hGJkDZDchYI",
       "logo": "https://i.ytimg.com/vi/hGJkDZDchYI/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=hGJkDZDchYI"
-    },
-    {
-      "name": "CGTN",
-      "title": "Live: Mexican President Claudia Sheinbaum arrives in Shenzhen, China",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/rM9yYyLdOX4/hqdefault.jpg",
-      "author": "CGTN",
-      "desc": "",
-      "id": "rM9yYyLdOX4",
-      "logo": "https://i.ytimg.com/vi/rM9yYyLdOX4/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=rM9yYyLdOX4"
-    },
-    {
-      "name": "CGTN",
-      "title": "Live: APEC Now – Cooperation",
-      "group": "新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/Pc4UnI-AeZA/hqdefault.jpg",
-      "author": "CGTN",
-      "desc": "",
-      "id": "Pc4UnI-AeZA",
-      "logo": "https://i.ytimg.com/vi/Pc4UnI-AeZA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=Pc4UnI-AeZA"
     },
     {
       "name": "CGTN",
@@ -459,6 +447,42 @@
       "url": "https://www.youtube.com/watch?v=eA6Aczd3FZM"
     },
     {
+      "name": "鏡電視新聞台",
+      "title": "直播／灣仔庄福德堂三官大帝聖誕　沈伯洋出席祝壽大典｜20261123",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/pCd8dXkCEcc/hqdefault.jpg",
+      "author": "鏡新聞",
+      "desc": "",
+      "id": "pCd8dXkCEcc",
+      "logo": "https://i.ytimg.com/vi/pCd8dXkCEcc/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=pCd8dXkCEcc"
+    },
+    {
+      "name": "鏡電視新聞台",
+      "title": "#洋流 嘉年華大成功！十萬小水滴到場！#沈伯洋 喬裝沒人認出？直播談政策再加場！#蔣萬安 合體#柯文哲 各藏心計？#賴士葆 罵沈人渣再敗票？市民下跪蔣無情？｜#中午鏡來講 20261123",
+      "group": "新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/vSmg-d7a46g/hqdefault.jpg",
+      "author": "鏡新聞",
+      "desc": "",
+      "id": "vSmg-d7a46g",
+      "logo": "https://i.ytimg.com/vi/vSmg-d7a46g/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=vSmg-d7a46g"
+    },
+    {
+      "name": "CCTV4美洲",
+      "title": "【正在直播：CCTV中文国际（美洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW",
+      "group": "综合",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/fMbq8IaIDxk/hqdefault.jpg",
+      "author": "LIVE NOW",
+      "desc": "",
+      "id": "fMbq8IaIDxk",
+      "logo": "https://i.ytimg.com/vi/fMbq8IaIDxk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=fMbq8IaIDxk"
+    },
+    {
       "name": "CCTV4美洲",
       "title": "【正在直播：CCTV中文国际（亚洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW",
       "group": "综合",
@@ -471,20 +495,8 @@
       "url": "https://www.youtube.com/watch?v=X-HTZdV960U"
     },
     {
-      "name": "CCTV4美洲",
-      "title": "【正在直播：CCTV中文国际（美洲）】全球新闻热点、时事点评、深度报道、纪录片、电视剧等 | LIVE NOW",
-      "group": "综合",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/PiSwAy-blvA/hqdefault.jpg",
-      "author": "LIVE NOW",
-      "desc": "",
-      "id": "PiSwAy-blvA",
-      "logo": "https://i.ytimg.com/vi/PiSwAy-blvA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=PiSwAy-blvA"
-    },
-    {
       "name": "大愛電視HD",
-      "title": "大愛一臺HD Live 全球直播 | 現正播映：人間菩提 (10444集)",
+      "title": "大愛一臺HD Live 全球直播 | 現正播映：大愛劇_幸福的起點 (20集)",
       "group": "综合",
       "tvg-id": "",
       "tvg-logo": "https://i.ytimg.com/vi/pM-1ytfQhos/hqdefault.jpg",
@@ -496,7 +508,7 @@
     },
     {
       "name": "大愛電視HD",
-      "title": "大愛二臺HD Live 全球直播  | 現正播映：高僧傳 (1778集)",
+      "title": "大愛二臺HD Live 全球直播  | 現正播映：大愛劇_幸福的起點 (20集)",
       "group": "综合",
       "tvg-id": "",
       "tvg-logo": "https://i.ytimg.com/vi/QDxRJP-wfeI/hqdefault.jpg",
@@ -511,12 +523,12 @@
       "title": "Watch Sky News live",
       "group": "国际新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/umLWFz4izTM/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/53SxFKpbKDE/hqdefault.jpg",
       "author": "Sky News",
       "desc": "",
-      "id": "umLWFz4izTM",
-      "logo": "https://i.ytimg.com/vi/umLWFz4izTM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=umLWFz4izTM"
+      "id": "53SxFKpbKDE",
+      "logo": "https://i.ytimg.com/vi/53SxFKpbKDE/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=53SxFKpbKDE"
     },
     {
       "name": "半島國際新聞台",
@@ -592,7 +604,7 @@
     },
     {
       "name": "Habertürk TV Canlı Yayın ᴴᴰ",
-      "title": "#CANLI - Dünyanın İklim Gündemi Antalya'da; COP31 Başladı!",
+      "title": "#CANLI - Altın sekiz ayın en sert haftalık düşüşünü yaşıyor",
       "group": "国际新闻",
       "tvg-id": "",
       "tvg-logo": "https://i.ytimg.com/vi/s4KIyYkwiM0/hqdefault.jpg",
@@ -760,18 +772,6 @@
     },
     {
       "name": "ABC News",
-      "title": "LIVE: ABC News Live - Sunday, November 15",
-      "group": "国际新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/SftX338Iueo/hqdefault.jpg",
-      "author": "ABC News",
-      "desc": "",
-      "id": "SftX338Iueo",
-      "logo": "https://i.ytimg.com/vi/SftX338Iueo/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=SftX338Iueo"
-    },
-    {
-      "name": "ABC News",
       "title": "LIVE: ABC News Live - 24/7 news, context and analysis",
       "group": "国际新闻",
       "tvg-id": "",
@@ -784,75 +784,87 @@
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴속보] \"사례비 받아가세요\" 믿고 열었다간…北 해킹조직 '김수키' 신종 공격 / 연합뉴스TV(YonhapnewsTV)",
+      "title": "[🔴생중계] 최민희 긴급 기자회견…이 시각 국회 소통관 LIVE / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/It6Ii4K8J9I/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/SWu5k-ySz3g/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "It6Ii4K8J9I",
-      "logo": "https://i.ytimg.com/vi/It6Ii4K8J9I/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=It6Ii4K8J9I"
+      "id": "SWu5k-ySz3g",
+      "logo": "https://i.ytimg.com/vi/SWu5k-ySz3g/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=SWu5k-ySz3g"
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴속보] 대법, 한덕수 내란중요임무 19일 선고…구속만료 하루전｜1심 징역 23년→2심 징역 15년 / 연합뉴스TV(YonhapnewsTV)",
+      "title": "\"전쟁 우리 주변으로 번지고 있다\"…전운 감도는 유럽 '3차 대전' 위기?｜핀란드 앞바다 '쾅'…폴란드에 러 미사일 '도발' [뉴스쏙] / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/nVFLq7UJwIE/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/ED3iqiRCxBs/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "nVFLq7UJwIE",
-      "logo": "https://i.ytimg.com/vi/nVFLq7UJwIE/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=nVFLq7UJwIE"
+      "id": "ED3iqiRCxBs",
+      "logo": "https://i.ytimg.com/vi/ED3iqiRCxBs/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=ED3iqiRCxBs"
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴생중계] 최민희, 최고위 사흘 만에 복귀…\"대통령·당원께 누 끼쳐\" 90도 사과ㅣ민주당 최고위원회의 LIVE / 연합뉴스TV(YonhapnewsTV)",
+      "title": "4,700선 깨진 코스피…'검은월요일' 공포 속 딜링룸 현장｜'증안펀드' 효과?…낙폭 제한 [현장쏙] / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/XVbQbhiu3Nc/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/9KdpuitNg3Y/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "XVbQbhiu3Nc",
-      "logo": "https://i.ytimg.com/vi/XVbQbhiu3Nc/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=XVbQbhiu3Nc"
+      "id": "9KdpuitNg3Y",
+      "logo": "https://i.ytimg.com/vi/9KdpuitNg3Y/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=9KdpuitNg3Y"
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴속보] 이란 도발에도 '버티기' 들어간 트럼프 왜?…\"관망하며 버티기 돌아선 듯\"｜미중러 회담서 이란제재 협조 요청하나/ 연합뉴스TV(YonhapnewsTV)",
+      "title": "'시간당 3㎝' 대설 예고된 강원…전국 비바람에 얼어붙는다 [뉴스쏙] / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/h1mc2txZLf8/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/VkPq36k8wCA/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "h1mc2txZLf8",
-      "logo": "https://i.ytimg.com/vi/h1mc2txZLf8/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=h1mc2txZLf8"
+      "id": "VkPq36k8wCA",
+      "logo": "https://i.ytimg.com/vi/VkPq36k8wCA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=VkPq36k8wCA"
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴속보] \"젠슨 황, CEO 복귀 논의 중…백악관 설득 시도\"/ 연합뉴스TV(YonhapnewsTV)",
+      "title": "[🔴속보] \"우산 챙겼나요?\"…전국에 비·눈｜서울 30mm 비, 강원 산지 최대 8cm 눈…변덕스러운 날씨 / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/cvqjPVyLpAw/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/puxjWIwTWoY/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "cvqjPVyLpAw",
-      "logo": "https://i.ytimg.com/vi/cvqjPVyLpAw/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=cvqjPVyLpAw"
+      "id": "puxjWIwTWoY",
+      "logo": "https://i.ytimg.com/vi/puxjWIwTWoY/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=puxjWIwTWoY"
     },
     {
       "name": "연합뉴스TV",
-      "title": "[🔴속보] 동해안 비·산지 눈…출근길 짙은 안개 유의｜비 그친 뒤 강한 찬 바람…수능일 영하권 기온 뚝 / 연합뉴스TV(YonhapnewsTV)",
+      "title": "[🔴속보] 트럼프, 레임덕 본격 시동 걸렸다…공화당 반기에 국방부 고위직 인준 제동 / 연합뉴스TV(YonhapnewsTV)",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/o7zCw8L3VZ4/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/DBHoA1Qb7GA/hqdefault.jpg",
       "author": "연합뉴스TV",
       "desc": "",
-      "id": "o7zCw8L3VZ4",
-      "logo": "https://i.ytimg.com/vi/o7zCw8L3VZ4/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=o7zCw8L3VZ4"
+      "id": "DBHoA1Qb7GA",
+      "logo": "https://i.ytimg.com/vi/DBHoA1Qb7GA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=DBHoA1Qb7GA"
+    },
+    {
+      "name": "연합뉴스TV",
+      "title": "[🔴속보] '검은 월요일' 공포에 개미들 '패닉'…18년 만에 '증시안정펀드' 가동 준비 / 연합뉴스TV(YonhapnewsTV)",
+      "group": "日韩新闻",
+      "tvg-id": "",
+      "tvg-logo": "https://i.ytimg.com/vi/x4xPIdoOGXk/hqdefault.jpg",
+      "author": "연합뉴스TV",
+      "desc": "",
+      "id": "x4xPIdoOGXk",
+      "logo": "https://i.ytimg.com/vi/x4xPIdoOGXk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=x4xPIdoOGXk"
     },
     {
       "name": "연합뉴스TV",
@@ -892,63 +904,39 @@
     },
     {
       "name": "YTN",
-      "title": "\"죽어서 우리 모두를 편안하게 해줘\"...젠슨 황 퇴진 뒤 쏟아진 '충격 폭로' [에디터픽] / YTN",
+      "title": "\"중국, 미국에 보복 예상\"…불붙는 '무역전쟁' [에디터픽] / YTN",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/328rJb4mb9w/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/hwYu3LkikPw/hqdefault.jpg",
       "author": "YTN",
       "desc": "",
-      "id": "328rJb4mb9w",
-      "logo": "https://i.ytimg.com/vi/328rJb4mb9w/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=328rJb4mb9w"
+      "id": "hwYu3LkikPw",
+      "logo": "https://i.ytimg.com/vi/hwYu3LkikPw/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=hwYu3LkikPw"
     },
     {
       "name": "YTN",
-      "title": "선거 참패도 모자라 항공대란까지...트럼프 덮친 거센 '후폭풍' [에디터픽] / YTN",
+      "title": "흑해 넘어 발트해까지 뚫렸다…유럽 코앞까지 들이닥친 전쟁 '확전 위기' [에디터픽] / YTN",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/GlNd57J0CPA/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/4zcl9LJvp0A/hqdefault.jpg",
       "author": "YTN",
       "desc": "",
-      "id": "GlNd57J0CPA",
-      "logo": "https://i.ytimg.com/vi/GlNd57J0CPA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=GlNd57J0CPA"
+      "id": "4zcl9LJvp0A",
+      "logo": "https://i.ytimg.com/vi/4zcl9LJvp0A/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=4zcl9LJvp0A"
     },
     {
       "name": "YTN",
-      "title": "\"돈바스 넘기라고?\" 젤렌스키, 미 중재안에 '발칵'…우크라군 20만 명 '엑소더스' [에디터픽] / YTN",
+      "title": "공화당마저 '반기'…트럼프 행정부 덮친 '대혼란' [에디터픽] / YTN",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/_xNMEQPXqnM/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/o-RlUfgPZYU/hqdefault.jpg",
       "author": "YTN",
       "desc": "",
-      "id": "_xNMEQPXqnM",
-      "logo": "https://i.ytimg.com/vi/_xNMEQPXqnM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=_xNMEQPXqnM"
-    },
-    {
-      "name": "YTN",
-      "title": "트럼프 흔들리자 기다렸다는 듯...이란, 미군 기지 공격 재개 '초비상' [에디터픽] / YTN",
-      "group": "日韩新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/XNUL1mpgorA/hqdefault.jpg",
-      "author": "YTN",
-      "desc": "",
-      "id": "XNUL1mpgorA",
-      "logo": "https://i.ytimg.com/vi/XNUL1mpgorA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=XNUL1mpgorA"
-    },
-    {
-      "name": "YTN",
-      "title": "\"젠슨 황, 엔비디아 CEO 복귀 추진\"…중국 매체, 불길한 시점에 꺼낸 'K-반도체' [에디터픽] / YTN",
-      "group": "日韩新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/8-xsb4zT_p8/hqdefault.jpg",
-      "author": "YTN",
-      "desc": "",
-      "id": "8-xsb4zT_p8",
-      "logo": "https://i.ytimg.com/vi/8-xsb4zT_p8/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=8-xsb4zT_p8"
+      "id": "o-RlUfgPZYU",
+      "logo": "https://i.ytimg.com/vi/o-RlUfgPZYU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=o-RlUfgPZYU"
     },
     {
       "name": "YTN",
@@ -964,87 +952,75 @@
     },
     {
       "name": "MBCNEWS",
-      "title": "2026년 국외 안장 독립유공자 유해봉환식 - [끝까지LIVE] MBC중계방송 2026년 11월 16일",
+      "title": "최민희 더불어민주당 의원, '기획 징계 의혹' 관련 기자회견 - [끝까지LIVE] MBC중계방송 2026년 11월 23일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/rWn5CV1oxSI/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/zGTH3gCJPWE/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "rWn5CV1oxSI",
-      "logo": "https://i.ytimg.com/vi/rWn5CV1oxSI/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=rWn5CV1oxSI"
+      "id": "zGTH3gCJPWE",
+      "logo": "https://i.ytimg.com/vi/zGTH3gCJPWE/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=zGTH3gCJPWE"
     },
     {
       "name": "MBCNEWS",
-      "title": "[속보] 김건희 '도이치 주가조작' 등 '3대 의혹' 사건..대법원, 19일 상고심 선고 - [MBC 뉴스속보] MBC뉴스 2026년 11월 16일",
+      "title": "[속보] '해킹'에 '보안망' 줄줄이 뚫린다.. 한전 150만 명·삼성증권 8천 명 '유출' - [MBC뉴스속보] MBC뉴스 2026년 11월 23일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/AXXLRRyhO48/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/enQJbLt8g4k/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "AXXLRRyhO48",
-      "logo": "https://i.ytimg.com/vi/AXXLRRyhO48/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=AXXLRRyhO48"
+      "id": "enQJbLt8g4k",
+      "logo": "https://i.ytimg.com/vi/enQJbLt8g4k/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=enQJbLt8g4k"
     },
     {
       "name": "MBCNEWS",
-      "title": "더불어민주당 최고위원회의..'최민희' 윤리심판원 이첩 등 - [끝까지LIVE] MBC중계방송 2026년 11월 16일",
+      "title": "국회 국방위 ‘청해부대 파견 연장’ 수정 동의안 상정..‘우회 파병’ 논란 - [끝까지LIVE] MBC중계방송 2026년 11월 23일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/D1gGNLzlaMM/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/1_dCJtC64uo/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "D1gGNLzlaMM",
-      "logo": "https://i.ytimg.com/vi/D1gGNLzlaMM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=D1gGNLzlaMM"
+      "id": "1_dCJtC64uo",
+      "logo": "https://i.ytimg.com/vi/1_dCJtC64uo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=1_dCJtC64uo"
     },
     {
       "name": "MBCNEWS",
-      "title": "국회 법사위 '한덕수 재판 지연' 긴급 현안질의 - [끝까지LIVE] MBC중계방송 2026년 11월 16일",
+      "title": "[속보] '미 반도체주 폭락' 코스피 5%대 급락..4,600선도 붕괴 ..매도 사이드카 발동 - [MBC뉴스속보] MBC뉴스 2026년 11월 23일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/ULjt7JRQ918/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/6fvrErXkpHg/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "ULjt7JRQ918",
-      "logo": "https://i.ytimg.com/vi/ULjt7JRQ918/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=ULjt7JRQ918"
+      "id": "6fvrErXkpHg",
+      "logo": "https://i.ytimg.com/vi/6fvrErXkpHg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=6fvrErXkpHg"
     },
     {
       "name": "MBCNEWS",
-      "title": "[속보] 한덕수 '내란 혐의'..대법원, 19일 상고심 선고 - [MBC 뉴스속보] MBC뉴스 2026년 11월 16일",
+      "title": "APEC 이재명-시진핑 세 번째 만남.. FTA·문화 교류로 '한한령' 해빙 기대감 - [핫이슈PLAY] MBC뉴스 2026년 11월 22일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/kqmI34WybtY/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/Z9_Ms5sq0UI/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "kqmI34WybtY",
-      "logo": "https://i.ytimg.com/vi/kqmI34WybtY/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=kqmI34WybtY"
+      "id": "Z9_Ms5sq0UI",
+      "logo": "https://i.ytimg.com/vi/Z9_Ms5sq0UI/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Z9_Ms5sq0UI"
     },
     {
       "name": "MBCNEWS",
-      "title": "더민주 전국혁신회의 '최민희 제명 요구' 기자회견 - [끝까지LIVE] MBC중계방송 2026년 11월 16일",
+      "title": "'평화' 합의에도 종전은 '안갯속'.. 유럽 정상들 '반발'.. 트럼프 '뒤끝 작렬' - [핫이슈PLAY] MBC뉴스 2026년 11월 22일",
       "group": "日韩新闻",
       "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/HFn6JVZfMjc/hqdefault.jpg",
+      "tvg-logo": "https://i.ytimg.com/vi/QxBo7DVfrKU/hqdefault.jpg",
       "author": "MBCNEWS",
       "desc": "",
-      "id": "HFn6JVZfMjc",
-      "logo": "https://i.ytimg.com/vi/HFn6JVZfMjc/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=HFn6JVZfMjc"
-    },
-    {
-      "name": "MBCNEWS",
-      "title": "[속보] \"젠슨 황, 엔비디아 CEO 복귀 논의 중\".. 사퇴 나흘 만.. 복귀 청원 16만 명 육박 - [MBC뉴스속보] MBC뉴스 2026년 11월 16일",
-      "group": "日韩新闻",
-      "tvg-id": "",
-      "tvg-logo": "https://i.ytimg.com/vi/dz8oX2O4QjQ/hqdefault.jpg",
-      "author": "MBCNEWS",
-      "desc": "",
-      "id": "dz8oX2O4QjQ",
-      "logo": "https://i.ytimg.com/vi/dz8oX2O4QjQ/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=dz8oX2O4QjQ"
+      "id": "QxBo7DVfrKU",
+      "logo": "https://i.ytimg.com/vi/QxBo7DVfrKU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=QxBo7DVfrKU"
     },
     {
       "name": "MBCNEWS",
